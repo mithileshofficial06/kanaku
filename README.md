@@ -1,207 +1,270 @@
+<div align="center">
+
+<img src="docs/icons/logo.svg" width="72" alt="Kanaku logo" />
+
 # Kanaku
 
-**An AI credit underwriter for Indian small businesses. Every rupee proven, every "no" turned into a path to yes.**
+### AI credit underwriting for India's small businesses
 
-*Kanaku* comes from the Tamil *kanakku*: accounts, the reckoning of money.
+**Every rupee proven. Every "no" turned into a path to yes.**
 
-Built solo for **Arthaton 2026**.
+<p>
+  <img src="https://img.shields.io/badge/Next.js-15-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js 15" />
+  <img src="https://img.shields.io/badge/React-19-149ECA?style=flat-square&logo=react&logoColor=white" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS 4" />
+  <img src="https://img.shields.io/badge/NVIDIA_NIM-Nemotron-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA NIM Nemotron" />
+  <img src="https://img.shields.io/badge/tests-21_passing-2F5D3A?style=flat-square&logo=vitest&logoColor=white" alt="21 tests passing" />
+  <img src="https://img.shields.io/badge/Arthaton-2026-790B13?style=flat-square" alt="Arthaton 2026" />
+</p>
 
-![Kanaku hero](docs/screens/hero.jpg)
+<p>
+  <a href="#live-demo"><b>Live demo</b></a> &nbsp;·&nbsp;
+  <a href="#demo-video"><b>Demo video</b></a> &nbsp;·&nbsp;
+  <a href="#quick-start"><b>Quick start</b></a> &nbsp;·&nbsp;
+  <a href="#how-it-works"><b>How it works</b></a>
+</p>
 
-> **Live demo:** _link added after deployment_  ·  **Demo video:** _link added after upload_
->
-> On the analyze page, the three sample businesses run in one click. No upload or sign-up is needed.
+<img src="docs/screens/hero.jpg" alt="Kanaku landing page: a statement scanner catching an edited row" width="100%" />
+
+</div>
 
 ---
 
-## The problem
+## Overview
 
-India has over 6 crore MSMEs, and their credit gap is estimated at ₹20–25 lakh crore. Most small businesses are thin-file: no audited accounts, so lenders underwrite them from bank statements. Today that means one of two things:
+India has over 6 crore MSMEs, and their credit gap is estimated at ₹20–25 lakh crore. Most of these businesses are thin-file: no audited accounts, so lenders underwrite them from **bank statements**. Today that happens in one of two ways:
 
-1. **A credit officer reads hundreds of rows by hand.** It is slow, inconsistent, and easy to fool. Edited PDFs, money cycled through friends' accounts and month-end cash parking all get through.
-2. **A rule engine says "rejected" and nothing else.** The owner never learns what would have made the loan work.
+- **Manual review.** A credit officer reads hundreds of rows. It is slow, inconsistent, and easy to fool with edited PDFs, money cycled through friends' accounts, or cash parked at month-end.
+- **Rule engines.** They say "rejected" and stop. The owner never learns what would have made the loan work.
 
-Pasting a statement into a chatbot doesn't solve this. A chatbot does arithmetic in its head, gives different numbers on a second run, can't prove where a figure came from, and won't notice that one row was typed over.
+**Kanaku** reads a bank statement (plus optional GST returns and an ITR) and produces a complete underwriting report in under a minute: a decision, the repayment maths, ranked red flags, and a concrete plan to qualify for more. **Every number is computed by deterministic code, and every figure links back to its row on the original PDF.**
 
-## What Kanaku does
+> Kanaku is decision support for a credit officer, not an automated lending decision. All data in this repository is synthetic.
 
-A loan officer, or the business owner, uploads a **bank statement**, and optionally **GST returns** and an **ITR**. In under a minute Kanaku returns an underwriting report:
+---
 
-| | |
-|---|---|
-| **Decision** | Approve, approve a reduced amount, decline, or refer to fraud review, with the binding constraint named. |
-| **Repayment capacity** | Real sales, operating costs, existing EMIs found in the statement, the room left for a new EMI, and the turnover cap. |
-| **Red flags** | Twelve checks, ranked by severity. A critical finding stops the loan regardless of capacity. |
-| **Path to Yes** | The exact changes that would unlock more credit, with live sliders. |
-| **Money-flow map** | Who pays the business and whom it pays. Round-tripping shows up as red dashed loops. |
-| **Three-document cross-check** | Bank vs GST vs ITR. Three filings that describe different businesses are a warning sign. |
-| **AI memo and Q&A** | A plain-English memo and a question box. Every figure and citation is checked before it is shown. |
+## Features
 
-**Every number is clickable.** Each figure and each `R175` chip opens the original PDF page with that row highlighted.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="docs/icons/path-to-yes.svg" width="40" align="left" alt="" />
+      <b>&nbsp;Path to Yes</b><br />
+      <sub>&nbsp;Instead of a flat rejection, the owner sees the exact changes that unlock the amount they asked for, with live what-if sliders.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <img src="docs/icons/tamper.svg" width="40" align="left" alt="" />
+      <b>&nbsp;Tamper detection</b><br />
+      <sub>&nbsp;Re-adds every running balance, compares the fonts of every amount, and reads the PDF's metadata. One edited number gets caught.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <img src="docs/icons/fraud.svg" width="40" align="left" alt="" />
+      <b>&nbsp;Fraud patterns</b><br />
+      <sub>&nbsp;Round-tripping through linked parties and month-end window dressing, detected and excluded from income.</sub>
+    </td>
+    <td valign="top">
+      <img src="docs/icons/cross-check.svg" width="40" align="left" alt="" />
+      <b>&nbsp;Three-document check</b><br />
+      <sub>&nbsp;Bank vs GST vs ITR. A business has one real turnover; Kanaku checks that all three filings agree.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <img src="docs/icons/capacity.svg" width="40" align="left" alt="" />
+      <b>&nbsp;Repayment capacity</b><br />
+      <sub>&nbsp;Genuine sales, operating costs and existing EMIs found in the statement, turned into a safe new EMI, every step shown.</sub>
+    </td>
+    <td valign="top">
+      <img src="docs/icons/money-flow.svg" width="40" align="left" alt="" />
+      <b>&nbsp;Money-flow map</b><br />
+      <sub>&nbsp;Who pays the business and whom it pays. Money cycling through a party shows up as a red loop.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <img src="docs/icons/proof.svg" width="40" align="left" alt="" />
+      <b>&nbsp;Proof for every number</b><br />
+      <sub>&nbsp;The AI memo cites rows, and code verifies every figure and citation before display. Click any citation to see the original page.</sub>
+    </td>
+    <td valign="top">
+      <img src="docs/icons/reader.svg" width="40" align="left" alt="" />
+      <b>&nbsp;Reads any bank's layout</b><br />
+      <sub>&nbsp;A layout-aware parser with an AI fallback, both gated by the balance chain. Password-protected PDFs are supported; scans are refused with the reason.</sub>
+    </td>
+  </tr>
+</table>
 
-![Proof drawer: the original PDF page with row R175 highlighted](docs/screens/evidence-drawer.jpg)
+<br />
 
-## What makes it different
+<div align="center">
+  <img src="docs/screens/evidence-drawer.jpg" alt="Proof drawer: the original statement page with edited row R175 highlighted" width="100%" />
+  <sub><b>The proof drawer.</b> Clicking a citation opens the original PDF page with the row highlighted. Here, row R175 has had ₹45,000 added to it.</sub>
+</div>
 
-### 1. Path to Yes
-Other tools stop at "rejected". Kanaku shows the owner the plan:
+---
 
-> **Arun Auto Spares** asked for ₹5L and qualifies for **₹1.25L** today. Close the small gold loan (+₹1.65L), take 60 months instead of 36 (+₹1.25L), stay bounce-free for six months (+₹25k) and move half the cash sales to UPI (+₹1.15L). **That reaches ₹5.55L.**
-
-The offer is recalculated as the sliders move, using the same deterministic maths as the report. The AI is not involved in any of these numbers.
-
-![Path to Yes](docs/screens/path-to-yes.jpg)
-
-### 2. Tamper detection
-Kanaku re-adds every row: previous balance + credit − debit must equal the printed balance. An edited amount breaks that chain on exactly one row. Kanaku also checks:
-- the **font** of every amount (a typed-over number usually uses a different font);
-- the **PDF metadata** (a bank's core system did not produce a file saved by "QuickPDF Editor Online").
-
-For Sri Lakshmi Traders, Kanaku finds row **R175**, where a ₹57,550 credit was inflated by **₹45,000**. The proof drawer opens that page with the row highlighted.
-
-### 3. Fraud patterns a person misses
-- **Round-tripping:** ₹50k or more sent to a party and returned within 7 days, within 5% of the amount. Sri Lakshmi Traders did this 12 times with two parties, for ₹23.73L.
-- **Window dressing:** large cash deposits in the last 3 days of a month, withdrawn in the first 5 days of the next.
-- **GST vs bank vs ITR:** GST declared ₹1.15 Cr a year, while ₹19.55L of genuine sales reached the bank (5.9×) and the ITR says ₹21.5L.
-
-![Money flow](docs/screens/money-flow.jpg)
-
-## Why you can trust it: the AI never does the maths
+## How it works
 
 ```mermaid
 flowchart LR
-  A[PDF statement] --> B{Layout reader}
-  B -- recognised --> D[Rows]
+  A[Bank statement PDF] --> B{Layout reader}
+  B -- recognised --> D[Statement rows]
   B -- unknown layout --> C[AI reader<br/>copies cells only]
   C --> V{Balance chain<br/>reconciles?}
-  V -- no --> X[Refused, with the reason]
+  V -- no --> X[Refused with reason]
   V -- yes --> D
-  D --> E[Deterministic engine<br/>TypeScript]
-  G[GST / ITR PDFs] --> E
-  E --> F[Facts: every figure,<br/>every flag, every row ID]
+  D --> E[Deterministic engine]
+  G[GST and ITR PDFs] --> E
+  E --> F[Facts: figures, flags, row IDs]
   F --> M[AI memo and answers<br/>NVIDIA Nemotron]
-  M --> K{Checker}
+  M --> K{Verifier}
   F --> K
-  K --> R[Report: figures and<br/>citations verified]
+  K --> R[Report with<br/>verified citations]
 ```
 
-| Step | Who does it | How it is kept honest |
+### The AI never does the maths
+
+| Stage | Performed by | Safeguard |
 |---|---|---|
-| Reading the statement | A layout-aware parser. The AI reads only layouts the parser doesn't recognise. | Every parse must reconcile against the running balance, or it is rejected. When the AI reads a file, it only copies cells; whether an amount is money in or out comes from the balance arithmetic. |
-| Labelling transactions | Rules first. The AI labels only narrations the rules can't place. | Labels feed the engine; they never change a printed amount. |
-| Every number in the report | Deterministic TypeScript engine ([`src/lib/engine`](src/lib/engine)) | Unit-tested; the policy constants are in one file. |
-| Memo and answers | NVIDIA Nemotron 3 Ultra on NIM | Every rupee figure must match a computed fact (exact to ₹1, or within rounding for lakh and crore figures). Every citation must be a real row, GST month, ITR or PDF metadata. The result is shown on the memo, for example *28/28 figures match, 28/28 citations found*. Any failure is shown struck through. |
+| **Reading** | Layout-aware parser. The AI reads only layouts the parser can't recognise. | Every parse must reconcile against the running balance. The AI only copies cells; balance arithmetic decides whether each amount is money in or out. |
+| **Labelling** | Rules first. The AI labels only narrations the rules can't place. | Labels never change a printed amount. |
+| **Calculation** | Deterministic TypeScript engine | Unit-tested; every assumption is in one policy file. |
+| **Explanation** | NVIDIA Nemotron 3 Ultra | Every rupee figure must match a computed fact, and every citation must exist. Results are shown on the memo (for example *28/28 figures, 28/28 citations*). |
 
-Each report also states how it was produced: which reader was used, how many rows reconcile, how many narrations the AI labelled, and who wrote the memo.
+Each report also shows how it was produced: which reader was used, how many rows reconcile, what the AI labelled, and who wrote the memo.
 
-![AI memo with verification counts](docs/screens/memo.jpg)
+---
 
-## Works on more than its own sample files
+## See it in action
 
-The analyze page includes the same business printed in **other bank layouts**, so the reader can be tested live:
+The analyze page includes three synthetic businesses that run with one click:
 
-| Layout | What is different | Read by |
-|---|---|---|
-| Two date columns | Txn and value dates, `1 Apr 2026` dates, descriptions wrapped over two lines | Layout reader |
-| Short dates | `dd/mm/yy`, value date after the reference, "Withdrawal Amt." headers | Layout reader |
-| Newest first, Dr/Cr | A single amount column with a Dr/Cr marker, balances ending in "Cr" | Layout reader |
-| Unknown layout | Headers no rule understands | AI reader, balance-checked |
-| Scanned image | No text layer | Refused, with the reason |
-
-All four readable layouts produce the same 363 rows and the same decision as the original. Password-protected PDFs open with a password field; the password is used only to open the file and is never stored.
-
-![Other bank layouts](docs/screens/bank-layouts.jpg)
-
-## Underwriting policy
-
-Every assumption is in [`src/lib/engine/policy.ts`](src/lib/engine/policy.ts) and is shown in the UI.
-
-| Rule | Value |
-|---|---|
-| Minimum DSCR on monthly surplus (sales minus operating costs) | 1.25 |
-| Loan cap | 20% of verified annual turnover (Nayak Committee heuristic) |
-| Cash counted toward the turnover cap | 50% (cash cannot be traced to customers) |
-| Assumed rate | 18% a year, unsecured MSME term loan |
-| EMI bounces in the last 6 months | 0 → ×1, 1 → ×0.9, 2–3 → ×0.75, 4+ → ×0.5 |
-| Round trip | ≥ ₹50k, back within 7 days, within 5% |
-| Window dressing | ≥ ₹50k, last 3 days of a month, reversed in the first 5 days, within 10% |
-
-## The three sample businesses (synthetic)
-
-| Business | Scenario | Kanaku's answer |
+| Business | Scenario | Kanaku's decision |
 |---|---|---|
 | **Meenakshi Textiles**, Madurai | Healthy: steady digital sales, one small loan | **Approve ₹5L** (capacity ₹10.2L) |
-| **Arun Auto Spares**, Coimbatore | Stressed: cash-heavy, two loans, 3 recent EMI bounces | **₹1.25L now**, Path to Yes to ₹5.55L |
-| **Sri Lakshmi Traders**, Salem | Fraud: edited row, 12 round trips, month-end cash, GST 5.9× bank | **Refer to fraud review**, 7 red flags |
+| **Arun Auto Spares**, Coimbatore | Stressed: cash-heavy, two loans, 3 recent EMI bounces | **₹1.25L now**, with a Path to Yes to ₹5.55L |
+| **Sri Lakshmi Traders**, Salem | Fraud: edited row, 12 round trips, GST 5.9× bank | **Refer to fraud review**, 7 evidence-backed red flags |
 
-All data is generated by [`scripts/generate-samples.ts`](scripts/generate-samples.ts). No real person's bank statement, PAN or account number is used anywhere.
+<div align="center">
+  <img src="docs/screens/path-to-yes.jpg" alt="Path to Yes: from ₹1.25L today to ₹5.55L in four steps" width="100%" />
+  <sub><b>Path to Yes.</b> Arun Auto Spares qualifies for ₹1.25L today. Closing the small gold loan, taking a longer tenure, six bounce-free months and moving half the cash sales to UPI reach ₹5.55L.</sub>
+</div>
 
-## Run it locally
+<br />
 
-Requirements: Node 20 or newer.
+It also includes the same business printed in **four other bank layouts** (different date styles, a single amount column with a Dr/Cr marker, newest-first order, an unrecognised layout) and a scanned image. Every readable layout produces the same 363 rows and the same decision; the scan is refused with the reason.
+
+---
+
+## Quick start
+
+**Requirements:** Node.js 20+ and a free NVIDIA NIM API key from [build.nvidia.com](https://build.nvidia.com). The app runs without a key, using template memos.
 
 ```bash
 git clone https://github.com/mithileshofficial06/kanaku.git
 cd kanaku
 npm install
-cp .env.example .env.local    # then add your NVIDIA NIM key (free at build.nvidia.com)
-npm run dev                   # http://localhost:3000
+cp .env.example .env.local      # add your NVIDIA NIM key
+npm run dev                     # http://localhost:3000
 ```
 
-Without a key everything still works: the memo falls back to a template built from the same facts, and only the AI reader for unknown layouts is unavailable.
+### Configuration
 
-| Command | What it does |
+| Variable | Purpose | Default |
+|---|---|---|
+| `NIM_API_KEY` | NVIDIA NIM key (`nvapi-...`) | none (template mode) |
+| `NIM_BASE_URL` | OpenAI-compatible endpoint | `https://integrate.api.nvidia.com/v1` |
+| `NIM_MODEL_SMART` | Memo and answers | `nvidia/nemotron-3-ultra-550b-a55b` |
+| `NIM_MODEL_FAST` | Labelling and the AI reader | `nvidia/nemotron-3.5-lightning-30b-a3b` |
+
+### Scripts
+
+| Command | Description |
 |---|---|
-| `npm test` | 21 tests: exact parsing of every sample and every bank layout, engine outcomes, verifier |
-| `npm run gen:samples` | Regenerate the three sample businesses (PDFs plus ground truth) |
-| `npm run gen:formats` | Regenerate the other-bank layouts and the scanned file |
-| `npx tsx --env-file=.env.local scripts/bench-memo.ts` | Live memo timing and verification against NIM |
-
-### Environment
-
-```
-NIM_API_KEY=nvapi-...
-NIM_BASE_URL=https://integrate.api.nvidia.com/v1
-NIM_MODEL_SMART=nvidia/nemotron-3-ultra-550b-a55b      # memo and answers
-NIM_MODEL_FAST=nvidia/nemotron-3.5-lightning-30b-a3b   # narration labels, AI reader
-```
-
-## Stack
-
-Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS 4 · Motion · pdf.js (parsing and the proof viewer) · pdf-lib (synthetic documents) · OpenAI-compatible SDK against NVIDIA NIM · Vitest
-
-```
-src/lib/parse/      PDF reading, layout-aware statement parser, GST and ITR parsers
-src/lib/engine/     categorise, eligibility and Path to Yes, fraud checks, report
-src/lib/llm.ts      NIM client, AI reader, labelling, memo, answers, verifier
-src/lib/pipeline.ts documents in, report out
-src/app/api/        analyze, memo, ask, status
-src/components/     landing page, report, proof drawer, feature pages
-```
-
-## Path to production
-
-- **Account Aggregator.** Fetch statements directly from the bank through India's RBI-regulated AA network. That removes edited PDFs at the source; tamper detection then guards the PDF path that most lenders still accept.
-- **On-premise model.** Nemotron is an open model, so a lender can host it inside its own network and statements never leave the bank.
-- **More layouts and OCR.** Add bank-specific layouts as they come up. Scanned statements would need OCR plus the same balance-chain gate before any row is trusted.
-- **Bureau data.** Combine with CIBIL or CRIF for repayment history beyond the one account.
-
-## Limits, stated plainly
-
-- Kanaku supports a credit decision; it is not a lending decision. A credit officer makes the call.
-- The policy constants are reasonable defaults, not any lender's actual credit policy.
-- Every sample document is synthetic. Don't upload real customer data to a public demo.
-
-## AI tools used
-
-| Tool | Used for |
-|---|---|
-| **Claude Code** (Anthropic, Claude Opus 5.5) | Pair-programming the whole build: architecture, code, tests, synthetic data generation and UI. |
-| **NVIDIA NIM: Nemotron 3 Ultra** (`nvidia/nemotron-3-ultra-550b-a55b`) | In the app: writes the underwriting memo and answers questions. |
-| **NVIDIA NIM: Nemotron 3.5 Lightning** (`nvidia/nemotron-3.5-lightning-30b-a3b`) | In the app: labels unclear narrations and reads unrecognised statement layouts. |
-
-All business logic, parsing and arithmetic is deterministic code in this repository. No AI computes any number in the report.
+| `npm run dev` | Start the development server |
+| `npm run build && npm start` | Production build and server |
+| `npm test` | Run the 21 tests (exact parsing of every sample and layout, engine outcomes, verifier) |
+| `npm run gen:samples` | Regenerate the three sample businesses |
+| `npm run gen:formats` | Regenerate the alternative bank layouts and the scanned file |
 
 ---
 
-Built for Arthaton 2026.
+## Underwriting policy
+
+Every assumption lives in [`src/lib/engine/policy.ts`](src/lib/engine/policy.ts) and is shown in the UI.
+
+| Rule | Value |
+|---|---|
+| Minimum DSCR on monthly surplus | 1.25 |
+| Loan cap | 20% of verified annual turnover (Nayak Committee heuristic) |
+| Cash counted toward the cap | 50%, because cash cannot be traced to customers |
+| Assumed interest rate | 18% a year, unsecured MSME term loan |
+| EMI bounces in the last 6 months | 0 → ×1 · 1 → ×0.9 · 2–3 → ×0.75 · 4+ → ×0.5 |
+| Round trip | ≥ ₹50k, returned within 7 days, within 5% |
+| Window dressing | ≥ ₹50k in the last 3 days of a month, reversed within the first 5 |
+
+---
+
+## Project structure
+
+```
+src/
+├── app/
+│   ├── api/               analyze · memo · ask · status
+│   ├── analyze/           the underwriting workspace
+│   └── features/[slug]/   one explainer page per feature
+├── components/
+│   ├── report/            report view, proof drawer, Path to Yes, charts
+│   └── motion.tsx         animation primitives
+└── lib/
+    ├── parse/             PDF reading, layout-aware statement parser
+    ├── engine/            categorise, eligibility, Path to Yes, fraud checks
+    ├── llm.ts             NIM client, AI reader, memo, answers, verifier
+    └── pipeline.ts        documents in, report out
+scripts/                   synthetic data generators, live AI benchmarks
+```
+
+**Stack:** Next.js 15 · React 19 · TypeScript · Tailwind CSS 4 · Motion · pdf.js · pdf-lib · NVIDIA NIM (OpenAI-compatible API) · Vitest
+
+---
+
+## Roadmap
+
+- **Account Aggregator integration.** Fetch statements directly from banks through India's RBI-regulated AA framework, which removes edited PDFs at the source.
+- **On-premise deployment.** Nemotron is an open model, so a lender can host it inside its own network and statements never leave the institution.
+- **OCR for scanned statements.** Behind the same balance-chain gate, so no unverified row is ever used.
+- **Credit bureau data.** Combine with bureau reports for repayment history beyond a single account.
+
+## Limitations
+
+- Kanaku supports a credit officer's decision; it does not make the lending decision itself.
+- The policy values are reasonable defaults, not any lender's actual credit policy.
+- Every sample document is synthetic. Do not upload real customer data to a public demo.
+
+---
+
+## Live demo
+
+_Link to be added after deployment._
+
+## Demo video
+
+_Link to be added after upload._
+
+## AI tools used
+
+| Tool | Role |
+|---|---|
+| **Claude Code** (Anthropic, Claude Opus 5.5) | Development partner for the whole build: architecture, code, tests, synthetic data and UI |
+| **NVIDIA NIM: Nemotron 3 Ultra** | In the app: writes the underwriting memo and answers questions |
+| **NVIDIA NIM: Nemotron 3.5 Lightning** | In the app: labels unclear narrations and reads unrecognised statement layouts |
+
+All parsing, business logic and arithmetic is deterministic code in this repository. No AI computes any number in a report.
+
+<div align="center">
+<br />
+<sub>Built solo for <b>Arthaton 2026</b> · <i>Kanaku</i>, from the Tamil <i>kanakku</i>: accounts, the reckoning of money</sub>
+</div>
