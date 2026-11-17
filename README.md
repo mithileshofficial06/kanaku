@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kanaku
 
-## Getting Started
+**Kanaku** (Tamil: *kanakku*, "accounts / calculation") is an AI credit underwriter for Indian small businesses.
 
-First, run the development server:
+Upload a bank statement, GST returns and an ITR. Kanaku produces an underwriting memo: an eligible loan amount, cash-flow health, fraud red flags, and a **Path to Yes** that tells the business owner exactly what to change to qualify for more. Every number links back to the row or page it came from.
 
+> Built for Arthaton 2026 (AI for Finance). All data in this repository is synthetic. Kanaku is decision support, not a lending decision.
+
+## Status
+Work in progress. The full README (architecture, setup, demo video) will be completed before submission.
+
+## Core ideas
+- **The AI reads and explains; code does the maths.** Every figure is computed deterministically in TypeScript and is reproducible.
+- **Proof for every claim.** Each transaction gets an ID, the AI must cite IDs, and the app checks every citation.
+- **Tamper detection.** A running-balance chain check flags edited statement rows.
+- **Path to Yes.** What-if levers show how a borrower can reach the amount they asked for.
+
+## Quick start
 ```bash
+npm install
+cp .env.example .env.local   # add your NVIDIA NIM API key
+npm run gen:samples          # generate the synthetic sample businesses
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech
+Next.js, TypeScript, Tailwind, pdfjs-dist, pdf-lib, Vitest. LLM: NVIDIA NIM (open models, via an OpenAI-compatible API).
