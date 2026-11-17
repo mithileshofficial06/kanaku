@@ -93,8 +93,8 @@ function Hero({ rows }: { rows: HeroRow[] }) {
             <motion.span initial={{ width: 0 }} animate={{ width: 64 }} transition={{ delay: 0.4, duration: 0.9, ease: EASE }} className="h-px bg-ivory/70" />
           </motion.div>
           <h1 className="mt-6">
-            <SplitChars as="span" text="Every rupee" className="display block text-[18vw] lg:text-[9.2vw] xl:text-[150px]" delay={0.2} />
-            <SplitChars as="span" text="proven." delay={0.6} className="display block text-[18vw] text-transparent [-webkit-text-stroke:2px_var(--ivory)] lg:text-[9.2vw] xl:text-[150px]" />
+            <SplitChars as="span" text="Every rupee" className="display block text-[18vw] lg:text-[8.4vw] xl:text-[124px]" delay={0.2} />
+            <SplitChars as="span" text="proven." delay={0.6} className="display block text-[18vw] text-transparent [-webkit-text-stroke:2px_var(--ivory)] lg:text-[8.4vw] xl:text-[124px]" />
           </h1>
           <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1, duration: 0.8, ease: EASE }} className="serif mt-8 max-w-xl text-xl italic leading-snug text-ivory/90 md:text-2xl">
             Upload a bank statement, GST returns and an ITR. Get a loan decision in a minute, with proof for every number and a path to yes for every no.
@@ -105,7 +105,7 @@ function Hero({ rows }: { rows: HeroRow[] }) {
           </motion.div>
           <motion.dl initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.6, duration: 1 }} className="mt-14 grid max-w-lg grid-cols-3 border-t border-ivory/25 pt-6">
             {[["< 1 min", "per application"], ["0", "numbers computed by AI"], ["7", "fraud checks"]].map(([a, b]) => (
-              <div key={b}><dt className="display text-3xl">{a}</dt><dd className="mt-1 text-[11px] uppercase tracking-[0.16em] text-ivory/70">{b}</dd></div>
+              <div key={b} className="pr-3"><dt className="display text-2xl md:text-3xl">{a}</dt><dd className="mt-1 text-[10px] uppercase leading-snug tracking-[0.12em] text-ivory/70 md:text-[11px] md:tracking-[0.16em]">{b}</dd></div>
             ))}
           </motion.dl>
         </motion.div>
@@ -214,7 +214,7 @@ function Features() {
         <SplitChars as="h2" text="Seven ways it earns trust." className="display mt-4 block text-6xl md:text-8xl" />
         <div className="mt-16 grid gap-px bg-ivory/15 md:grid-cols-2 lg:grid-cols-4">
           {FEATURES.map((f, i) => (
-            <Reveal key={f.slug} delay={(i % 4) * 0.08} className={i === 0 ? "lg:col-span-2 lg:row-span-2" : ""}>
+            <Reveal key={f.slug} delay={(i % 4) * 0.08} className={i === 0 ? "lg:col-span-2" : ""}>
               <Link href={`/features/${f.slug}`} className="group relative flex h-full min-h-[260px] flex-col justify-between overflow-hidden bg-crimson p-8">
                 <span className="absolute inset-0 translate-y-full bg-ivory transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] group-hover:translate-y-0" />
                 <div className="relative flex items-start justify-between transition-colors duration-300 group-hover:text-crimson">

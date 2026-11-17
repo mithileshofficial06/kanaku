@@ -26,7 +26,7 @@ export function Nav({ tone = "ivory" }: { tone?: "ivory" | "crimson" }) {
         <Logo tone={tone} />
         <nav className="hidden items-center gap-10 text-[11px] font-semibold uppercase tracking-[0.22em] md:flex">
           <div className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-            <button className="py-2 opacity-90 hover:opacity-100" aria-expanded={open}>Features</button>
+            <button className="py-2 uppercase tracking-[0.22em] opacity-90 hover:opacity-100" aria-expanded={open}>Features</button>
             <AnimatePresence>
               {open && (
                 <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }} transition={{ duration: 0.25 }} className="absolute left-1/2 top-full w-[340px] -translate-x-1/2 border border-crimson/20 bg-ivory p-2 text-crimson shadow-[0_24px_60px_-20px_rgba(51,4,10,0.45)]">
