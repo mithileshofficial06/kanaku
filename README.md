@@ -120,7 +120,7 @@ The analyze page includes three synthetic businesses that run with one click:
 
 | Business | Scenario | Kanaku's decision |
 |---|---|---|
-| **Meenakshi Textiles**, Madurai | Healthy: steady digital sales, one small loan | **Approve ₹5L** (capacity ₹10.2L) |
+| **Meenakshi Textiles**, Madurai | Healthy: steady digital sales, one small loan | **Approve ₹5L** (capacity ₹12.6L) |
 | **Arun Auto Spares**, Coimbatore | Stressed: cash-heavy, two loans, 3 recent EMI bounces | **₹1.25L now**, with a Path to Yes to ₹5.55L |
 | **Sri Lakshmi Traders**, Salem | Fraud: edited row, 12 round trips, GST 5.9× bank | **Refer to fraud review**, 7 evidence-backed red flags |
 
