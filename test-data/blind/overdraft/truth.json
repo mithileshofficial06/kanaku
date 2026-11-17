@@ -1,0 +1,5078 @@
+{
+ "opening": 284316.42,
+ "rows": [
+  {
+   "date": "2025-10-01",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID90779100/024200195294",
+   "chq": "",
+   "debit": 0,
+   "credit": 21033.2,
+   "balance": 305349.62
+  },
+  {
+   "date": "2025-10-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N2285266800",
+   "chq": "",
+   "debit": 27534.72,
+   "credit": 0,
+   "balance": 277814.9
+  },
+  {
+   "date": "2025-10-02",
+   "narration": "IMPS/P2A/496268912306/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 12417.03,
+   "credit": 0,
+   "balance": 265397.87
+  },
+  {
+   "date": "2025-10-02",
+   "narration": "ATM WDL/TRICHY CANTONMENT/629302",
+   "chq": "",
+   "debit": 9000,
+   "credit": 0,
+   "balance": 256397.87
+  },
+  {
+   "date": "2025-10-02",
+   "narration": "IMPS/P2A/696232312966/K SUBRAMANIAN/SHOP RENT OCT",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": 218397.87
+  },
+  {
+   "date": "2025-10-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 34800,
+   "balance": 253197.87
+  },
+  {
+   "date": "2025-10-04",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID97771689/259609067360",
+   "chq": "",
+   "debit": 0,
+   "credit": 36725.94,
+   "balance": 289923.81
+  },
+  {
+   "date": "2025-10-05",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID98593119/901879158939",
+   "chq": "",
+   "debit": 0,
+   "credit": 32434.04,
+   "balance": 322357.85
+  },
+  {
+   "date": "2025-10-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N5300265646",
+   "chq": "",
+   "debit": 63073.92,
+   "credit": 0,
+   "balance": 259283.93
+  },
+  {
+   "date": "2025-10-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": 237643.93
+  },
+  {
+   "date": "2025-10-06",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID71449136/347923383144",
+   "chq": "",
+   "debit": 0,
+   "credit": 33125.95,
+   "balance": 270769.88
+  },
+  {
+   "date": "2025-10-07",
+   "narration": "NEFT DR-SALARY OCT-PRAKASH R",
+   "chq": "",
+   "debit": 13651.58,
+   "credit": 0,
+   "balance": 257118.3
+  },
+  {
+   "date": "2025-10-07",
+   "narration": "NEFT DR-SALARY OCT-SELVI M",
+   "chq": "",
+   "debit": 15212.02,
+   "credit": 0,
+   "balance": 241906.28
+  },
+  {
+   "date": "2025-10-07",
+   "narration": "NEFT DR-SALARY OCT-KARTHIK S",
+   "chq": "",
+   "debit": 14640.29,
+   "credit": 0,
+   "balance": 227265.99
+  },
+  {
+   "date": "2025-10-07",
+   "narration": "NEFT DR-SALARY OCT-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 13323.79,
+   "credit": 0,
+   "balance": 213942.2
+  },
+  {
+   "date": "2025-10-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N1654155462",
+   "chq": "",
+   "debit": 29731.27,
+   "credit": 0,
+   "balance": 184210.93
+  },
+  {
+   "date": "2025-10-09",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID04641721/910180070493",
+   "chq": "",
+   "debit": 0,
+   "credit": 27593.77,
+   "balance": 211804.7
+  },
+  {
+   "date": "2025-10-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 30100,
+   "balance": 241904.7
+  },
+  {
+   "date": "2025-10-11",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID27412735/885462941759",
+   "chq": "",
+   "debit": 0,
+   "credit": 32171.55,
+   "balance": 274076.25
+  },
+  {
+   "date": "2025-10-12",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID68975367/889208575189",
+   "chq": "",
+   "debit": 0,
+   "credit": 31189.86,
+   "balance": 305266.11
+  },
+  {
+   "date": "2025-10-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N7283080472",
+   "chq": "",
+   "debit": 37009.16,
+   "credit": 0,
+   "balance": 268256.95
+  },
+  {
+   "date": "2025-10-12",
+   "narration": "IMPS/P2A/943608128202/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 20358.61,
+   "credit": 0,
+   "balance": 247898.34
+  },
+  {
+   "date": "2025-10-13",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID35213914/695319730113",
+   "chq": "",
+   "debit": 0,
+   "credit": 32022.79,
+   "balance": 279921.13
+  },
+  {
+   "date": "2025-10-14",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID10549444/478295460751",
+   "chq": "",
+   "debit": 0,
+   "credit": 23605.66,
+   "balance": 303526.79
+  },
+  {
+   "date": "2025-10-14",
+   "narration": "BILLPAY/TNPDCL/674546269/EB BILL",
+   "chq": "",
+   "debit": 13969.71,
+   "credit": 0,
+   "balance": 289557.08
+  },
+  {
+   "date": "2025-10-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N3476441385",
+   "chq": "",
+   "debit": 27471.97,
+   "credit": 0,
+   "balance": 262085.11
+  },
+  {
+   "date": "2025-10-16",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID23990751/849829836470",
+   "chq": "",
+   "debit": 0,
+   "credit": 40282.74,
+   "balance": 302367.85
+  },
+  {
+   "date": "2025-10-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 46700,
+   "balance": 349067.85
+  },
+  {
+   "date": "2025-10-18",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID35520836/949283935163",
+   "chq": "",
+   "debit": 0,
+   "credit": 36369.55,
+   "balance": 385437.4
+  },
+  {
+   "date": "2025-10-19",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID08057451/893013750602",
+   "chq": "",
+   "debit": 0,
+   "credit": 34316.49,
+   "balance": 419753.89
+  },
+  {
+   "date": "2025-10-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N3621083998",
+   "chq": "",
+   "debit": 67977.95,
+   "credit": 0,
+   "balance": 351775.94
+  },
+  {
+   "date": "2025-10-19",
+   "narration": "GST PMT CBIC CPIN 27747674525236",
+   "chq": "",
+   "debit": 19487.5,
+   "credit": 0,
+   "balance": 332288.44
+  },
+  {
+   "date": "2025-10-21",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID16193899/054412528527",
+   "chq": "",
+   "debit": 0,
+   "credit": 17587.65,
+   "balance": 349876.09
+  },
+  {
+   "date": "2025-10-22",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID81990595/362605909541",
+   "chq": "",
+   "debit": 0,
+   "credit": 14291.93,
+   "balance": 364168.02
+  },
+  {
+   "date": "2025-10-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0879333675",
+   "chq": "",
+   "debit": 20735.75,
+   "credit": 0,
+   "balance": 343432.27
+  },
+  {
+   "date": "2025-10-22",
+   "narration": "IMPS/P2A/166308352891/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 17148.61,
+   "credit": 0,
+   "balance": 326283.66
+  },
+  {
+   "date": "2025-10-23",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID15089694/997456872249",
+   "chq": "",
+   "debit": 0,
+   "credit": 26532.69,
+   "balance": 352816.35
+  },
+  {
+   "date": "2025-10-24",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID04302970/845549232533",
+   "chq": "",
+   "debit": 0,
+   "credit": 16219.28,
+   "balance": 369035.63
+  },
+  {
+   "date": "2025-10-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 29200,
+   "balance": 398235.63
+  },
+  {
+   "date": "2025-10-25",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID11740259/327755230730",
+   "chq": "",
+   "debit": 0,
+   "credit": 25031.99,
+   "balance": 423267.62
+  },
+  {
+   "date": "2025-10-26",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID85129958/036857664688",
+   "chq": "",
+   "debit": 0,
+   "credit": 33960.44,
+   "balance": 457228.06
+  },
+  {
+   "date": "2025-10-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N1367687197",
+   "chq": "",
+   "debit": 59336.64,
+   "credit": 0,
+   "balance": 397891.42
+  },
+  {
+   "date": "2025-10-27",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID66783808/171504091039",
+   "chq": "",
+   "debit": 0,
+   "credit": 13730.51,
+   "balance": 411621.93
+  },
+  {
+   "date": "2025-10-27",
+   "narration": "IMPS/P2A/014471995650/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 265000,
+   "credit": 0,
+   "balance": 146621.93
+  },
+  {
+   "date": "2025-10-29",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID44511994/047908581586",
+   "chq": "",
+   "debit": 0,
+   "credit": 35961.29,
+   "balance": 182583.22
+  },
+  {
+   "date": "2025-10-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N2867623239",
+   "chq": "",
+   "debit": 24965.9,
+   "credit": 0,
+   "balance": 157617.32
+  },
+  {
+   "date": "2025-10-30",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID08708017/582949191349",
+   "chq": "",
+   "debit": 0,
+   "credit": 18908.52,
+   "balance": 176525.84
+  },
+  {
+   "date": "2025-10-31",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 46000,
+   "balance": 222525.84
+  },
+  {
+   "date": "2025-10-31",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 10937.45,
+   "credit": 0,
+   "balance": 211588.39
+  },
+  {
+   "date": "2025-11-01",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID64735107/721829071530",
+   "chq": "",
+   "debit": 0,
+   "credit": 24100.16,
+   "balance": 235688.55
+  },
+  {
+   "date": "2025-11-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N1873363471",
+   "chq": "",
+   "debit": 21569.2,
+   "credit": 0,
+   "balance": 214119.35
+  },
+  {
+   "date": "2025-11-02",
+   "narration": "IMPS/P2A/638536691804/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 14328.78,
+   "credit": 0,
+   "balance": 199790.57
+  },
+  {
+   "date": "2025-11-02",
+   "narration": "IMPS/P2A/716901183852/K SUBRAMANIAN/SHOP RENT NOV",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": 161790.57
+  },
+  {
+   "date": "2025-11-03",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID01442246/127585177898",
+   "chq": "",
+   "debit": 0,
+   "credit": 25700.78,
+   "balance": 187491.35
+  },
+  {
+   "date": "2025-11-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 51800,
+   "balance": 239291.35
+  },
+  {
+   "date": "2025-11-04",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID17230948/070603924683",
+   "chq": "",
+   "debit": 0,
+   "credit": 39634.28,
+   "balance": 278925.63
+  },
+  {
+   "date": "2025-11-05",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID63534203/352844226365",
+   "chq": "",
+   "debit": 0,
+   "credit": 15480.84,
+   "balance": 294406.47
+  },
+  {
+   "date": "2025-11-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N2045690386",
+   "chq": "",
+   "debit": 40574.5,
+   "credit": 0,
+   "balance": 253831.97
+  },
+  {
+   "date": "2025-11-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": 232191.97
+  },
+  {
+   "date": "2025-11-06",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID62650685/225978309960",
+   "chq": "",
+   "debit": 0,
+   "credit": 24916.6,
+   "balance": 257108.57
+  },
+  {
+   "date": "2025-11-07",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID00890708/564985547273",
+   "chq": "",
+   "debit": 0,
+   "credit": 30001.65,
+   "balance": 287110.22
+  },
+  {
+   "date": "2025-11-07",
+   "narration": "NEFT DR-SALARY NOV-PRAKASH R",
+   "chq": "",
+   "debit": 13297.43,
+   "credit": 0,
+   "balance": 273812.79
+  },
+  {
+   "date": "2025-11-07",
+   "narration": "NEFT DR-SALARY NOV-SELVI M",
+   "chq": "",
+   "debit": 14236.41,
+   "credit": 0,
+   "balance": 259576.38
+  },
+  {
+   "date": "2025-11-07",
+   "narration": "NEFT DR-SALARY NOV-KARTHIK S",
+   "chq": "",
+   "debit": 13159.92,
+   "credit": 0,
+   "balance": 246416.46
+  },
+  {
+   "date": "2025-11-07",
+   "narration": "NEFT DR-SALARY NOV-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 12655.08,
+   "credit": 0,
+   "balance": 233761.38
+  },
+  {
+   "date": "2025-11-08",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID03705811/288943885411",
+   "chq": "",
+   "debit": 0,
+   "credit": 17297.39,
+   "balance": 251058.77
+  },
+  {
+   "date": "2025-11-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N6766860216",
+   "chq": "",
+   "debit": 17952.72,
+   "credit": 0,
+   "balance": 233106.05
+  },
+  {
+   "date": "2025-11-08",
+   "narration": "ATM WDL/TRICHY CANTONMENT/072079",
+   "chq": "",
+   "debit": 9000,
+   "credit": 0,
+   "balance": 224106.05
+  },
+  {
+   "date": "2025-11-09",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID22367197/326351720806",
+   "chq": "",
+   "debit": 0,
+   "credit": 30210.78,
+   "balance": 254316.83
+  },
+  {
+   "date": "2025-11-10",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID04570536/051471752516",
+   "chq": "",
+   "debit": 0,
+   "credit": 33576.56,
+   "balance": 287893.39
+  },
+  {
+   "date": "2025-11-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 46200,
+   "balance": 334093.39
+  },
+  {
+   "date": "2025-11-11",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID70236692/049125637101",
+   "chq": "",
+   "debit": 0,
+   "credit": 14463.94,
+   "balance": 348557.33
+  },
+  {
+   "date": "2025-11-12",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID85521935/244406967670",
+   "chq": "",
+   "debit": 0,
+   "credit": 35642.58,
+   "balance": 384199.91
+  },
+  {
+   "date": "2025-11-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N3192503723",
+   "chq": "",
+   "debit": 30159.56,
+   "credit": 0,
+   "balance": 354040.35
+  },
+  {
+   "date": "2025-11-12",
+   "narration": "IMPS/P2A/868228803408/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 13058.21,
+   "credit": 0,
+   "balance": 340982.14
+  },
+  {
+   "date": "2025-11-13",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID69377923/711968190385",
+   "chq": "",
+   "debit": 0,
+   "credit": 18889.44,
+   "balance": 359871.58
+  },
+  {
+   "date": "2025-11-14",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID95871764/289338513312",
+   "chq": "",
+   "debit": 0,
+   "credit": 14271.22,
+   "balance": 374142.8
+  },
+  {
+   "date": "2025-11-15",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID12174916/944415991162",
+   "chq": "",
+   "debit": 0,
+   "credit": 28118.61,
+   "balance": 402261.41
+  },
+  {
+   "date": "2025-11-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N6104685061",
+   "chq": "",
+   "debit": 26978.43,
+   "credit": 0,
+   "balance": 375282.98
+  },
+  {
+   "date": "2025-11-16",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID33605508/154293399773",
+   "chq": "",
+   "debit": 0,
+   "credit": 39637.86,
+   "balance": 414920.84
+  },
+  {
+   "date": "2025-11-17",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID32290674/204599289090",
+   "chq": "",
+   "debit": 0,
+   "credit": 32293.19,
+   "balance": 447214.03
+  },
+  {
+   "date": "2025-11-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 60300,
+   "balance": 507514.03
+  },
+  {
+   "date": "2025-11-18",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID61497613/923445330594",
+   "chq": "",
+   "debit": 0,
+   "credit": 40367.31,
+   "balance": 547881.34
+  },
+  {
+   "date": "2025-11-19",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID20815114/027448303232",
+   "chq": "",
+   "debit": 0,
+   "credit": 22395.64,
+   "balance": 570276.98
+  },
+  {
+   "date": "2025-11-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N9761479851",
+   "chq": "",
+   "debit": 51277.19,
+   "credit": 0,
+   "balance": 518999.79
+  },
+  {
+   "date": "2025-11-19",
+   "narration": "GST PMT CBIC CPIN 81415720853095",
+   "chq": "",
+   "debit": 18475.09,
+   "credit": 0,
+   "balance": 500524.7
+  },
+  {
+   "date": "2025-11-20",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID88919764/773093558190",
+   "chq": "",
+   "debit": 0,
+   "credit": 12970.94,
+   "balance": 513495.64
+  },
+  {
+   "date": "2025-11-21",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID19989469/143666052909",
+   "chq": "",
+   "debit": 0,
+   "credit": 24114.74,
+   "balance": 537610.38
+  },
+  {
+   "date": "2025-11-21",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 8130.23,
+   "credit": 0,
+   "balance": 529480.15
+  },
+  {
+   "date": "2025-11-22",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID04721297/907800196280",
+   "chq": "",
+   "debit": 0,
+   "credit": 18014.17,
+   "balance": 547494.32
+  },
+  {
+   "date": "2025-11-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N6646922395",
+   "chq": "",
+   "debit": 31908.58,
+   "credit": 0,
+   "balance": 515585.74
+  },
+  {
+   "date": "2025-11-22",
+   "narration": "IMPS/P2A/377003159728/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 15812.05,
+   "credit": 0,
+   "balance": 499773.69
+  },
+  {
+   "date": "2025-11-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 50800,
+   "balance": 550573.69
+  },
+  {
+   "date": "2025-11-25",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID47188320/314974460190",
+   "chq": "",
+   "debit": 0,
+   "credit": 21982.45,
+   "balance": 572556.14
+  },
+  {
+   "date": "2025-11-26",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID41636526/042437843394",
+   "chq": "",
+   "debit": 0,
+   "credit": 31554.32,
+   "balance": 604110.46
+  },
+  {
+   "date": "2025-11-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N0273739027",
+   "chq": "",
+   "debit": 54400.47,
+   "credit": 0,
+   "balance": 549709.99
+  },
+  {
+   "date": "2025-11-27",
+   "narration": "IMPS/P2A/352606868661/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 271000,
+   "credit": 0,
+   "balance": 278709.99
+  },
+  {
+   "date": "2025-11-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N6873958925",
+   "chq": "",
+   "debit": 35831.45,
+   "credit": 0,
+   "balance": 242878.54
+  },
+  {
+   "date": "2025-12-01",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID05972136/723364375699",
+   "chq": "",
+   "debit": 0,
+   "credit": 16516.93,
+   "balance": 259395.47
+  },
+  {
+   "date": "2025-12-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N2676450767",
+   "chq": "",
+   "debit": 13595.03,
+   "credit": 0,
+   "balance": 245800.44
+  },
+  {
+   "date": "2025-12-02",
+   "narration": "IMPS/P2A/772795829343/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 14102.03,
+   "credit": 0,
+   "balance": 231698.41
+  },
+  {
+   "date": "2025-12-02",
+   "narration": "IMPS/P2A/616762637424/K SUBRAMANIAN/SHOP RENT DEC",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": 193698.41
+  },
+  {
+   "date": "2025-12-03",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID62008826/189256105921",
+   "chq": "",
+   "debit": 0,
+   "credit": 19769.39,
+   "balance": 213467.8
+  },
+  {
+   "date": "2025-12-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 21400,
+   "balance": 234867.8
+  },
+  {
+   "date": "2025-12-04",
+   "narration": "ATM WDL/TRICHY CANTONMENT/872496",
+   "chq": "",
+   "debit": 10000,
+   "credit": 0,
+   "balance": 224867.8
+  },
+  {
+   "date": "2025-12-05",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID42153118/336313227259",
+   "chq": "",
+   "debit": 0,
+   "credit": 24691.53,
+   "balance": 249559.33
+  },
+  {
+   "date": "2025-12-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N5601289106",
+   "chq": "",
+   "debit": 16794.57,
+   "credit": 0,
+   "balance": 232764.76
+  },
+  {
+   "date": "2025-12-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": 211124.76
+  },
+  {
+   "date": "2025-12-06",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID54888322/692384407288",
+   "chq": "",
+   "debit": 0,
+   "credit": 22764.03,
+   "balance": 233888.79
+  },
+  {
+   "date": "2025-12-07",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID93946347/797396544242",
+   "chq": "",
+   "debit": 0,
+   "credit": 16675.27,
+   "balance": 250564.06
+  },
+  {
+   "date": "2025-12-07",
+   "narration": "NEFT DR-SALARY DEC-PRAKASH R",
+   "chq": "",
+   "debit": 13376.83,
+   "credit": 0,
+   "balance": 237187.23
+  },
+  {
+   "date": "2025-12-07",
+   "narration": "NEFT DR-SALARY DEC-SELVI M",
+   "chq": "",
+   "debit": 12614.18,
+   "credit": 0,
+   "balance": 224573.05
+  },
+  {
+   "date": "2025-12-07",
+   "narration": "NEFT DR-SALARY DEC-KARTHIK S",
+   "chq": "",
+   "debit": 15064.85,
+   "credit": 0,
+   "balance": 209508.2
+  },
+  {
+   "date": "2025-12-07",
+   "narration": "NEFT DR-SALARY DEC-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 14975.6,
+   "credit": 0,
+   "balance": 194532.6
+  },
+  {
+   "date": "2025-12-07",
+   "narration": "NEFT CR-HDFC0000412-NATIONAL COLLEGE CANTEEN-BULK ORDER",
+   "chq": "",
+   "debit": 0,
+   "credit": 37114.64,
+   "balance": 231647.24
+  },
+  {
+   "date": "2025-12-08",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID71466531/760352291397",
+   "chq": "",
+   "debit": 0,
+   "credit": 14448.1,
+   "balance": 246095.34
+  },
+  {
+   "date": "2025-12-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N4571561820",
+   "chq": "",
+   "debit": 18761.44,
+   "credit": 0,
+   "balance": 227333.9
+  },
+  {
+   "date": "2025-12-09",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID51513328/629849377491",
+   "chq": "",
+   "debit": 0,
+   "credit": 25619.41,
+   "balance": 252953.31
+  },
+  {
+   "date": "2025-12-10",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID31762030/809095172058",
+   "chq": "",
+   "debit": 0,
+   "credit": 13893.96,
+   "balance": 266847.27
+  },
+  {
+   "date": "2025-12-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 34400,
+   "balance": 301247.27
+  },
+  {
+   "date": "2025-12-11",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID15406029/929298192640",
+   "chq": "",
+   "debit": 0,
+   "credit": 24548.14,
+   "balance": 325795.41
+  },
+  {
+   "date": "2025-12-12",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID40480626/971548463601",
+   "chq": "",
+   "debit": 0,
+   "credit": 20870.62,
+   "balance": 346666.03
+  },
+  {
+   "date": "2025-12-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N2556297782",
+   "chq": "",
+   "debit": 35268.26,
+   "credit": 0,
+   "balance": 311397.77
+  },
+  {
+   "date": "2025-12-12",
+   "narration": "IMPS/P2A/765293867098/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 13853.96,
+   "credit": 0,
+   "balance": 297543.81
+  },
+  {
+   "date": "2025-12-13",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID13545243/055073499154",
+   "chq": "",
+   "debit": 0,
+   "credit": 15801.76,
+   "balance": 313345.57
+  },
+  {
+   "date": "2025-12-14",
+   "narration": "BILLPAY/TNPDCL/600783993/EB BILL",
+   "chq": "",
+   "debit": 11499.75,
+   "credit": 0,
+   "balance": 301845.82
+  },
+  {
+   "date": "2025-12-15",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID13876100/590836657698",
+   "chq": "",
+   "debit": 0,
+   "credit": 13517.89,
+   "balance": 315363.71
+  },
+  {
+   "date": "2025-12-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N8991196810",
+   "chq": "",
+   "debit": 24677.47,
+   "credit": 0,
+   "balance": 290686.24
+  },
+  {
+   "date": "2025-12-15",
+   "narration": "ATM WDL/TRICHY CANTONMENT/596391",
+   "chq": "",
+   "debit": 6000,
+   "credit": 0,
+   "balance": 284686.24
+  },
+  {
+   "date": "2025-12-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 35200,
+   "balance": 319886.24
+  },
+  {
+   "date": "2025-12-18",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID67572036/936765739367",
+   "chq": "",
+   "debit": 0,
+   "credit": 19592.87,
+   "balance": 339479.11
+  },
+  {
+   "date": "2025-12-19",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID35360605/463489537100",
+   "chq": "",
+   "debit": 0,
+   "credit": 25448.72,
+   "balance": 364927.83
+  },
+  {
+   "date": "2025-12-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N9334821383",
+   "chq": "",
+   "debit": 28002.12,
+   "credit": 0,
+   "balance": 336925.71
+  },
+  {
+   "date": "2025-12-19",
+   "narration": "GST PMT CBIC CPIN 83520076484705",
+   "chq": "",
+   "debit": 14200.43,
+   "credit": 0,
+   "balance": 322725.28
+  },
+  {
+   "date": "2025-12-20",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID65973026/667858112763",
+   "chq": "",
+   "debit": 0,
+   "credit": 24169.19,
+   "balance": 346894.47
+  },
+  {
+   "date": "2025-12-21",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID79764295/538381153511",
+   "chq": "",
+   "debit": 0,
+   "credit": 13636.19,
+   "balance": 360530.66
+  },
+  {
+   "date": "2025-12-21",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 7925.63,
+   "credit": 0,
+   "balance": 352605.03
+  },
+  {
+   "date": "2025-12-22",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID60113160/363675430829",
+   "chq": "",
+   "debit": 0,
+   "credit": 10258.88,
+   "balance": 362863.91
+  },
+  {
+   "date": "2025-12-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N8832414058",
+   "chq": "",
+   "debit": 19704.51,
+   "credit": 0,
+   "balance": 343159.4
+  },
+  {
+   "date": "2025-12-22",
+   "narration": "IMPS/P2A/894156533110/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 18210.56,
+   "credit": 0,
+   "balance": 324948.84
+  },
+  {
+   "date": "2025-12-24",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID50636697/835824201243",
+   "chq": "",
+   "debit": 0,
+   "credit": 24073.05,
+   "balance": 349021.89
+  },
+  {
+   "date": "2025-12-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 41800,
+   "balance": 390821.89
+  },
+  {
+   "date": "2025-12-25",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID93260518/991000110177",
+   "chq": "",
+   "debit": 0,
+   "credit": 9984.49,
+   "balance": 400806.38
+  },
+  {
+   "date": "2025-12-25",
+   "narration": "ATM WDL/TRICHY CANTONMENT/142776",
+   "chq": "",
+   "debit": 9000,
+   "credit": 0,
+   "balance": 391806.38
+  },
+  {
+   "date": "2025-12-26",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID04186916/150308294258",
+   "chq": "",
+   "debit": 0,
+   "credit": 20058.99,
+   "balance": 411865.37
+  },
+  {
+   "date": "2025-12-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N8258246443",
+   "chq": "",
+   "debit": 17343.03,
+   "credit": 0,
+   "balance": 394522.34
+  },
+  {
+   "date": "2025-12-27",
+   "narration": "IMPS/P2A/948064831875/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 198000,
+   "credit": 0,
+   "balance": 196522.34
+  },
+  {
+   "date": "2025-12-29",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID32980541/863644409488",
+   "chq": "",
+   "debit": 0,
+   "credit": 12105.16,
+   "balance": 208627.5
+  },
+  {
+   "date": "2025-12-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N7486809494",
+   "chq": "",
+   "debit": 13817.17,
+   "credit": 0,
+   "balance": 194810.33
+  },
+  {
+   "date": "2025-12-30",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID01386429/258947067499",
+   "chq": "",
+   "debit": 0,
+   "credit": 23417.54,
+   "balance": 218227.87
+  },
+  {
+   "date": "2025-12-31",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID03678894/954427870194",
+   "chq": "",
+   "debit": 0,
+   "credit": 20479.95,
+   "balance": 238707.82
+  },
+  {
+   "date": "2025-12-31",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 39400,
+   "balance": 278107.82
+  },
+  {
+   "date": "2025-12-31",
+   "narration": "SMS ALERT CHARGES FOR QTR INCL GST",
+   "chq": "",
+   "debit": 17.7,
+   "credit": 0,
+   "balance": 278090.12
+  },
+  {
+   "date": "2025-12-31",
+   "narration": "CASH HANDLING CHARGES INCL GST",
+   "chq": "",
+   "debit": 282.5,
+   "credit": 0,
+   "balance": 277807.62
+  },
+  {
+   "date": "2026-01-01",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID70151785/642121018868",
+   "chq": "",
+   "debit": 0,
+   "credit": 37925.75,
+   "balance": 315733.37
+  },
+  {
+   "date": "2026-01-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N2127949513",
+   "chq": "",
+   "debit": 35086.33,
+   "credit": 0,
+   "balance": 280647.04
+  },
+  {
+   "date": "2026-01-02",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID90130897/341134688786",
+   "chq": "",
+   "debit": 0,
+   "credit": 15134.18,
+   "balance": 295781.22
+  },
+  {
+   "date": "2026-01-02",
+   "narration": "IMPS/P2A/701030415715/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 11929.87,
+   "credit": 0,
+   "balance": 283851.35
+  },
+  {
+   "date": "2026-01-02",
+   "narration": "IMPS/P2A/379967993304/K SUBRAMANIAN/SHOP RENT JAN",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": 245851.35
+  },
+  {
+   "date": "2026-01-03",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID82983274/052955437870",
+   "chq": "",
+   "debit": 0,
+   "credit": 28741.71,
+   "balance": 274593.06
+  },
+  {
+   "date": "2026-01-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 44800,
+   "balance": 319393.06
+  },
+  {
+   "date": "2026-01-04",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 3033.12,
+   "credit": 0,
+   "balance": 316359.94
+  },
+  {
+   "date": "2026-01-04",
+   "narration": "ATM WDL/TRICHY CANTONMENT/127387",
+   "chq": "",
+   "debit": 6000,
+   "credit": 0,
+   "balance": 310359.94
+  },
+  {
+   "date": "2026-01-05",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID80331983/072457436493",
+   "chq": "",
+   "debit": 0,
+   "credit": 27255.37,
+   "balance": 337615.31
+  },
+  {
+   "date": "2026-01-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N1308244340",
+   "chq": "",
+   "debit": 38709.98,
+   "credit": 0,
+   "balance": 298905.33
+  },
+  {
+   "date": "2026-01-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": 277265.33
+  },
+  {
+   "date": "2026-01-06",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID88770842/446753662406",
+   "chq": "",
+   "debit": 0,
+   "credit": 37179.61,
+   "balance": 314444.94
+  },
+  {
+   "date": "2026-01-07",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID04221138/930217967620",
+   "chq": "",
+   "debit": 0,
+   "credit": 33738.29,
+   "balance": 348183.23
+  },
+  {
+   "date": "2026-01-07",
+   "narration": "NEFT DR-SALARY JAN-PRAKASH R",
+   "chq": "",
+   "debit": 13356.67,
+   "credit": 0,
+   "balance": 334826.56
+  },
+  {
+   "date": "2026-01-07",
+   "narration": "NEFT DR-SALARY JAN-SELVI M",
+   "chq": "",
+   "debit": 14183.05,
+   "credit": 0,
+   "balance": 320643.51
+  },
+  {
+   "date": "2026-01-07",
+   "narration": "NEFT DR-SALARY JAN-KARTHIK S",
+   "chq": "",
+   "debit": 14186.57,
+   "credit": 0,
+   "balance": 306456.94
+  },
+  {
+   "date": "2026-01-07",
+   "narration": "NEFT DR-SALARY JAN-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 15901.35,
+   "credit": 0,
+   "balance": 290555.59
+  },
+  {
+   "date": "2026-01-08",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID35367588/761926800159",
+   "chq": "",
+   "debit": 0,
+   "credit": 16353.4,
+   "balance": 306908.99
+  },
+  {
+   "date": "2026-01-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N8606687147",
+   "chq": "",
+   "debit": 25387.33,
+   "credit": 0,
+   "balance": 281521.66
+  },
+  {
+   "date": "2026-01-08",
+   "narration": "ATM WDL/TRICHY CANTONMENT/003874",
+   "chq": "",
+   "debit": 7000,
+   "credit": 0,
+   "balance": 274521.66
+  },
+  {
+   "date": "2026-01-09",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID46881601/649899659243",
+   "chq": "",
+   "debit": 0,
+   "credit": 33436.7,
+   "balance": 307958.36
+  },
+  {
+   "date": "2026-01-10",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID34511972/220624964545",
+   "chq": "",
+   "debit": 0,
+   "credit": 33748.52,
+   "balance": 341706.88
+  },
+  {
+   "date": "2026-01-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 31300,
+   "balance": 373006.88
+  },
+  {
+   "date": "2026-01-11",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID86072464/243401221691",
+   "chq": "",
+   "debit": 0,
+   "credit": 17172.09,
+   "balance": 390178.97
+  },
+  {
+   "date": "2026-01-12",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID92352405/393284858082",
+   "chq": "",
+   "debit": 0,
+   "credit": 17400.65,
+   "balance": 407579.62
+  },
+  {
+   "date": "2026-01-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N4136759004",
+   "chq": "",
+   "debit": 26806.73,
+   "credit": 0,
+   "balance": 380772.89
+  },
+  {
+   "date": "2026-01-12",
+   "narration": "IMPS/P2A/131242080103/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 20083.99,
+   "credit": 0,
+   "balance": 360688.9
+  },
+  {
+   "date": "2026-01-12",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 8773.72,
+   "credit": 0,
+   "balance": 351915.18
+  },
+  {
+   "date": "2026-01-13",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID48211044/604539258461",
+   "chq": "",
+   "debit": 0,
+   "credit": 35705.72,
+   "balance": 387620.9
+  },
+  {
+   "date": "2026-01-15",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID10494469/331537286165",
+   "chq": "",
+   "debit": 0,
+   "credit": 19462.14,
+   "balance": 407083.04
+  },
+  {
+   "date": "2026-01-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0994826904",
+   "chq": "",
+   "debit": 28417.57,
+   "credit": 0,
+   "balance": 378665.47
+  },
+  {
+   "date": "2026-01-16",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID86657224/397259184941",
+   "chq": "",
+   "debit": 0,
+   "credit": 24239.68,
+   "balance": 402905.15
+  },
+  {
+   "date": "2026-01-17",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID30503500/281224239028",
+   "chq": "",
+   "debit": 0,
+   "credit": 36614.77,
+   "balance": 439519.92
+  },
+  {
+   "date": "2026-01-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 29700,
+   "balance": 469219.92
+  },
+  {
+   "date": "2026-01-19",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID68923685/108983896936",
+   "chq": "",
+   "debit": 0,
+   "credit": 24823.77,
+   "balance": 494043.69
+  },
+  {
+   "date": "2026-01-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N9627081071",
+   "chq": "",
+   "debit": 39679.15,
+   "credit": 0,
+   "balance": 454364.54
+  },
+  {
+   "date": "2026-01-19",
+   "narration": "GST PMT CBIC CPIN 02124296749637",
+   "chq": "",
+   "debit": 16271.75,
+   "credit": 0,
+   "balance": 438092.79
+  },
+  {
+   "date": "2026-01-21",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID63955975/007845990060",
+   "chq": "",
+   "debit": 0,
+   "credit": 15181.03,
+   "balance": 453273.82
+  },
+  {
+   "date": "2026-01-22",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID22260921/837264378426",
+   "chq": "",
+   "debit": 0,
+   "credit": 19642.01,
+   "balance": 472915.83
+  },
+  {
+   "date": "2026-01-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N2744896771",
+   "chq": "",
+   "debit": 34498.24,
+   "credit": 0,
+   "balance": 438417.59
+  },
+  {
+   "date": "2026-01-22",
+   "narration": "IMPS/P2A/610833072133/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 14595.12,
+   "credit": 0,
+   "balance": 423822.47
+  },
+  {
+   "date": "2026-01-23",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID60919581/870993505313",
+   "chq": "",
+   "debit": 0,
+   "credit": 28246.65,
+   "balance": 452069.12
+  },
+  {
+   "date": "2026-01-24",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID34441629/063202314476",
+   "chq": "",
+   "debit": 0,
+   "credit": 25743.51,
+   "balance": 477812.63
+  },
+  {
+   "date": "2026-01-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 38700,
+   "balance": 516512.63
+  },
+  {
+   "date": "2026-01-25",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID06001280/325801197393",
+   "chq": "",
+   "debit": 0,
+   "credit": 19821.46,
+   "balance": 536334.09
+  },
+  {
+   "date": "2026-01-26",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID89344136/941326224074",
+   "chq": "",
+   "debit": 0,
+   "credit": 18015.96,
+   "balance": 554350.05
+  },
+  {
+   "date": "2026-01-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N7856353793",
+   "chq": "",
+   "debit": 44787.39,
+   "credit": 0,
+   "balance": 509562.66
+  },
+  {
+   "date": "2026-01-27",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID94513639/271239359141",
+   "chq": "",
+   "debit": 0,
+   "credit": 13292.41,
+   "balance": 522855.07
+  },
+  {
+   "date": "2026-01-27",
+   "narration": "IMPS/P2A/279999154767/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 236000,
+   "credit": 0,
+   "balance": 286855.07
+  },
+  {
+   "date": "2026-01-28",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID04030900/901355274628",
+   "chq": "",
+   "debit": 0,
+   "credit": 28233.36,
+   "balance": 315088.43
+  },
+  {
+   "date": "2026-01-29",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID22859125/636302953674",
+   "chq": "",
+   "debit": 0,
+   "credit": 15219.66,
+   "balance": 330308.09
+  },
+  {
+   "date": "2026-01-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0320966538",
+   "chq": "",
+   "debit": 22272.13,
+   "credit": 0,
+   "balance": 308035.96
+  },
+  {
+   "date": "2026-01-30",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID01510447/930716702916",
+   "chq": "",
+   "debit": 0,
+   "credit": 26620.35,
+   "balance": 334656.31
+  },
+  {
+   "date": "2026-01-31",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID81438817/975952913360",
+   "chq": "",
+   "debit": 0,
+   "credit": 30444.33,
+   "balance": 365100.64
+  },
+  {
+   "date": "2026-01-31",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 29100,
+   "balance": 394200.64
+  },
+  {
+   "date": "2026-01-31",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 8457.07,
+   "credit": 0,
+   "balance": 385743.57
+  },
+  {
+   "date": "2026-02-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N7151409030",
+   "chq": "",
+   "debit": 24268.79,
+   "credit": 0,
+   "balance": 361474.78
+  },
+  {
+   "date": "2026-02-02",
+   "narration": "IMPS/P2A/223348307789/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 15548.17,
+   "credit": 0,
+   "balance": 345926.61
+  },
+  {
+   "date": "2026-02-02",
+   "narration": "IMPS/P2A/324184969058/K SUBRAMANIAN/SHOP RENT FEB",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": 307926.61
+  },
+  {
+   "date": "2026-02-03",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID32707495/135560373521",
+   "chq": "",
+   "debit": 0,
+   "credit": 25416.79,
+   "balance": 333343.4
+  },
+  {
+   "date": "2026-02-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 32100,
+   "balance": 365443.4
+  },
+  {
+   "date": "2026-02-04",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID81332889/254829820335",
+   "chq": "",
+   "debit": 0,
+   "credit": 8716.84,
+   "balance": 374160.24
+  },
+  {
+   "date": "2026-02-05",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID81058325/620321329751",
+   "chq": "",
+   "debit": 0,
+   "credit": 21778.98,
+   "balance": 395939.22
+  },
+  {
+   "date": "2026-02-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N5990945788",
+   "chq": "",
+   "debit": 39262.49,
+   "credit": 0,
+   "balance": 356676.73
+  },
+  {
+   "date": "2026-02-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": 335036.73
+  },
+  {
+   "date": "2026-02-06",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID76634380/623996220876",
+   "chq": "",
+   "debit": 0,
+   "credit": 19919.13,
+   "balance": 354955.86
+  },
+  {
+   "date": "2026-02-07",
+   "narration": "NEFT DR-SALARY FEB-PRAKASH R",
+   "chq": "",
+   "debit": 14955.59,
+   "credit": 0,
+   "balance": 340000.27
+  },
+  {
+   "date": "2026-02-07",
+   "narration": "NEFT DR-SALARY FEB-SELVI M",
+   "chq": "",
+   "debit": 15264.65,
+   "credit": 0,
+   "balance": 324735.62
+  },
+  {
+   "date": "2026-02-07",
+   "narration": "NEFT DR-SALARY FEB-KARTHIK S",
+   "chq": "",
+   "debit": 14195.15,
+   "credit": 0,
+   "balance": 310540.47
+  },
+  {
+   "date": "2026-02-07",
+   "narration": "NEFT DR-SALARY FEB-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 14922.82,
+   "credit": 0,
+   "balance": 295617.65
+  },
+  {
+   "date": "2026-02-08",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID89715313/311782122242",
+   "chq": "",
+   "debit": 0,
+   "credit": 16485.79,
+   "balance": 312103.44
+  },
+  {
+   "date": "2026-02-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0454945260",
+   "chq": "",
+   "debit": 18434.8,
+   "credit": 0,
+   "balance": 293668.64
+  },
+  {
+   "date": "2026-02-10",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID87466876/547638145217",
+   "chq": "",
+   "debit": 0,
+   "credit": 18646.76,
+   "balance": 312315.4
+  },
+  {
+   "date": "2026-02-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 35900,
+   "balance": 348215.4
+  },
+  {
+   "date": "2026-02-11",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID63616941/780840494576",
+   "chq": "",
+   "debit": 0,
+   "credit": 11622.82,
+   "balance": 359838.22
+  },
+  {
+   "date": "2026-02-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N3169504183",
+   "chq": "",
+   "debit": 41101.72,
+   "credit": 0,
+   "balance": 318736.5
+  },
+  {
+   "date": "2026-02-12",
+   "narration": "IMPS/P2A/265904483257/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 18675.4,
+   "credit": 0,
+   "balance": 300061.1
+  },
+  {
+   "date": "2026-02-13",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID17495234/709356018887",
+   "chq": "",
+   "debit": 0,
+   "credit": 14241.99,
+   "balance": 314303.09
+  },
+  {
+   "date": "2026-02-14",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID16815127/449184106525",
+   "chq": "",
+   "debit": 0,
+   "credit": 8222.45,
+   "balance": 322525.54
+  },
+  {
+   "date": "2026-02-14",
+   "narration": "BILLPAY/TNPDCL/246909909/EB BILL",
+   "chq": "",
+   "debit": 14346.32,
+   "credit": 0,
+   "balance": 308179.22
+  },
+  {
+   "date": "2026-02-15",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID30861428/960865937003",
+   "chq": "",
+   "debit": 0,
+   "credit": 12395.58,
+   "balance": 320574.8
+  },
+  {
+   "date": "2026-02-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N2292045570",
+   "chq": "",
+   "debit": 15106.93,
+   "credit": 0,
+   "balance": 305467.87
+  },
+  {
+   "date": "2026-02-16",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID68762387/607941192890",
+   "chq": "",
+   "debit": 0,
+   "credit": 10053.6,
+   "balance": 315521.47
+  },
+  {
+   "date": "2026-02-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 18700,
+   "balance": 334221.47
+  },
+  {
+   "date": "2026-02-18",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID73242260/544702833122",
+   "chq": "",
+   "debit": 0,
+   "credit": 9249.43,
+   "balance": 343470.9
+  },
+  {
+   "date": "2026-02-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N8859418794",
+   "chq": "",
+   "debit": 24865.78,
+   "credit": 0,
+   "balance": 318605.12
+  },
+  {
+   "date": "2026-02-19",
+   "narration": "GST PMT CBIC CPIN 92011753613560",
+   "chq": "",
+   "debit": 12861.98,
+   "credit": 0,
+   "balance": 305743.14
+  },
+  {
+   "date": "2026-02-20",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID29883613/342642173967",
+   "chq": "",
+   "debit": 0,
+   "credit": 19542.09,
+   "balance": 325285.23
+  },
+  {
+   "date": "2026-02-21",
+   "narration": "ATM WDL/TRICHY CANTONMENT/381203",
+   "chq": "",
+   "debit": 10000,
+   "credit": 0,
+   "balance": 315285.23
+  },
+  {
+   "date": "2026-02-22",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID75756476/088665050571",
+   "chq": "",
+   "debit": 0,
+   "credit": 8543.85,
+   "balance": 323829.08
+  },
+  {
+   "date": "2026-02-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N2223683004",
+   "chq": "",
+   "debit": 19631.3,
+   "credit": 0,
+   "balance": 304197.78
+  },
+  {
+   "date": "2026-02-22",
+   "narration": "IMPS/P2A/715342919112/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 11878.17,
+   "credit": 0,
+   "balance": 292319.61
+  },
+  {
+   "date": "2026-02-23",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID66177838/595482358729",
+   "chq": "",
+   "debit": 0,
+   "credit": 17511.23,
+   "balance": 309830.84
+  },
+  {
+   "date": "2026-02-24",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID62202275/677668222788",
+   "chq": "",
+   "debit": 0,
+   "credit": 22735.73,
+   "balance": 332566.57
+  },
+  {
+   "date": "2026-02-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 34700,
+   "balance": 367266.57
+  },
+  {
+   "date": "2026-02-25",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID30096061/353779515692",
+   "chq": "",
+   "debit": 0,
+   "credit": 14185.73,
+   "balance": 381452.3
+  },
+  {
+   "date": "2026-02-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N9020531853",
+   "chq": "",
+   "debit": 32914.19,
+   "credit": 0,
+   "balance": 348538.11
+  },
+  {
+   "date": "2026-02-27",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID66184681/021863880508",
+   "chq": "",
+   "debit": 0,
+   "credit": 11356.37,
+   "balance": 359894.48
+  },
+  {
+   "date": "2026-02-27",
+   "narration": "IMPS/P2A/029704050424/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 222000,
+   "credit": 0,
+   "balance": 137894.48
+  },
+  {
+   "date": "2026-03-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N6850502752",
+   "chq": "",
+   "debit": 16159.14,
+   "credit": 0,
+   "balance": 121735.34
+  },
+  {
+   "date": "2026-03-02",
+   "narration": "IMPS/P2A/626327546446/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 16239.06,
+   "credit": 0,
+   "balance": 105496.28
+  },
+  {
+   "date": "2026-03-02",
+   "narration": "IMPS/P2A/338395469732/K SUBRAMANIAN/SHOP RENT MAR",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": 67496.28
+  },
+  {
+   "date": "2026-03-03",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID67464954/078812635767",
+   "chq": "",
+   "debit": 0,
+   "credit": 23963.61,
+   "balance": 91459.89
+  },
+  {
+   "date": "2026-03-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 18100,
+   "balance": 109559.89
+  },
+  {
+   "date": "2026-03-04",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID57206964/215978949291",
+   "chq": "",
+   "debit": 0,
+   "credit": 22167.15,
+   "balance": 131727.04
+  },
+  {
+   "date": "2026-03-04",
+   "narration": "NEFT CR-HDFC0000412-BHEL STAFF CLUB-BULK ORDER",
+   "chq": "",
+   "debit": 0,
+   "credit": 53512.59,
+   "balance": 185239.63
+  },
+  {
+   "date": "2026-03-05",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID95062963/577409720144",
+   "chq": "",
+   "debit": 0,
+   "credit": 8324.89,
+   "balance": 193564.52
+  },
+  {
+   "date": "2026-03-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N9070947417",
+   "chq": "",
+   "debit": 46904.42,
+   "credit": 0,
+   "balance": 146660.1
+  },
+  {
+   "date": "2026-03-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": 125020.1
+  },
+  {
+   "date": "2026-03-06",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID94285464/648118561086",
+   "chq": "",
+   "debit": 0,
+   "credit": 24865.94,
+   "balance": 149886.04
+  },
+  {
+   "date": "2026-03-07",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID59148525/821902702567",
+   "chq": "",
+   "debit": 0,
+   "credit": 21151.19,
+   "balance": 171037.23
+  },
+  {
+   "date": "2026-03-07",
+   "narration": "NEFT DR-SALARY MAR-PRAKASH R",
+   "chq": "",
+   "debit": 12762.97,
+   "credit": 0,
+   "balance": 158274.26
+  },
+  {
+   "date": "2026-03-07",
+   "narration": "NEFT DR-SALARY MAR-SELVI M",
+   "chq": "",
+   "debit": 14416.19,
+   "credit": 0,
+   "balance": 143858.07
+  },
+  {
+   "date": "2026-03-07",
+   "narration": "NEFT DR-SALARY MAR-KARTHIK S",
+   "chq": "",
+   "debit": 13478.18,
+   "credit": 0,
+   "balance": 130379.89
+  },
+  {
+   "date": "2026-03-07",
+   "narration": "NEFT DR-SALARY MAR-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 13442.24,
+   "credit": 0,
+   "balance": 116937.65
+  },
+  {
+   "date": "2026-03-08",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID43704306/570677615039",
+   "chq": "",
+   "debit": 0,
+   "credit": 19802.82,
+   "balance": 136740.47
+  },
+  {
+   "date": "2026-03-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0664172570",
+   "chq": "",
+   "debit": 18398.5,
+   "credit": 0,
+   "balance": 118341.97
+  },
+  {
+   "date": "2026-03-08",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 8995.55,
+   "credit": 0,
+   "balance": 109346.42
+  },
+  {
+   "date": "2026-03-09",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID91293701/517416825959",
+   "chq": "",
+   "debit": 0,
+   "credit": 13458.68,
+   "balance": 122805.1
+  },
+  {
+   "date": "2026-03-10",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID17349635/430088757393",
+   "chq": "",
+   "debit": 0,
+   "credit": 24434.05,
+   "balance": 147239.15
+  },
+  {
+   "date": "2026-03-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 29600,
+   "balance": 176839.15
+  },
+  {
+   "date": "2026-03-10",
+   "narration": "ATM WDL/TRICHY CANTONMENT/736171",
+   "chq": "",
+   "debit": 6000,
+   "credit": 0,
+   "balance": 170839.15
+  },
+  {
+   "date": "2026-03-11",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID96971094/226447555235",
+   "chq": "",
+   "debit": 0,
+   "credit": 24193.04,
+   "balance": 195032.19
+  },
+  {
+   "date": "2026-03-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N7906759594",
+   "chq": "",
+   "debit": 28122.52,
+   "credit": 0,
+   "balance": 166909.67
+  },
+  {
+   "date": "2026-03-12",
+   "narration": "IMPS/P2A/259290267409/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 16964.29,
+   "credit": 0,
+   "balance": 149945.38
+  },
+  {
+   "date": "2026-03-13",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID74326052/736768766966",
+   "chq": "",
+   "debit": 0,
+   "credit": 20369.31,
+   "balance": 170314.69
+  },
+  {
+   "date": "2026-03-14",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID33172656/585652334349",
+   "chq": "",
+   "debit": 0,
+   "credit": 14357.5,
+   "balance": 184672.19
+  },
+  {
+   "date": "2026-03-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N8694683219",
+   "chq": "",
+   "debit": 11341.81,
+   "credit": 0,
+   "balance": 173330.38
+  },
+  {
+   "date": "2026-03-16",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID74691800/072259678982",
+   "chq": "",
+   "debit": 0,
+   "credit": 17788.77,
+   "balance": 191119.15
+  },
+  {
+   "date": "2026-03-17",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID92449119/616463848217",
+   "chq": "",
+   "debit": 0,
+   "credit": 21650.25,
+   "balance": 212769.4
+  },
+  {
+   "date": "2026-03-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 22000,
+   "balance": 234769.4
+  },
+  {
+   "date": "2026-03-17",
+   "narration": "NEFT CR-HDFC0000412-NATIONAL COLLEGE CANTEEN-BULK ORDER",
+   "chq": "",
+   "debit": 0,
+   "credit": 48623.35,
+   "balance": 283392.75
+  },
+  {
+   "date": "2026-03-18",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID42981226/007464076213",
+   "chq": "",
+   "debit": 0,
+   "credit": 16303.29,
+   "balance": 299696.04
+  },
+  {
+   "date": "2026-03-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N0545917780",
+   "chq": "",
+   "debit": 42242.71,
+   "credit": 0,
+   "balance": 257453.33
+  },
+  {
+   "date": "2026-03-19",
+   "narration": "GST PMT CBIC CPIN 25450085146959",
+   "chq": "",
+   "debit": 15178.18,
+   "credit": 0,
+   "balance": 242275.15
+  },
+  {
+   "date": "2026-03-20",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID37724096/532737600633",
+   "chq": "",
+   "debit": 0,
+   "credit": 11620.56,
+   "balance": 253895.71
+  },
+  {
+   "date": "2026-03-21",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID94420285/981731472967",
+   "chq": "",
+   "debit": 0,
+   "credit": 22206.17,
+   "balance": 276101.88
+  },
+  {
+   "date": "2026-03-22",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID28812281/247227148300",
+   "chq": "",
+   "debit": 0,
+   "credit": 18147.4,
+   "balance": 294249.28
+  },
+  {
+   "date": "2026-03-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0532130852",
+   "chq": "",
+   "debit": 14160.66,
+   "credit": 0,
+   "balance": 280088.62
+  },
+  {
+   "date": "2026-03-22",
+   "narration": "IMPS/P2A/405638414426/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 15561.42,
+   "credit": 0,
+   "balance": 264527.2
+  },
+  {
+   "date": "2026-03-24",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID74528200/922518079990",
+   "chq": "",
+   "debit": 0,
+   "credit": 8475.93,
+   "balance": 273003.13
+  },
+  {
+   "date": "2026-03-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 38800,
+   "balance": 311803.13
+  },
+  {
+   "date": "2026-03-25",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID99559922/134588525144",
+   "chq": "",
+   "debit": 0,
+   "credit": 9443.62,
+   "balance": 321246.75
+  },
+  {
+   "date": "2026-03-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N8200307618",
+   "chq": "",
+   "debit": 40251.39,
+   "credit": 0,
+   "balance": 280995.36
+  },
+  {
+   "date": "2026-03-27",
+   "narration": "IMPS/P2A/075359092543/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 223000,
+   "credit": 0,
+   "balance": 57995.36
+  },
+  {
+   "date": "2026-03-28",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID77326223/880632892694",
+   "chq": "",
+   "debit": 0,
+   "credit": 19145.02,
+   "balance": 77140.38
+  },
+  {
+   "date": "2026-03-28",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 10342.92,
+   "credit": 0,
+   "balance": 66797.46
+  },
+  {
+   "date": "2026-03-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N9170673813",
+   "chq": "",
+   "debit": 12373.42,
+   "credit": 0,
+   "balance": 54424.04
+  },
+  {
+   "date": "2026-03-30",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 13062.15,
+   "credit": 0,
+   "balance": 41361.89
+  },
+  {
+   "date": "2026-03-31",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID52474389/520914228713",
+   "chq": "",
+   "debit": 0,
+   "credit": 10352,
+   "balance": 51713.89
+  },
+  {
+   "date": "2026-03-31",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 27200,
+   "balance": 78913.89
+  },
+  {
+   "date": "2026-03-31",
+   "narration": "SMS ALERT CHARGES FOR QTR INCL GST",
+   "chq": "",
+   "debit": 17.7,
+   "credit": 0,
+   "balance": 78896.19
+  },
+  {
+   "date": "2026-03-31",
+   "narration": "CASH HANDLING CHARGES INCL GST",
+   "chq": "",
+   "debit": 327.04,
+   "credit": 0,
+   "balance": 78569.15
+  },
+  {
+   "date": "2026-04-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N6161479740",
+   "chq": "",
+   "debit": 16915.14,
+   "credit": 0,
+   "balance": 61654.01
+  },
+  {
+   "date": "2026-04-02",
+   "narration": "IMPS/P2A/141257068901/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 17718.37,
+   "credit": 0,
+   "balance": 43935.64
+  },
+  {
+   "date": "2026-04-02",
+   "narration": "IMPS/P2A/058240219083/K SUBRAMANIAN/SHOP RENT APR",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": 5935.64
+  },
+  {
+   "date": "2026-04-03",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID38485092/620613965292",
+   "chq": "",
+   "debit": 0,
+   "credit": 12964.43,
+   "balance": 18900.07
+  },
+  {
+   "date": "2026-04-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 37000,
+   "balance": 55900.07
+  },
+  {
+   "date": "2026-04-05",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID05748657/509719010633",
+   "chq": "",
+   "debit": 0,
+   "credit": 13350.81,
+   "balance": 69250.88
+  },
+  {
+   "date": "2026-04-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N5028415495",
+   "chq": "",
+   "debit": 55016.18,
+   "credit": 0,
+   "balance": 14234.7
+  },
+  {
+   "date": "2026-04-05",
+   "narration": "ATM WDL/TRICHY CANTONMENT/489880",
+   "chq": "",
+   "debit": 6000,
+   "credit": 0,
+   "balance": 8234.7
+  },
+  {
+   "date": "2026-04-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": -13405.3
+  },
+  {
+   "date": "2026-04-06",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID30542636/476921046482",
+   "chq": "",
+   "debit": 0,
+   "credit": 20399.96,
+   "balance": 6994.66
+  },
+  {
+   "date": "2026-04-07",
+   "narration": "NEFT DR-SALARY APR-PRAKASH R",
+   "chq": "",
+   "debit": 13720.99,
+   "credit": 0,
+   "balance": -6726.33
+  },
+  {
+   "date": "2026-04-07",
+   "narration": "NEFT DR-SALARY APR-SELVI M",
+   "chq": "",
+   "debit": 14843.46,
+   "credit": 0,
+   "balance": -21569.79
+  },
+  {
+   "date": "2026-04-07",
+   "narration": "NEFT DR-SALARY APR-KARTHIK S",
+   "chq": "",
+   "debit": 14142.87,
+   "credit": 0,
+   "balance": -35712.66
+  },
+  {
+   "date": "2026-04-07",
+   "narration": "NEFT DR-SALARY APR-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 14643.39,
+   "credit": 0,
+   "balance": -50356.05
+  },
+  {
+   "date": "2026-04-08",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID75441622/684540384134",
+   "chq": "",
+   "debit": 0,
+   "credit": 23158.71,
+   "balance": -27197.34
+  },
+  {
+   "date": "2026-04-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N3684459970",
+   "chq": "",
+   "debit": 27696.06,
+   "credit": 0,
+   "balance": -54893.4
+  },
+  {
+   "date": "2026-04-09",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID63299204/681429053068",
+   "chq": "",
+   "debit": 0,
+   "credit": 29408.02,
+   "balance": -25485.38
+  },
+  {
+   "date": "2026-04-10",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID98331997/888685257945",
+   "chq": "",
+   "debit": 0,
+   "credit": 29114.99,
+   "balance": 3629.61
+  },
+  {
+   "date": "2026-04-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 29000,
+   "balance": 32629.61
+  },
+  {
+   "date": "2026-04-11",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID72947659/918300349638",
+   "chq": "",
+   "debit": 0,
+   "credit": 21419.9,
+   "balance": 54049.51
+  },
+  {
+   "date": "2026-04-12",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID21504645/931550775838",
+   "chq": "",
+   "debit": 0,
+   "credit": 13106.71,
+   "balance": 67156.22
+  },
+  {
+   "date": "2026-04-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N2402813578",
+   "chq": "",
+   "debit": 47371.36,
+   "credit": 0,
+   "balance": 19784.86
+  },
+  {
+   "date": "2026-04-12",
+   "narration": "IMPS/P2A/442924528349/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 17014.98,
+   "credit": 0,
+   "balance": 2769.88
+  },
+  {
+   "date": "2026-04-12",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 5198.64,
+   "credit": 0,
+   "balance": -2428.76
+  },
+  {
+   "date": "2026-04-13",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID93498385/222039977186",
+   "chq": "",
+   "debit": 0,
+   "credit": 28023.19,
+   "balance": 25594.43
+  },
+  {
+   "date": "2026-04-14",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID40383317/419788086364",
+   "chq": "",
+   "debit": 0,
+   "credit": 25989.6,
+   "balance": 51584.03
+  },
+  {
+   "date": "2026-04-14",
+   "narration": "BILLPAY/TNPDCL/989225351/EB BILL",
+   "chq": "",
+   "debit": 14420.07,
+   "credit": 0,
+   "balance": 37163.96
+  },
+  {
+   "date": "2026-04-15",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID73955053/710789579029",
+   "chq": "",
+   "debit": 0,
+   "credit": 10506.86,
+   "balance": 47670.82
+  },
+  {
+   "date": "2026-04-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N2290603762",
+   "chq": "",
+   "debit": 17366.74,
+   "credit": 0,
+   "balance": 30304.08
+  },
+  {
+   "date": "2026-04-16",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID97643165/350914051083",
+   "chq": "",
+   "debit": 0,
+   "credit": 14370.63,
+   "balance": 44674.71
+  },
+  {
+   "date": "2026-04-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 41500,
+   "balance": 86174.71
+  },
+  {
+   "date": "2026-04-18",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID43021532/510743380061",
+   "chq": "",
+   "debit": 0,
+   "credit": 20242.85,
+   "balance": 106417.56
+  },
+  {
+   "date": "2026-04-19",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID03505806/951732637844",
+   "chq": "",
+   "debit": 0,
+   "credit": 10314.77,
+   "balance": 116732.33
+  },
+  {
+   "date": "2026-04-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N4575737707",
+   "chq": "",
+   "debit": 54908.95,
+   "credit": 0,
+   "balance": 61823.38
+  },
+  {
+   "date": "2026-04-19",
+   "narration": "GST PMT CBIC CPIN 63621095358470",
+   "chq": "",
+   "debit": 12205.24,
+   "credit": 0,
+   "balance": 49618.14
+  },
+  {
+   "date": "2026-04-20",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID24801540/162368316532",
+   "chq": "",
+   "debit": 0,
+   "credit": 30665.99,
+   "balance": 80284.13
+  },
+  {
+   "date": "2026-04-21",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID63411571/930120051870",
+   "chq": "",
+   "debit": 0,
+   "credit": 30340.29,
+   "balance": 110624.42
+  },
+  {
+   "date": "2026-04-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N8975075394",
+   "chq": "",
+   "debit": 25379.39,
+   "credit": 0,
+   "balance": 85245.03
+  },
+  {
+   "date": "2026-04-22",
+   "narration": "IMPS/P2A/022477008832/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 20595,
+   "credit": 0,
+   "balance": 64650.03
+  },
+  {
+   "date": "2026-04-23",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID18388310/745352920520",
+   "chq": "",
+   "debit": 0,
+   "credit": 10398.67,
+   "balance": 75048.7
+  },
+  {
+   "date": "2026-04-24",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID45618603/030669162673",
+   "chq": "",
+   "debit": 0,
+   "credit": 13364.29,
+   "balance": 88412.99
+  },
+  {
+   "date": "2026-04-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 41400,
+   "balance": 129812.99
+  },
+  {
+   "date": "2026-04-25",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID79751310/525017988746",
+   "chq": "",
+   "debit": 0,
+   "credit": 21320.75,
+   "balance": 151133.74
+  },
+  {
+   "date": "2026-04-26",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID86011165/563123560545",
+   "chq": "",
+   "debit": 0,
+   "credit": 28314.91,
+   "balance": 179448.65
+  },
+  {
+   "date": "2026-04-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N6209637016",
+   "chq": "",
+   "debit": 19652.68,
+   "credit": 0,
+   "balance": 159795.97
+  },
+  {
+   "date": "2026-04-27",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID71276162/849788311691",
+   "chq": "",
+   "debit": 0,
+   "credit": 27404.78,
+   "balance": 187200.75
+  },
+  {
+   "date": "2026-04-27",
+   "narration": "IMPS/P2A/154563549268/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 237000,
+   "credit": 0,
+   "balance": -49799.25
+  },
+  {
+   "date": "2026-04-28",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID35502473/519441445891",
+   "chq": "",
+   "debit": 0,
+   "credit": 20215.64,
+   "balance": -29583.61
+  },
+  {
+   "date": "2026-04-29",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID62314413/419272447541",
+   "chq": "",
+   "debit": 0,
+   "credit": 23357.9,
+   "balance": -6225.71
+  },
+  {
+   "date": "2026-04-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N5214645143",
+   "chq": "",
+   "debit": 26937.48,
+   "credit": 0,
+   "balance": -33163.19
+  },
+  {
+   "date": "2026-04-30",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID24437644/593374589342",
+   "chq": "",
+   "debit": 0,
+   "credit": 23498.21,
+   "balance": -9664.98
+  },
+  {
+   "date": "2026-05-01",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID33935370/757497898148",
+   "chq": "",
+   "debit": 0,
+   "credit": 21260.96,
+   "balance": 11595.98
+  },
+  {
+   "date": "2026-05-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N6522140594",
+   "chq": "",
+   "debit": 15604.53,
+   "credit": 0,
+   "balance": -4008.55
+  },
+  {
+   "date": "2026-05-01",
+   "narration": "ATM WDL/TRICHY CANTONMENT/629943",
+   "chq": "",
+   "debit": 5000,
+   "credit": 0,
+   "balance": -9008.55
+  },
+  {
+   "date": "2026-05-02",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID62792290/284472544929",
+   "chq": "",
+   "debit": 0,
+   "credit": 10109.55,
+   "balance": 1101
+  },
+  {
+   "date": "2026-05-02",
+   "narration": "IMPS/P2A/256833650932/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 12395.31,
+   "credit": 0,
+   "balance": -11294.31
+  },
+  {
+   "date": "2026-05-02",
+   "narration": "IMPS/P2A/240203558045/K SUBRAMANIAN/SHOP RENT MAY",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": -49294.31
+  },
+  {
+   "date": "2026-05-03",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID18748082/407023056265",
+   "chq": "",
+   "debit": 0,
+   "credit": 20119.96,
+   "balance": -29174.35
+  },
+  {
+   "date": "2026-05-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 34600,
+   "balance": 5425.65
+  },
+  {
+   "date": "2026-05-05",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID25586394/851425438812",
+   "chq": "",
+   "debit": 0,
+   "credit": 22559.69,
+   "balance": 27985.34
+  },
+  {
+   "date": "2026-05-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N5809601950",
+   "chq": "",
+   "debit": 21768.17,
+   "credit": 0,
+   "balance": 6217.17
+  },
+  {
+   "date": "2026-05-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": -15422.83
+  },
+  {
+   "date": "2026-05-05",
+   "narration": "NEFT CR-HDFC0000412-BHEL STAFF CLUB-BULK ORDER",
+   "chq": "",
+   "debit": 0,
+   "credit": 30407.3,
+   "balance": 14984.47
+  },
+  {
+   "date": "2026-05-06",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID50993569/912781972300",
+   "chq": "",
+   "debit": 0,
+   "credit": 25400.74,
+   "balance": 40385.21
+  },
+  {
+   "date": "2026-05-07",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID48660357/845361228154",
+   "chq": "",
+   "debit": 0,
+   "credit": 25558.27,
+   "balance": 65943.48
+  },
+  {
+   "date": "2026-05-07",
+   "narration": "NEFT DR-SALARY MAY-PRAKASH R",
+   "chq": "",
+   "debit": 14213.54,
+   "credit": 0,
+   "balance": 51729.94
+  },
+  {
+   "date": "2026-05-07",
+   "narration": "NEFT DR-SALARY MAY-SELVI M",
+   "chq": "",
+   "debit": 13885.69,
+   "credit": 0,
+   "balance": 37844.25
+  },
+  {
+   "date": "2026-05-07",
+   "narration": "NEFT DR-SALARY MAY-KARTHIK S",
+   "chq": "",
+   "debit": 13708.81,
+   "credit": 0,
+   "balance": 24135.44
+  },
+  {
+   "date": "2026-05-07",
+   "narration": "NEFT DR-SALARY MAY-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 14437.5,
+   "credit": 0,
+   "balance": 9697.94
+  },
+  {
+   "date": "2026-05-08",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID39483084/866992722535",
+   "chq": "",
+   "debit": 0,
+   "credit": 17459.03,
+   "balance": 27156.97
+  },
+  {
+   "date": "2026-05-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N5733138884",
+   "chq": "",
+   "debit": 22127.57,
+   "credit": 0,
+   "balance": 5029.4
+  },
+  {
+   "date": "2026-05-09",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID73507864/283612259148",
+   "chq": "",
+   "debit": 0,
+   "credit": 22848.86,
+   "balance": 27878.26
+  },
+  {
+   "date": "2026-05-10",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID65478967/069323323647",
+   "chq": "",
+   "debit": 0,
+   "credit": 21407.46,
+   "balance": 49285.72
+  },
+  {
+   "date": "2026-05-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 28600,
+   "balance": 77885.72
+  },
+  {
+   "date": "2026-05-11",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID00891948/628924400130",
+   "chq": "",
+   "debit": 0,
+   "credit": 17889.12,
+   "balance": 95774.84
+  },
+  {
+   "date": "2026-05-12",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID65794340/441238263190",
+   "chq": "",
+   "debit": 0,
+   "credit": 12667.58,
+   "balance": 108442.42
+  },
+  {
+   "date": "2026-05-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N0233103944",
+   "chq": "",
+   "debit": 32673.4,
+   "credit": 0,
+   "balance": 75769.02
+  },
+  {
+   "date": "2026-05-12",
+   "narration": "IMPS/P2A/666974383080/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 18655.43,
+   "credit": 0,
+   "balance": 57113.59
+  },
+  {
+   "date": "2026-05-13",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID92892474/375664587912",
+   "chq": "",
+   "debit": 0,
+   "credit": 20252.46,
+   "balance": 77366.05
+  },
+  {
+   "date": "2026-05-14",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID51526028/067811483594",
+   "chq": "",
+   "debit": 0,
+   "credit": 17210.37,
+   "balance": 94576.42
+  },
+  {
+   "date": "2026-05-15",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID33766339/798981004559",
+   "chq": "",
+   "debit": 0,
+   "credit": 25591.44,
+   "balance": 120167.86
+  },
+  {
+   "date": "2026-05-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0211524541",
+   "chq": "",
+   "debit": 14407.39,
+   "credit": 0,
+   "balance": 105760.47
+  },
+  {
+   "date": "2026-05-16",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID02449816/772492495006",
+   "chq": "",
+   "debit": 0,
+   "credit": 12704.89,
+   "balance": 118465.36
+  },
+  {
+   "date": "2026-05-17",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID04288698/751126841847",
+   "chq": "",
+   "debit": 0,
+   "credit": 19188.65,
+   "balance": 137654.01
+  },
+  {
+   "date": "2026-05-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 34400,
+   "balance": 172054.01
+  },
+  {
+   "date": "2026-05-17",
+   "narration": "ATM WDL/TRICHY CANTONMENT/248855",
+   "chq": "",
+   "debit": 8000,
+   "credit": 0,
+   "balance": 164054.01
+  },
+  {
+   "date": "2026-05-18",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID32758628/075663827181",
+   "chq": "",
+   "debit": 0,
+   "credit": 18270.71,
+   "balance": 182324.72
+  },
+  {
+   "date": "2026-05-19",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID50744434/666226870307",
+   "chq": "",
+   "debit": 0,
+   "credit": 13877.47,
+   "balance": 196202.19
+  },
+  {
+   "date": "2026-05-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N1556700494",
+   "chq": "",
+   "debit": 44529.09,
+   "credit": 0,
+   "balance": 151673.1
+  },
+  {
+   "date": "2026-05-19",
+   "narration": "GST PMT CBIC CPIN 71621952821028",
+   "chq": "",
+   "debit": 13887.93,
+   "credit": 0,
+   "balance": 137785.17
+  },
+  {
+   "date": "2026-05-20",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID64878205/229746971359",
+   "chq": "",
+   "debit": 0,
+   "credit": 18131.96,
+   "balance": 155917.13
+  },
+  {
+   "date": "2026-05-21",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID99711690/465838727906",
+   "chq": "",
+   "debit": 0,
+   "credit": 19133.51,
+   "balance": 175050.64
+  },
+  {
+   "date": "2026-05-22",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID27700563/852112840361",
+   "chq": "",
+   "debit": 0,
+   "credit": 21048.67,
+   "balance": 196099.31
+  },
+  {
+   "date": "2026-05-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N4723000623",
+   "chq": "",
+   "debit": 21045.52,
+   "credit": 0,
+   "balance": 175053.79
+  },
+  {
+   "date": "2026-05-22",
+   "narration": "IMPS/P2A/253682459512/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 16309.32,
+   "credit": 0,
+   "balance": 158744.47
+  },
+  {
+   "date": "2026-05-23",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID31233070/163432570020",
+   "chq": "",
+   "debit": 0,
+   "credit": 16343.53,
+   "balance": 175088
+  },
+  {
+   "date": "2026-05-24",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID05833891/979719157625",
+   "chq": "",
+   "debit": 0,
+   "credit": 17066.73,
+   "balance": 192154.73
+  },
+  {
+   "date": "2026-05-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 38300,
+   "balance": 230454.73
+  },
+  {
+   "date": "2026-05-25",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID26090995/706791414315",
+   "chq": "",
+   "debit": 0,
+   "credit": 12296.73,
+   "balance": 242751.46
+  },
+  {
+   "date": "2026-05-26",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID09406063/742391366915",
+   "chq": "",
+   "debit": 0,
+   "credit": 21968.27,
+   "balance": 264719.73
+  },
+  {
+   "date": "2026-05-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N6096344303",
+   "chq": "",
+   "debit": 35102.62,
+   "credit": 0,
+   "balance": 229617.11
+  },
+  {
+   "date": "2026-05-27",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID62082327/217885293317",
+   "chq": "",
+   "debit": 0,
+   "credit": 9071.5,
+   "balance": 238688.61
+  },
+  {
+   "date": "2026-05-27",
+   "narration": "IMPS/P2A/761582814159/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 225000,
+   "credit": 0,
+   "balance": 13688.61
+  },
+  {
+   "date": "2026-05-28",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID80246190/621053102638",
+   "chq": "",
+   "debit": 0,
+   "credit": 23905.01,
+   "balance": 37593.62
+  },
+  {
+   "date": "2026-05-29",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID96912886/370843547504",
+   "chq": "",
+   "debit": 0,
+   "credit": 16751.23,
+   "balance": 54344.85
+  },
+  {
+   "date": "2026-05-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N3769169040",
+   "chq": "",
+   "debit": 22244.5,
+   "credit": 0,
+   "balance": 32100.35
+  },
+  {
+   "date": "2026-05-30",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID85432187/661412960560",
+   "chq": "",
+   "debit": 0,
+   "credit": 9174.79,
+   "balance": 41275.14
+  },
+  {
+   "date": "2026-05-31",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID89990621/726962418331",
+   "chq": "",
+   "debit": 0,
+   "credit": 21253.18,
+   "balance": 62528.32
+  },
+  {
+   "date": "2026-05-31",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 35100,
+   "balance": 97628.32
+  },
+  {
+   "date": "2026-06-01",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID01011038/177273805884",
+   "chq": "",
+   "debit": 0,
+   "credit": 16085.82,
+   "balance": 113714.14
+  },
+  {
+   "date": "2026-06-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N1415181732",
+   "chq": "",
+   "debit": 9081.25,
+   "credit": 0,
+   "balance": 104632.89
+  },
+  {
+   "date": "2026-06-01",
+   "narration": "ATM WDL/TRICHY CANTONMENT/511810",
+   "chq": "",
+   "debit": 7000,
+   "credit": 0,
+   "balance": 97632.89
+  },
+  {
+   "date": "2026-06-02",
+   "narration": "IMPS/P2A/286856990964/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 16048.51,
+   "credit": 0,
+   "balance": 81584.38
+  },
+  {
+   "date": "2026-06-02",
+   "narration": "IMPS/P2A/166540032785/K SUBRAMANIAN/SHOP RENT JUN",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": 43584.38
+  },
+  {
+   "date": "2026-06-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 38400,
+   "balance": 81984.38
+  },
+  {
+   "date": "2026-06-03",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 11987.21,
+   "credit": 0,
+   "balance": 69997.17
+  },
+  {
+   "date": "2026-06-05",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID97200729/467881023707",
+   "chq": "",
+   "debit": 0,
+   "credit": 8324.92,
+   "balance": 78322.09
+  },
+  {
+   "date": "2026-06-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N4480773468",
+   "chq": "",
+   "debit": 46898.76,
+   "credit": 0,
+   "balance": 31423.33
+  },
+  {
+   "date": "2026-06-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": 9783.33
+  },
+  {
+   "date": "2026-06-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE RETURN-INSUFFICIENT FUNDS",
+   "chq": "",
+   "debit": 0,
+   "credit": 21640,
+   "balance": 31423.33
+  },
+  {
+   "date": "2026-06-05",
+   "narration": "ACH RETURN CHARGES INCL GST",
+   "chq": "",
+   "debit": 590,
+   "credit": 0,
+   "balance": 30833.33
+  },
+  {
+   "date": "2026-06-06",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID05519127/612829722063",
+   "chq": "",
+   "debit": 0,
+   "credit": 14141.46,
+   "balance": 44974.79
+  },
+  {
+   "date": "2026-06-07",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID69581417/529790644532",
+   "chq": "",
+   "debit": 0,
+   "credit": 25331.28,
+   "balance": 70306.07
+  },
+  {
+   "date": "2026-06-07",
+   "narration": "NEFT DR-SALARY JUN-PRAKASH R",
+   "chq": "",
+   "debit": 15912.61,
+   "credit": 0,
+   "balance": 54393.46
+  },
+  {
+   "date": "2026-06-07",
+   "narration": "NEFT DR-SALARY JUN-SELVI M",
+   "chq": "",
+   "debit": 16221.7,
+   "credit": 0,
+   "balance": 38171.76
+  },
+  {
+   "date": "2026-06-07",
+   "narration": "NEFT DR-SALARY JUN-KARTHIK S",
+   "chq": "",
+   "debit": 15679.5,
+   "credit": 0,
+   "balance": 22492.26
+  },
+  {
+   "date": "2026-06-07",
+   "narration": "NEFT DR-SALARY JUN-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 14032.69,
+   "credit": 0,
+   "balance": 8459.57
+  },
+  {
+   "date": "2026-06-08",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID58622113/612341654663",
+   "chq": "",
+   "debit": 0,
+   "credit": 24051.81,
+   "balance": 32511.38
+  },
+  {
+   "date": "2026-06-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N1010056331",
+   "chq": "",
+   "debit": 23027.21,
+   "credit": 0,
+   "balance": 9484.17
+  },
+  {
+   "date": "2026-06-09",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID23734491/622134626589",
+   "chq": "",
+   "debit": 0,
+   "credit": 11552.64,
+   "balance": 21036.81
+  },
+  {
+   "date": "2026-06-09",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015-REPRESENT",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": -603.19
+  },
+  {
+   "date": "2026-06-10",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID91578383/266681193096",
+   "chq": "",
+   "debit": 0,
+   "credit": 16085.99,
+   "balance": 15482.8
+  },
+  {
+   "date": "2026-06-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 31800,
+   "balance": 47282.8
+  },
+  {
+   "date": "2026-06-11",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID49998669/355499245451",
+   "chq": "",
+   "debit": 0,
+   "credit": 13902.16,
+   "balance": 61184.96
+  },
+  {
+   "date": "2026-06-12",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID76335071/532147289939",
+   "chq": "",
+   "debit": 0,
+   "credit": 18454.68,
+   "balance": 79639.64
+  },
+  {
+   "date": "2026-06-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N3149830355",
+   "chq": "",
+   "debit": 34292.06,
+   "credit": 0,
+   "balance": 45347.58
+  },
+  {
+   "date": "2026-06-12",
+   "narration": "IMPS/P2A/218689219672/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 16549.33,
+   "credit": 0,
+   "balance": 28798.25
+  },
+  {
+   "date": "2026-06-13",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID81093699/258903464992",
+   "chq": "",
+   "debit": 0,
+   "credit": 13161.21,
+   "balance": 41959.46
+  },
+  {
+   "date": "2026-06-14",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID07483759/169530405183",
+   "chq": "",
+   "debit": 0,
+   "credit": 11820.93,
+   "balance": 53780.39
+  },
+  {
+   "date": "2026-06-14",
+   "narration": "BILLPAY/TNPDCL/465056081/EB BILL",
+   "chq": "",
+   "debit": 12696.17,
+   "credit": 0,
+   "balance": 41084.22
+  },
+  {
+   "date": "2026-06-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0821615083",
+   "chq": "",
+   "debit": 12464.78,
+   "credit": 0,
+   "balance": 28619.44
+  },
+  {
+   "date": "2026-06-16",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID22532480/858853887345",
+   "chq": "",
+   "debit": 0,
+   "credit": 17087.17,
+   "balance": 45706.61
+  },
+  {
+   "date": "2026-06-17",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID02705389/258754649378",
+   "chq": "",
+   "debit": 0,
+   "credit": 24102.89,
+   "balance": 69809.5
+  },
+  {
+   "date": "2026-06-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 27000,
+   "balance": 96809.5
+  },
+  {
+   "date": "2026-06-18",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID10757049/546725572295",
+   "chq": "",
+   "debit": 0,
+   "credit": 20568.03,
+   "balance": 117377.53
+  },
+  {
+   "date": "2026-06-19",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID05884456/644260511018",
+   "chq": "",
+   "debit": 0,
+   "credit": 15533.89,
+   "balance": 132911.42
+  },
+  {
+   "date": "2026-06-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N3230081619",
+   "chq": "",
+   "debit": 39216.73,
+   "credit": 0,
+   "balance": 93694.69
+  },
+  {
+   "date": "2026-06-19",
+   "narration": "GST PMT CBIC CPIN 94568426820773",
+   "chq": "",
+   "debit": 10695.24,
+   "credit": 0,
+   "balance": 82999.45
+  },
+  {
+   "date": "2026-06-21",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID45613999/270638147803",
+   "chq": "",
+   "debit": 0,
+   "credit": 10740.55,
+   "balance": 93740
+  },
+  {
+   "date": "2026-06-22",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID72924686/894259605590",
+   "chq": "",
+   "debit": 0,
+   "credit": 17034.52,
+   "balance": 110774.52
+  },
+  {
+   "date": "2026-06-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0893486534",
+   "chq": "",
+   "debit": 14056.74,
+   "credit": 0,
+   "balance": 96717.78
+  },
+  {
+   "date": "2026-06-22",
+   "narration": "IMPS/P2A/708932198789/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 17691.73,
+   "credit": 0,
+   "balance": 79026.05
+  },
+  {
+   "date": "2026-06-23",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID79990701/253608228895",
+   "chq": "",
+   "debit": 0,
+   "credit": 10171.43,
+   "balance": 89197.48
+  },
+  {
+   "date": "2026-06-24",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID68922248/441907027366",
+   "chq": "",
+   "debit": 0,
+   "credit": 19255.35,
+   "balance": 108452.83
+  },
+  {
+   "date": "2026-06-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 19200,
+   "balance": 127652.83
+  },
+  {
+   "date": "2026-06-25",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID90012133/859319873098",
+   "chq": "",
+   "debit": 0,
+   "credit": 19782.33,
+   "balance": 147435.16
+  },
+  {
+   "date": "2026-06-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N8725512968",
+   "chq": "",
+   "debit": 22584.29,
+   "credit": 0,
+   "balance": 124850.87
+  },
+  {
+   "date": "2026-06-27",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID30463389/240022037928",
+   "chq": "",
+   "debit": 0,
+   "credit": 22059.04,
+   "balance": 146909.91
+  },
+  {
+   "date": "2026-06-27",
+   "narration": "IMPS/P2A/239951356439/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 197000,
+   "credit": 0,
+   "balance": -50090.09
+  },
+  {
+   "date": "2026-06-28",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID49209328/050223086357",
+   "chq": "",
+   "debit": 0,
+   "credit": 19588.27,
+   "balance": -30501.82
+  },
+  {
+   "date": "2026-06-29",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID75317084/170565749403",
+   "chq": "",
+   "debit": 0,
+   "credit": 14428.02,
+   "balance": -16073.8
+  },
+  {
+   "date": "2026-06-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N6605407007",
+   "chq": "",
+   "debit": 12753.54,
+   "credit": 0,
+   "balance": -28827.34
+  },
+  {
+   "date": "2026-06-30",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID18652340/552530680984",
+   "chq": "",
+   "debit": 0,
+   "credit": 24941.19,
+   "balance": -3886.15
+  },
+  {
+   "date": "2026-06-30",
+   "narration": "SMS ALERT CHARGES FOR QTR INCL GST",
+   "chq": "",
+   "debit": 17.7,
+   "credit": 0,
+   "balance": -3903.85
+  },
+  {
+   "date": "2026-06-30",
+   "narration": "CASH HANDLING CHARGES INCL GST",
+   "chq": "",
+   "debit": 393.16,
+   "credit": 0,
+   "balance": -4297.01
+  },
+  {
+   "date": "2026-07-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0340818545",
+   "chq": "",
+   "debit": 25937.56,
+   "credit": 0,
+   "balance": -30234.57
+  },
+  {
+   "date": "2026-07-02",
+   "narration": "IMPS/P2A/338002062527/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 18379.36,
+   "credit": 0,
+   "balance": -48613.93
+  },
+  {
+   "date": "2026-07-02",
+   "narration": "IMPS/P2A/173154213778/K SUBRAMANIAN/SHOP RENT JUL",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": -86613.93
+  },
+  {
+   "date": "2026-07-03",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID30109429/601186617275",
+   "chq": "",
+   "debit": 0,
+   "credit": 10832.13,
+   "balance": -75781.8
+  },
+  {
+   "date": "2026-07-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 25500,
+   "balance": -50281.8
+  },
+  {
+   "date": "2026-07-05",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID67293230/795376517035",
+   "chq": "",
+   "debit": 0,
+   "credit": 19240.12,
+   "balance": -31041.68
+  },
+  {
+   "date": "2026-07-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N0623105649",
+   "chq": "",
+   "debit": 26843.23,
+   "credit": 0,
+   "balance": -57884.91
+  },
+  {
+   "date": "2026-07-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": -79524.91
+  },
+  {
+   "date": "2026-07-06",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID24425157/692157327319",
+   "chq": "",
+   "debit": 0,
+   "credit": 23091.68,
+   "balance": -56433.23
+  },
+  {
+   "date": "2026-07-06",
+   "narration": "ATM WDL/TRICHY CANTONMENT/423725",
+   "chq": "",
+   "debit": 6000,
+   "credit": 0,
+   "balance": -62433.23
+  },
+  {
+   "date": "2026-07-07",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID09243465/505431891535",
+   "chq": "",
+   "debit": 0,
+   "credit": 19462.08,
+   "balance": -42971.15
+  },
+  {
+   "date": "2026-07-07",
+   "narration": "NEFT DR-SALARY JUL-PRAKASH R",
+   "chq": "",
+   "debit": 14962.19,
+   "credit": 0,
+   "balance": -57933.34
+  },
+  {
+   "date": "2026-07-07",
+   "narration": "NEFT DR-SALARY JUL-SELVI M",
+   "chq": "",
+   "debit": 14438.15,
+   "credit": 0,
+   "balance": -72371.49
+  },
+  {
+   "date": "2026-07-07",
+   "narration": "NEFT DR-SALARY JUL-KARTHIK S",
+   "chq": "",
+   "debit": 13001.51,
+   "credit": 0,
+   "balance": -85373
+  },
+  {
+   "date": "2026-07-07",
+   "narration": "NEFT DR-SALARY JUL-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 13303.92,
+   "credit": 0,
+   "balance": -98676.92
+  },
+  {
+   "date": "2026-07-08",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID76635118/273277405720",
+   "chq": "",
+   "debit": 0,
+   "credit": 24468.64,
+   "balance": -74208.28
+  },
+  {
+   "date": "2026-07-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0202374342",
+   "chq": "",
+   "debit": 18308.96,
+   "credit": 0,
+   "balance": -92517.24
+  },
+  {
+   "date": "2026-07-09",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID24552748/419241195656",
+   "chq": "",
+   "debit": 0,
+   "credit": 9891.31,
+   "balance": -82625.93
+  },
+  {
+   "date": "2026-07-10",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID93540000/164576491338",
+   "chq": "",
+   "debit": 0,
+   "credit": 8130.89,
+   "balance": -74495.04
+  },
+  {
+   "date": "2026-07-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 39200,
+   "balance": -35295.04
+  },
+  {
+   "date": "2026-07-11",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID05294414/425125985413",
+   "chq": "",
+   "debit": 0,
+   "credit": 25712.43,
+   "balance": -9582.61
+  },
+  {
+   "date": "2026-07-12",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID86172864/772557794305",
+   "chq": "",
+   "debit": 0,
+   "credit": 25328.55,
+   "balance": 15745.94
+  },
+  {
+   "date": "2026-07-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N2309805660",
+   "chq": "",
+   "debit": 26601.54,
+   "credit": 0,
+   "balance": -10855.6
+  },
+  {
+   "date": "2026-07-12",
+   "narration": "IMPS/P2A/259691559090/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 12242.48,
+   "credit": 0,
+   "balance": -23098.08
+  },
+  {
+   "date": "2026-07-13",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID79524504/394599131949",
+   "chq": "",
+   "debit": 0,
+   "credit": 21145.1,
+   "balance": -1952.98
+  },
+  {
+   "date": "2026-07-15",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID62556998/848183266189",
+   "chq": "",
+   "debit": 0,
+   "credit": 9456.17,
+   "balance": 7503.19
+  },
+  {
+   "date": "2026-07-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N1603713262",
+   "chq": "",
+   "debit": 15156.51,
+   "credit": 0,
+   "balance": -7653.32
+  },
+  {
+   "date": "2026-07-16",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID11422909/133961730179",
+   "chq": "",
+   "debit": 0,
+   "credit": 11045.75,
+   "balance": 3392.43
+  },
+  {
+   "date": "2026-07-16",
+   "narration": "POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY",
+   "chq": "",
+   "debit": 9101.13,
+   "credit": 0,
+   "balance": -5708.7
+  },
+  {
+   "date": "2026-07-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 31500,
+   "balance": 25791.3
+  },
+  {
+   "date": "2026-07-18",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID37970714/118072395298",
+   "chq": "",
+   "debit": 0,
+   "credit": 12800.7,
+   "balance": 38592
+  },
+  {
+   "date": "2026-07-18",
+   "narration": "NEFT CR-HDFC0000412-SRI RANGA KALYANA MANDAPAM-BULK ORDER",
+   "chq": "",
+   "debit": 0,
+   "credit": 34328.62,
+   "balance": 72920.62
+  },
+  {
+   "date": "2026-07-19",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID32106710/983865687698",
+   "chq": "",
+   "debit": 0,
+   "credit": 17888.36,
+   "balance": 90808.98
+  },
+  {
+   "date": "2026-07-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N3977859852",
+   "chq": "",
+   "debit": 34763.74,
+   "credit": 0,
+   "balance": 56045.24
+  },
+  {
+   "date": "2026-07-19",
+   "narration": "GST PMT CBIC CPIN 20843473020314",
+   "chq": "",
+   "debit": 12780.13,
+   "credit": 0,
+   "balance": 43265.11
+  },
+  {
+   "date": "2026-07-20",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID22493579/647001962596",
+   "chq": "",
+   "debit": 0,
+   "credit": 14418.93,
+   "balance": 57684.04
+  },
+  {
+   "date": "2026-07-21",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID16067258/004895217225",
+   "chq": "",
+   "debit": 0,
+   "credit": 11428.07,
+   "balance": 69112.11
+  },
+  {
+   "date": "2026-07-21",
+   "narration": "NEFT CR-HDFC0000412-SRI RANGA KALYANA MANDAPAM-BULK ORDER",
+   "chq": "",
+   "debit": 0,
+   "credit": 71841.82,
+   "balance": 140953.93
+  },
+  {
+   "date": "2026-07-22",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID73397393/371783691815",
+   "chq": "",
+   "debit": 0,
+   "credit": 21058.17,
+   "balance": 162012.1
+  },
+  {
+   "date": "2026-07-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N4858140270",
+   "chq": "",
+   "debit": 17756.34,
+   "credit": 0,
+   "balance": 144255.76
+  },
+  {
+   "date": "2026-07-22",
+   "narration": "IMPS/P2A/088433136325/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 14335.64,
+   "credit": 0,
+   "balance": 129920.12
+  },
+  {
+   "date": "2026-07-23",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID26857701/141324905433",
+   "chq": "",
+   "debit": 0,
+   "credit": 24559.88,
+   "balance": 154480
+  },
+  {
+   "date": "2026-07-24",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID92329910/040455117255",
+   "chq": "",
+   "debit": 0,
+   "credit": 17138.72,
+   "balance": 171618.72
+  },
+  {
+   "date": "2026-07-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 31500,
+   "balance": 203118.72
+  },
+  {
+   "date": "2026-07-25",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID01894742/116940365458",
+   "chq": "",
+   "debit": 0,
+   "credit": 13490,
+   "balance": 216608.72
+  },
+  {
+   "date": "2026-07-26",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID84282448/327697156895",
+   "chq": "",
+   "debit": 0,
+   "credit": 23907.19,
+   "balance": 240515.91
+  },
+  {
+   "date": "2026-07-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N3262464083",
+   "chq": "",
+   "debit": 17098.61,
+   "credit": 0,
+   "balance": 223417.3
+  },
+  {
+   "date": "2026-07-27",
+   "narration": "IMPS/P2A/319401097589/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 229000,
+   "credit": 0,
+   "balance": -5582.7
+  },
+  {
+   "date": "2026-07-28",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID83091741/076123389448",
+   "chq": "",
+   "debit": 0,
+   "credit": 23842.93,
+   "balance": 18260.23
+  },
+  {
+   "date": "2026-07-29",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID48255564/570470023225",
+   "chq": "",
+   "debit": 0,
+   "credit": 14648.21,
+   "balance": 32908.44
+  },
+  {
+   "date": "2026-07-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N9388680492",
+   "chq": "",
+   "debit": 18051.2,
+   "credit": 0,
+   "balance": 14857.24
+  },
+  {
+   "date": "2026-07-31",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID19375234/742965824048",
+   "chq": "",
+   "debit": 0,
+   "credit": 11017.86,
+   "balance": 25875.1
+  },
+  {
+   "date": "2026-07-31",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 35300,
+   "balance": 61175.1
+  },
+  {
+   "date": "2026-07-31",
+   "narration": "NEFT CR-HDFC0000412-SRI RANGA KALYANA MANDAPAM-BULK ORDER",
+   "chq": "",
+   "debit": 0,
+   "credit": 51624.8,
+   "balance": 112799.9
+  },
+  {
+   "date": "2026-08-01",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID22378484/205553609616",
+   "chq": "",
+   "debit": 0,
+   "credit": 20843.26,
+   "balance": 133643.16
+  },
+  {
+   "date": "2026-08-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N7045188247",
+   "chq": "",
+   "debit": 19388.13,
+   "credit": 0,
+   "balance": 114255.03
+  },
+  {
+   "date": "2026-08-02",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID15300582/275860366809",
+   "chq": "",
+   "debit": 0,
+   "credit": 13220.76,
+   "balance": 127475.79
+  },
+  {
+   "date": "2026-08-02",
+   "narration": "IMPS/P2A/349981247170/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 12258.92,
+   "credit": 0,
+   "balance": 115216.87
+  },
+  {
+   "date": "2026-08-02",
+   "narration": "IMPS/P2A/549915061807/K SUBRAMANIAN/SHOP RENT AUG",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": 77216.87
+  },
+  {
+   "date": "2026-08-03",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID64884961/284729129152",
+   "chq": "",
+   "debit": 0,
+   "credit": 9866.91,
+   "balance": 87083.78
+  },
+  {
+   "date": "2026-08-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 19000,
+   "balance": 106083.78
+  },
+  {
+   "date": "2026-08-04",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID04534079/480569191818",
+   "chq": "",
+   "debit": 0,
+   "credit": 25152.28,
+   "balance": 131236.06
+  },
+  {
+   "date": "2026-08-05",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID77212832/363898585222",
+   "chq": "",
+   "debit": 0,
+   "credit": 17227.79,
+   "balance": 148463.85
+  },
+  {
+   "date": "2026-08-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N1489413020",
+   "chq": "",
+   "debit": 45552.82,
+   "credit": 0,
+   "balance": 102911.03
+  },
+  {
+   "date": "2026-08-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": 81271.03
+  },
+  {
+   "date": "2026-08-06",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID74338872/661799014130",
+   "chq": "",
+   "debit": 0,
+   "credit": 11642.16,
+   "balance": 92913.19
+  },
+  {
+   "date": "2026-08-07",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID36883055/958972042509",
+   "chq": "",
+   "debit": 0,
+   "credit": 13894.63,
+   "balance": 106807.82
+  },
+  {
+   "date": "2026-08-07",
+   "narration": "NEFT DR-SALARY AUG-PRAKASH R",
+   "chq": "",
+   "debit": 15006.89,
+   "credit": 0,
+   "balance": 91800.93
+  },
+  {
+   "date": "2026-08-07",
+   "narration": "NEFT DR-SALARY AUG-SELVI M",
+   "chq": "",
+   "debit": 14670.54,
+   "credit": 0,
+   "balance": 77130.39
+  },
+  {
+   "date": "2026-08-07",
+   "narration": "NEFT DR-SALARY AUG-KARTHIK S",
+   "chq": "",
+   "debit": 14088.39,
+   "credit": 0,
+   "balance": 63042
+  },
+  {
+   "date": "2026-08-07",
+   "narration": "NEFT DR-SALARY AUG-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 14057.3,
+   "credit": 0,
+   "balance": 48984.7
+  },
+  {
+   "date": "2026-08-08",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID63719170/256301444836",
+   "chq": "",
+   "debit": 0,
+   "credit": 8684.23,
+   "balance": 57668.93
+  },
+  {
+   "date": "2026-08-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N1201792937",
+   "chq": "",
+   "debit": 25415.98,
+   "credit": 0,
+   "balance": 32252.95
+  },
+  {
+   "date": "2026-08-09",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID62069523/113866504959",
+   "chq": "",
+   "debit": 0,
+   "credit": 8973.49,
+   "balance": 41226.44
+  },
+  {
+   "date": "2026-08-10",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID41883678/407819344310",
+   "chq": "",
+   "debit": 0,
+   "credit": 14609.88,
+   "balance": 55836.32
+  },
+  {
+   "date": "2026-08-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 27700,
+   "balance": 83536.32
+  },
+  {
+   "date": "2026-08-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N6225601254",
+   "chq": "",
+   "debit": 41426.62,
+   "credit": 0,
+   "balance": 42109.7
+  },
+  {
+   "date": "2026-08-12",
+   "narration": "IMPS/P2A/872282941332/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 13374.22,
+   "credit": 0,
+   "balance": 28735.48
+  },
+  {
+   "date": "2026-08-13",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID04214221/954215746808",
+   "chq": "",
+   "debit": 0,
+   "credit": 17379.69,
+   "balance": 46115.17
+  },
+  {
+   "date": "2026-08-14",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID78650344/062571242632",
+   "chq": "",
+   "debit": 0,
+   "credit": 14481.79,
+   "balance": 60596.96
+  },
+  {
+   "date": "2026-08-14",
+   "narration": "BILLPAY/TNPDCL/635688078/EB BILL",
+   "chq": "",
+   "debit": 14961.88,
+   "credit": 0,
+   "balance": 45635.08
+  },
+  {
+   "date": "2026-08-15",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID48993462/836648238595",
+   "chq": "",
+   "debit": 0,
+   "credit": 21178.34,
+   "balance": 66813.42
+  },
+  {
+   "date": "2026-08-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N2442553997",
+   "chq": "",
+   "debit": 11068.1,
+   "credit": 0,
+   "balance": 55745.32
+  },
+  {
+   "date": "2026-08-16",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID71449558/304403688622",
+   "chq": "",
+   "debit": 0,
+   "credit": 13834.52,
+   "balance": 69579.84
+  },
+  {
+   "date": "2026-08-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 22000,
+   "balance": 91579.84
+  },
+  {
+   "date": "2026-08-18",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID56229812/113141958157",
+   "chq": "",
+   "debit": 0,
+   "credit": 23026.32,
+   "balance": 114606.16
+  },
+  {
+   "date": "2026-08-19",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID83007591/484367946865",
+   "chq": "",
+   "debit": 0,
+   "credit": 14024.33,
+   "balance": 128630.49
+  },
+  {
+   "date": "2026-08-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N8009672193",
+   "chq": "",
+   "debit": 44388.64,
+   "credit": 0,
+   "balance": 84241.85
+  },
+  {
+   "date": "2026-08-19",
+   "narration": "GST PMT CBIC CPIN 97560131797800",
+   "chq": "",
+   "debit": 12648.5,
+   "credit": 0,
+   "balance": 71593.35
+  },
+  {
+   "date": "2026-08-20",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID35381557/720896751714",
+   "chq": "",
+   "debit": 0,
+   "credit": 23123.47,
+   "balance": 94716.82
+  },
+  {
+   "date": "2026-08-21",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID88419729/333220390522",
+   "chq": "",
+   "debit": 0,
+   "credit": 10409.35,
+   "balance": 105126.17
+  },
+  {
+   "date": "2026-08-22",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID43960303/492065760175",
+   "chq": "",
+   "debit": 0,
+   "credit": 8227.21,
+   "balance": 113353.38
+  },
+  {
+   "date": "2026-08-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N2064935035",
+   "chq": "",
+   "debit": 20275.53,
+   "credit": 0,
+   "balance": 93077.85
+  },
+  {
+   "date": "2026-08-22",
+   "narration": "IMPS/P2A/250110052124/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 15451.24,
+   "credit": 0,
+   "balance": 77626.61
+  },
+  {
+   "date": "2026-08-23",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID60859762/676795023778",
+   "chq": "",
+   "debit": 0,
+   "credit": 13615.23,
+   "balance": 91241.84
+  },
+  {
+   "date": "2026-08-24",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID85309102/743093556458",
+   "chq": "",
+   "debit": 0,
+   "credit": 9059.47,
+   "balance": 100301.31
+  },
+  {
+   "date": "2026-08-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 39700,
+   "balance": 140001.31
+  },
+  {
+   "date": "2026-08-25",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID08014545/236113082787",
+   "chq": "",
+   "debit": 0,
+   "credit": 19596.08,
+   "balance": 159597.39
+  },
+  {
+   "date": "2026-08-26",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID59607216/086310822463",
+   "chq": "",
+   "debit": 0,
+   "credit": 13796.62,
+   "balance": 173394.01
+  },
+  {
+   "date": "2026-08-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N0221106564",
+   "chq": "",
+   "debit": 36402.61,
+   "credit": 0,
+   "balance": 136991.4
+  },
+  {
+   "date": "2026-08-27",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID51329045/052031994307",
+   "chq": "",
+   "debit": 0,
+   "credit": 22506.72,
+   "balance": 159498.12
+  },
+  {
+   "date": "2026-08-27",
+   "narration": "IMPS/P2A/198621927581/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 207000,
+   "credit": 0,
+   "balance": -47501.88
+  },
+  {
+   "date": "2026-08-28",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID89135984/554490064897",
+   "chq": "",
+   "debit": 0,
+   "credit": 24674.31,
+   "balance": -22827.57
+  },
+  {
+   "date": "2026-08-29",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID52375138/208938276234",
+   "chq": "",
+   "debit": 0,
+   "credit": 25938.85,
+   "balance": 3111.28
+  },
+  {
+   "date": "2026-08-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0595163275",
+   "chq": "",
+   "debit": 25279.53,
+   "credit": 0,
+   "balance": -22168.25
+  },
+  {
+   "date": "2026-08-31",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID74819054/856479144000",
+   "chq": "",
+   "debit": 0,
+   "credit": 18563.83,
+   "balance": -3604.42
+  },
+  {
+   "date": "2026-08-31",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 30100,
+   "balance": 26495.58
+  },
+  {
+   "date": "2026-09-01",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID70697139/158272856269",
+   "chq": "",
+   "debit": 0,
+   "credit": 8529.11,
+   "balance": 35024.69
+  },
+  {
+   "date": "2026-09-01",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N0156547287",
+   "chq": "",
+   "debit": 23514.61,
+   "credit": 0,
+   "balance": 11510.08
+  },
+  {
+   "date": "2026-09-02",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID53929008/103724088683",
+   "chq": "",
+   "debit": 0,
+   "credit": 16487.58,
+   "balance": 27997.66
+  },
+  {
+   "date": "2026-09-02",
+   "narration": "IMPS/P2A/085904578570/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 14188.81,
+   "credit": 0,
+   "balance": 13808.85
+  },
+  {
+   "date": "2026-09-02",
+   "narration": "IMPS/P2A/703634329873/K SUBRAMANIAN/SHOP RENT SEP",
+   "chq": "",
+   "debit": 38000,
+   "credit": 0,
+   "balance": -24191.15
+  },
+  {
+   "date": "2026-09-03",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID57726990/792569008992",
+   "chq": "",
+   "debit": 0,
+   "credit": 25955.09,
+   "balance": 1763.94
+  },
+  {
+   "date": "2026-09-03",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 40900,
+   "balance": 42663.94
+  },
+  {
+   "date": "2026-09-04",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID97554567/617240050246",
+   "chq": "",
+   "debit": 0,
+   "credit": 14628.05,
+   "balance": 57291.99
+  },
+  {
+   "date": "2026-09-05",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID94254771/181240091770",
+   "chq": "",
+   "debit": 0,
+   "credit": 14077.75,
+   "balance": 71369.74
+  },
+  {
+   "date": "2026-09-05",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N1362620346",
+   "chq": "",
+   "debit": 19400.93,
+   "credit": 0,
+   "balance": 51968.81
+  },
+  {
+   "date": "2026-09-05",
+   "narration": "ACH D- CHOLAMANDALAM FINANCE-LN1681015",
+   "chq": "",
+   "debit": 21640,
+   "credit": 0,
+   "balance": 30328.81
+  },
+  {
+   "date": "2026-09-06",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID28629521/323931714145",
+   "chq": "",
+   "debit": 0,
+   "credit": 15097.54,
+   "balance": 45426.35
+  },
+  {
+   "date": "2026-09-07",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID98584923/271364200392",
+   "chq": "",
+   "debit": 0,
+   "credit": 9201.35,
+   "balance": 54627.7
+  },
+  {
+   "date": "2026-09-07",
+   "narration": "NEFT DR-SALARY SEP-PRAKASH R",
+   "chq": "",
+   "debit": 13854.91,
+   "credit": 0,
+   "balance": 40772.79
+  },
+  {
+   "date": "2026-09-07",
+   "narration": "NEFT DR-SALARY SEP-SELVI M",
+   "chq": "",
+   "debit": 13962.91,
+   "credit": 0,
+   "balance": 26809.88
+  },
+  {
+   "date": "2026-09-07",
+   "narration": "NEFT DR-SALARY SEP-KARTHIK S",
+   "chq": "",
+   "debit": 13078.61,
+   "credit": 0,
+   "balance": 13731.27
+  },
+  {
+   "date": "2026-09-07",
+   "narration": "NEFT DR-SALARY SEP-MUTHU LAKSHMI P",
+   "chq": "",
+   "debit": 14424.52,
+   "credit": 0,
+   "balance": -693.25
+  },
+  {
+   "date": "2026-09-08",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID58812749/375016409223",
+   "chq": "",
+   "debit": 0,
+   "credit": 14439.56,
+   "balance": 13746.31
+  },
+  {
+   "date": "2026-09-08",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N6335685169",
+   "chq": "",
+   "debit": 9515.95,
+   "credit": 0,
+   "balance": 4230.36
+  },
+  {
+   "date": "2026-09-09",
+   "narration": "ATM WDL/TRICHY CANTONMENT/214248",
+   "chq": "",
+   "debit": 6000,
+   "credit": 0,
+   "balance": -1769.64
+  },
+  {
+   "date": "2026-09-10",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID55305363/692606063894",
+   "chq": "",
+   "debit": 0,
+   "credit": 9319.31,
+   "balance": 7549.67
+  },
+  {
+   "date": "2026-09-10",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 29200,
+   "balance": 36749.67
+  },
+  {
+   "date": "2026-09-11",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID97808742/633721790436",
+   "chq": "",
+   "debit": 0,
+   "credit": 8324.63,
+   "balance": 45074.3
+  },
+  {
+   "date": "2026-09-12",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID94064023/884173580828",
+   "chq": "",
+   "debit": 0,
+   "credit": 8310.91,
+   "balance": 53385.21
+  },
+  {
+   "date": "2026-09-12",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N1814292861",
+   "chq": "",
+   "debit": 45030.43,
+   "credit": 0,
+   "balance": 8354.78
+  },
+  {
+   "date": "2026-09-12",
+   "narration": "IMPS/P2A/795857661721/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 19612.01,
+   "credit": 0,
+   "balance": -11257.23
+  },
+  {
+   "date": "2026-09-14",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID83600709/691783271944",
+   "chq": "",
+   "debit": 0,
+   "credit": 24302.46,
+   "balance": 13045.23
+  },
+  {
+   "date": "2026-09-15",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID50445028/388032436354",
+   "chq": "",
+   "debit": 0,
+   "credit": 22706.9,
+   "balance": 35752.13
+  },
+  {
+   "date": "2026-09-15",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N1792910660",
+   "chq": "",
+   "debit": 13531.84,
+   "credit": 0,
+   "balance": 22220.29
+  },
+  {
+   "date": "2026-09-16",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID79943463/148118501806",
+   "chq": "",
+   "debit": 0,
+   "credit": 13954.62,
+   "balance": 36174.91
+  },
+  {
+   "date": "2026-09-17",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID72693944/363168362419",
+   "chq": "",
+   "debit": 0,
+   "credit": 17775.54,
+   "balance": 53950.45
+  },
+  {
+   "date": "2026-09-17",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 20200,
+   "balance": 74150.45
+  },
+  {
+   "date": "2026-09-18",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID74411677/775976597241",
+   "chq": "",
+   "debit": 0,
+   "credit": 23083.03,
+   "balance": 97233.48
+  },
+  {
+   "date": "2026-09-19",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID62812551/544194475743",
+   "chq": "",
+   "debit": 0,
+   "credit": 9707.5,
+   "balance": 106940.98
+  },
+  {
+   "date": "2026-09-19",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N2925826680",
+   "chq": "",
+   "debit": 25773.89,
+   "credit": 0,
+   "balance": 81167.09
+  },
+  {
+   "date": "2026-09-19",
+   "narration": "ATM WDL/TRICHY CANTONMENT/531154",
+   "chq": "",
+   "debit": 10000,
+   "credit": 0,
+   "balance": 71167.09
+  },
+  {
+   "date": "2026-09-19",
+   "narration": "GST PMT CBIC CPIN 83156429361265",
+   "chq": "",
+   "debit": 10095.24,
+   "credit": 0,
+   "balance": 61071.85
+  },
+  {
+   "date": "2026-09-20",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID24639942/922517677573",
+   "chq": "",
+   "debit": 0,
+   "credit": 9142.82,
+   "balance": 70214.67
+  },
+  {
+   "date": "2026-09-21",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID47258189/932290916171",
+   "chq": "",
+   "debit": 0,
+   "credit": 18066.74,
+   "balance": 88281.41
+  },
+  {
+   "date": "2026-09-21",
+   "narration": "NEFT CR-HDFC0000412-BHEL STAFF CLUB-BULK ORDER",
+   "chq": "",
+   "debit": 0,
+   "credit": 51560.54,
+   "balance": 139841.95
+  },
+  {
+   "date": "2026-09-22",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID76302972/023289120960",
+   "chq": "",
+   "debit": 0,
+   "credit": 10443.71,
+   "balance": 150285.66
+  },
+  {
+   "date": "2026-09-22",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N8228313518",
+   "chq": "",
+   "debit": 14442.13,
+   "credit": 0,
+   "balance": 135843.53
+  },
+  {
+   "date": "2026-09-22",
+   "narration": "IMPS/P2A/961991325455/AAVIN DAIRY DISTRIBUTOR/MILK",
+   "chq": "",
+   "debit": 14223.64,
+   "credit": 0,
+   "balance": 121619.89
+  },
+  {
+   "date": "2026-09-23",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID81868316/194012464812",
+   "chq": "",
+   "debit": 0,
+   "credit": 23201.14,
+   "balance": 144821.03
+  },
+  {
+   "date": "2026-09-24",
+   "narration": "UPI SETTLEMENT/PAYTM PAYMENTS SERVICES/MID70599411/873231165417",
+   "chq": "",
+   "debit": 0,
+   "credit": 9959.44,
+   "balance": 154780.47
+  },
+  {
+   "date": "2026-09-24",
+   "narration": "BY CASH - TRICHY CANTONMENT BR",
+   "chq": "",
+   "debit": 0,
+   "credit": 40700,
+   "balance": 195480.47
+  },
+  {
+   "date": "2026-09-26",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID51069075/460007924552",
+   "chq": "",
+   "debit": 0,
+   "credit": 19317.02,
+   "balance": 214797.49
+  },
+  {
+   "date": "2026-09-26",
+   "narration": "NEFT DR-SBIN0007721-SRI MURUGAN FLOUR AND RAVA MILLS-N7084785064",
+   "chq": "",
+   "debit": 16267.58,
+   "credit": 0,
+   "balance": 198529.91
+  },
+  {
+   "date": "2026-09-27",
+   "narration": "UPI SETTLEMENT/BHARATPE/MID23235236/245362010249",
+   "chq": "",
+   "debit": 0,
+   "credit": 16656.18,
+   "balance": 215186.09
+  },
+  {
+   "date": "2026-09-27",
+   "narration": "IMPS/P2A/918768735214/R ANNAPOORANI/SELF TRF TO SB",
+   "chq": "",
+   "debit": 215000,
+   "credit": 0,
+   "balance": 186.09
+  },
+  {
+   "date": "2026-09-29",
+   "narration": "UPI SETTLEMENT/PHONEPE PVT LTD/MID88520533/176224564400",
+   "chq": "",
+   "debit": 0,
+   "credit": 8567.75,
+   "balance": 8753.84
+  },
+  {
+   "date": "2026-09-29",
+   "narration": "NEFT DR-IOBA0001290-KANNAN SUGAR AND JAGGERY TRADERS-N9447348919",
+   "chq": "",
+   "debit": 23907.22,
+   "credit": 0,
+   "balance": -15153.38
+  },
+  {
+   "date": "2026-09-30",
+   "narration": "SMS ALERT CHARGES FOR QTR INCL GST",
+   "chq": "",
+   "debit": 17.7,
+   "credit": 0,
+   "balance": -15171.08
+  },
+  {
+   "date": "2026-09-30",
+   "narration": "CASH HANDLING CHARGES INCL GST",
+   "chq": "",
+   "debit": 426.41,
+   "credit": 0,
+   "balance": -15597.49
+  }
+ ],
+ "forgedIndex": 491
+}

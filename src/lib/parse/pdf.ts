@@ -171,7 +171,7 @@ export function parseStatement(pdf: PdfText): Statement | null {
     for (const it of l.slice(used)) {
       if (AMT.test(it.str) && it.x >= amountStart) {
         const field = nearest(it), v = Math.abs(parseInr(it.str));
-        if (field === "balance") t.balance = suffix(it.str) === "dr" ? -v : v;
+        if (field === "balance") t.balance = suffix(it.str) === "dr" || it.str.trim().startsWith("-") ? -v : v; // overdraft: "Dr" or a minus sign
         else if (field === "amount") { amount = v; mark = suffix(it.str) ?? mark; }
         else t[field] = v;
         t.fontNames!.push(`${field === "amount" ? "credit" : field}:${it.font}`);

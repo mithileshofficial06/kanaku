@@ -37,6 +37,16 @@ describe("blind statement: unseen layout and business", () => {
     expect(r.flags.filter((f) => f.severity === "critical")).toEqual([]);
   });
 
+  it("reads overdrawn balances (printed Dr) without inventing tampering", async () => {
+    const od = join(dir, "overdraft");
+    const t = JSON.parse(readFileSync(join(od, "truth.json"), "utf8")) as typeof truth;
+    const r = await runPipeline({ statement: new Uint8Array(readFileSync(join(od, "annapoorna-clean.pdf"))), profile });
+    expect(t.rows.some((x) => x.balance < 0)).toBe(true);
+    expect(r.txns.map((x) => x.balance)).toEqual(t.rows.map((x) => x.balance));
+    expect(r.flags.map((f) => f.code)).not.toContain("tamper_chain");
+    expect(r.decision.verdict).not.toBe("refer");
+  });
+
   it("refers the forged copy with all three tamper signals on the edited row", async () => {
     const r = await run("annapoorna-forged.pdf");
     expect(r.decision.verdict).toBe("refer");
