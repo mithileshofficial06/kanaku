@@ -12,6 +12,14 @@ const SAMPLES = [
   { id: "arun-auto-spares", name: "Arun Auto Spares", city: "Coimbatore", tag: "Under stress", line: "Cash-heavy, two loans, recent bounces" },
   { id: "sri-lakshmi-traders", name: "Sri Lakshmi Traders", city: "Salem", tag: "Suspicious file", line: "Big turnover on paper, money keeps coming back" },
 ];
+// The same business (Arun Auto Spares) printed in other layouts: proof the reader is not tied to one format.
+const FORMATS = [
+  { file: "layout-a.pdf", name: "Two date columns", line: "Txn and value dates, 1 Apr 2026 style, descriptions wrapped over two lines", how: "Layout reader" },
+  { file: "layout-b.pdf", name: "Short dates", line: "dd/mm/yy dates, value date after the reference, Withdrawal Amt. headers", how: "Layout reader" },
+  { file: "layout-c.pdf", name: "Newest first, Dr/Cr", line: "One amount column with a Dr/Cr marker, balances ending in Cr", how: "Layout reader" },
+  { file: "layout-d-ai.pdf", name: "Unknown layout", line: "Headers no rule understands. The AI reads the rows; the balance chain decides whether to trust them", how: "AI reader, about 20 s" },
+  { file: "scanned.pdf", name: "Scanned image", line: "No text layer. Kanaku refuses it and says why, instead of guessing", how: "Refused" },
+];
 const STAGES = ["Reading the PDF row by row", "Labelling every transaction", "Re-adding every balance", "Hunting round trips and month-end cash", "Lining up bank, GST and ITR", "Sizing the loan", "Building the Path to Yes"];
 
 function Loading() {
@@ -52,6 +60,8 @@ export default function AnalyzeApp() {
   const [pdfUrl, setPdfUrl] = useState<string>();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [errorAt, setErrorAt] = useState<"upload" | "formats">("upload");
+  useEffect(() => { if (error && !loading) document.querySelector('[role="alert"]')?.scrollIntoView({ behavior: "smooth", block: "center" }); }, [error, loading]);
   const [files, setFiles] = useState<{ statement?: File; gst?: File; itr?: File }>({});
   const started = useRef<string | null>(null);
 
@@ -73,6 +83,15 @@ export default function AnalyzeApp() {
     finish(fetch("/api/analyze", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ sampleId: id }) }), `/samples/${id}/statement.pdf`);
   }, [finish]);
 
+  const runFormat = useCallback(async (file: string) => {
+    setErrorAt("formats");
+    const blob = await (await fetch(`/samples/formats/${file}`)).blob();
+    const fd = new FormData();
+    fd.set("statement", new File([blob], file, { type: "application/pdf" }));
+    fd.set("businessName", "Arun Auto Spares"); fd.set("city", "Coimbatore"); fd.set("loanRequested", "500000"); fd.set("tenureMonths", "36"); fd.set("vintageYears", "4"); fd.set("purpose", "Stock up on two-wheeler spares");
+    finish(fetch("/api/analyze", { method: "POST", body: fd }), `/samples/formats/${file}`);
+  }, [finish]);
+
   useEffect(() => {
     const s = params.get("sample");
     if (s && started.current !== s && SAMPLES.some((x) => x.id === s)) { started.current = s; runSample(s); }
@@ -80,6 +99,7 @@ export default function AnalyzeApp() {
 
   const submit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setErrorAt("upload");
     if (!files.statement) { setError("Add a bank statement PDF."); return; }
     const fd = new FormData(e.currentTarget);
     fd.set("statement", files.statement);
@@ -105,7 +125,7 @@ export default function AnalyzeApp() {
         <div className="mx-auto max-w-[1400px] px-5 pb-20 pt-10 md:px-10">
           <p className="label text-ivory/70">Step 1 of 1</p>
           <SplitChars as="h1" text="Open a file." className="display mt-4 block text-7xl md:text-9xl" />
-          <p className="serif mt-6 max-w-2xl text-xl italic text-ivory/85">Pick a sample business to see Kanaku work instantly, or upload your own statement. Only text-based PDF statements are supported.</p>
+          <p className="serif mt-6 max-w-2xl text-xl italic text-ivory/85">Pick a sample business to see Kanaku work instantly, or upload your own statement. Text-based PDF statements from any bank work, including password-protected ones.</p>
         </div>
       </section>
       <section className="bg-ivory">
@@ -126,12 +146,33 @@ export default function AnalyzeApp() {
             ))}
           </div>
 
+          <div className="mt-20">
+            <p className="label text-crimson">Stress-test the reader</p>
+            <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+              <h2 className="display text-5xl text-crimson">Other bank layouts</h2>
+              <p className="max-w-xl text-ink-muted">The same stressed business, printed the way different banks print statements. Each should give the same answer: ₹1.25L now, with a Path to Yes.</p>
+            </div>
+            {error && errorAt === "formats" && <p role="alert" className="mt-6 border-l-4 border-red bg-red-soft p-4 text-sm text-red">{error}</p>}
+            <div className="mt-6 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-5">
+              {FORMATS.map((x) => (
+                <button key={x.file} onClick={() => runFormat(x.file)} className="group flex flex-col justify-between bg-ivory p-6 text-left transition-colors hover:bg-crimson hover:text-ivory">
+                  <span>
+                    <span className="label text-[10px] opacity-70">{x.how}</span>
+                    <span className="serif mt-3 block text-xl font-semibold">{x.name}</span>
+                    <span className="mt-2 block text-sm opacity-80">{x.line}</span>
+                  </span>
+                  <span className="mt-6 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em]">Run <Arrow className="transition-transform group-hover:translate-x-1" /></span>
+                </button>
+              ))}
+            </div>
+          </div>
+
           <div className="mt-20 grid gap-12 lg:grid-cols-[1fr_1.4fr]">
             <div>
               <p className="label text-crimson">Or upload your own</p>
               <h2 className="display mt-3 text-5xl text-crimson">Your documents</h2>
               <p className="mt-4 max-w-md text-ink-muted">Files are processed for this analysis only and are not stored. Never upload real customer data to a public demo: use synthetic or your own test files.</p>
-              {error && <p role="alert" className="mt-6 border-l-4 border-red bg-red-soft p-4 text-sm text-red">{error}</p>}
+              {error && errorAt === "upload" && <p role="alert" className="mt-6 border-l-4 border-red bg-red-soft p-4 text-sm text-red">{error}</p>}
             </div>
             <form onSubmit={submit} className="space-y-6">
               <div className="grid gap-px bg-line sm:grid-cols-3">
