@@ -183,7 +183,8 @@ export function analyze(st: Statement, profile: BusinessProfile, gst?: GstMonth[
   }
   const custTotals = new Map<string, { v: number; label: string; ids: string[] }>();
   for (const t of tx.filter((t) => t.cat === "sales_digital" && clean(t) && t.cpKey)) { const c = custTotals.get(t.cpKey) ?? { v: 0, label: t.cp, ids: [] }; c.v += t.credit; c.ids.push(t.id); custTotals.set(t.cpKey, c); }
-  const digitalTotal = sum([...custTotals.values()].map((c) => c.v));
+  // Share of ALL digital sales, including aggregator settlements that have no single named customer.
+  const digitalTotal = sum(tx.filter((t) => t.cat === "sales_digital" && clean(t)).map((t) => t.credit));
   const top = [...custTotals.values()].sort((a, b) => b.v - a.v)[0];
   if (top && digitalTotal && top.v / digitalTotal > POLICY.concentrationPct)
     flags.push({ code: "concentration", severity: "medium", title: `${Math.round((top.v / digitalTotal) * 100)}% of digital sales come from one customer`, detail: `${top.label} pays most of the business's digital income. Losing this customer would hit repayment capacity.`, evidence: rows(top.ids.slice(0, 20)) });

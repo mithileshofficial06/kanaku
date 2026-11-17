@@ -18,32 +18,49 @@ export function cpKey(name: string): string {
   return toks.slice(0, 2).join(" ");
 }
 
+// Payment aggregators settle many customers' payments in one credit: they are a channel, not a customer.
+// "SETTLEMENT" alone is not enough: a party paying back money also writes it ("RTGS CR-SRI BALAJI-SETTLEMENT").
+const AGGREGATOR = /(?:UPI|POS|MERCHANT|PG|CARD|QR)\s*SETT|PAYTM|PHONEPE|BHARATPE|RAZORPAY|PINE ?LABS|CCAVENUE|CASHFREE|MSWIPE|PAYU|BILLDESK|GOOGLE ?PAY|AMAZON ?PAY/;
+const IFSC = /^[A-Z]{4}0[A-Z0-9]{6}$/;
+
 function counterparty(n: string): string {
+  if (AGGREGATOR.test(n)) return "";
   const upi = /^UPI\/(?:CR|DR)\/\d+\/([^/]+)/.exec(n);
   if (upi) return upi[1].trim();
-  const neft = /^(?:NEFT|RTGS|IMPS)\s*(?:CR|DR)-([^-]+)/.exec(n);
-  if (neft) return neft[1].trim();
-  const ach = /ACH\s*D-\s*([A-Z ]+?)(?:-|\s+LTD|$)/.exec(n);
+  const p2a = /^IMPS\/P2[AP]\/\d+\/([^/]+)/.exec(n);
+  if (p2a) return p2a[1].trim();
+  // NEFT DR-SBIN0007721-SRI MURUGAN FLOUR MILLS-N123: skip the IFSC code to reach the name
+  const neft = /^(?:NEFT|RTGS|IMPS)\s*(?:CR|DR)?\s*-\s*(.+)$/.exec(n);
+  if (neft) return (neft[1].split("-").map((s) => s.trim()).find((s) => s && !IFSC.test(s)) ?? "").trim();
+  const ach = /(?:ACH|NACH|ECS)\s*(?:D|DR)?\s*-\s*([A-Z ]+?)(?:-|\s+LTD|$)/.exec(n);
   if (ach) return ach[1].trim();
   return "";
 }
 
+const LENDER = /FINANCE|FINSERV|FINCORP|CAPITAL|LOAN|CREDIT|HOUSING|NBFC|LENDING|\bLN\s?\d|\bBANK\b/;
 const RULES: [RegExp, Category, "cr" | "dr" | "any"][] = [
-  [/RTN|RETURN|BOUNCE|DISHON/, "bounce", "dr"],
+  [/RTN|RETURN|BOUNCE|DISHON|INSUFF/, "bounce", "dr"],
   [/\bEMI\b|LOAN.*(?:EMI|INST)/, "emi", "dr"],
+  // Auto-debits to a lender are loan repayments even when the word EMI is missing
+  [new RegExp(`(?:ACH|NACH|ECS|\\bSI\\b)[^A-Z]*(?:D|DR)?\\b.*(?:${LENDER.source})`), "emi", "dr"],
   [/LOAN DISB|DISBURS/, "loan_in", "cr"],
-  [/\bREV\b|REVERSAL|REFUND/, "reversal", "cr"],
+  // A returned debit coming back is not income
+  [/\bREV\b|REVERSAL|REVERSED|REFUND|RTN|RETURN/, "reversal", "cr"],
   [/INT\.?\s?PD|INTEREST/, "interest", "cr"],
-  [/CASH DEP|CASH DEPOSIT/, "sales_cash", "cr"],
-  [/^UPI\/CR|^(NEFT|RTGS|IMPS)\s*CR/, "sales_digital", "cr"],
+  [/CASH DEP|CASH DEPOSIT|BY CASH|CASH CR|CDM|CSH DEP|^CASH\b/, "sales_cash", "cr"],
+  [AGGREGATOR, "sales_digital", "cr"],
+  [/^UPI|\bUPI\b|^(NEFT|RTGS|IMPS)|BY TRANSFER|BY CLG|CLEARING|CHQ DEP|CHEQUE DEP|INWARD/, "sales_digital", "cr"],
   [/SALARY|WAGES|PAYROLL/, "salary", "dr"],
   [/RENT/, "rent", "dr"],
-  [/ELECTRIC|BILLPAY|WATER|TELECOM|BROADBAND/, "utility", "dr"],
-  [/GST PMT|CBIC|CBDT|TDS|TAX/, "tax", "dr"],
-  [/DRAWINGS|SELF TRANSFER/, "drawings", "dr"],
-  [/CASH WDL|ATM WDL|CASH WITHDRAWAL/, "cash_out", "dr"],
-  [/^(NEFT|RTGS|IMPS)\s*DR|^UPI\/DR/, "supplier", "dr"],
+  [/ELECTRIC|BILLPAY|WATER|TELECOM|BROADBAND|TNEB|TNPDCL|BESCOM|MSEDCL|EB BILL|\bGAS\b|AIRTEL|JIO|BSNL|VODAFONE|RECHARGE/, "utility", "dr"],
+  [/GST PMT|CBIC|CBDT|TDS|TAX PAY|INCOME TAX|ADVANCE TAX/, "tax", "dr"],
+  [/CASH WDL|ATM WDL|ATM CASH|CASH WITHDRAWAL|\bATW\b|NWD/, "cash_out", "dr"],
+  [/DRAWINGS|SELF TRANSFER|SELF TRF|TO SB\b|OWN A\/?C|PERSONAL A\/?C/, "drawings", "dr"],
+  [/^(NEFT|RTGS|IMPS)|^UPI|\bUPI\b|^POS\b|PURCHASE|TO TRANSFER|TRF TO/, "supplier", "dr"],
 ];
+
+/** Narration with reference numbers removed, so repeated transactions of one kind share a key. */
+export const narrKey = (n: string) => n.toUpperCase().replace(/[A-Z]*\d[A-Z0-9]*/g, "#").replace(/\s+/g, " ").trim();
 
 export function categorise(t: Txn, llmHint?: Category): ETxn {
   const n = t.narration.toUpperCase();
@@ -54,7 +71,7 @@ export function categorise(t: Txn, llmHint?: Category): ETxn {
   const cp = counterparty(n);
   const e: ETxn = { ...t, cat, cp, cpKey: cpKey(cp) };
   if (cat === "emi" || cat === "bounce") {
-    const lender = /(?:ACH\s*(?:D-|RTN CHGS-)\s*)([A-Z ]+?)(?:\s+LTD|-|\s+EMI)/.exec(n)?.[1]?.trim() ?? cp;
+    const lender = /(?:(?:ACH|NACH|ECS)\s*(?:D-|DR-|RTN CHGS-)\s*)([A-Z ]+?)(?:\s+LTD|-|\s+EMI|\s+RETURN|$)/.exec(n)?.[1]?.trim() || cp;
     const num = /EMI\s*(\d{3,})/.exec(n)?.[1] ?? "";
     e.loanRef = `${lender} ${num}`.trim();
   }
