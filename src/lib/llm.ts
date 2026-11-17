@@ -159,7 +159,7 @@ export function verify(text: string, r: Report, source: Verified["source"], mode
 // ------------------------------------------------------------ memo
 const MEMO_SYS = `You are a senior credit analyst at an Indian NBFC writing an underwriting memo for a small-business loan.
 Rules:
-- Use ONLY the facts in the JSON. Never calculate new numbers; copy figures exactly as given (you may write them as ₹X.XL or ₹X,XX,XXX).
+- Use ONLY the facts in the JSON. Never calculate new numbers, and never add, subtract or combine figures (for example, do not total two EMIs); copy figures exactly as given (you may write them as ₹X.XL or ₹X,XX,XXX).
 - After every claim that comes from evidence, cite it in square brackets using the evidence tags exactly as given, e.g. [R175] or [GST 2026-03] or [ITR] or [PDF-META].
 - The ONLY valid tags are row IDs (R followed by digits), one GST month each (GST YYYY-MM), ITR and PDF-META. Never put JSON field or section names in brackets (no [metrics], [eligibility], [pathToYes], [decision]); figures computed by the engine need no tag. Put a tag only right after a claim about that specific row, GST month, ITR or PDF file; never after the loan request, eligibility, surplus, EMI room, DSCR, averages or other totals. Never write a range such as [GST 2025-11 to GST 2026-04]; cite one or two single months instead.
 - Plain, direct English a business owner can follow. No hype.
@@ -167,10 +167,18 @@ Rules:
 - If the decision verdict is "refer", the Path to Yes section must say only that no offer is made until the integrity issues are resolved, and what the borrower must provide (a statement fetched directly from the bank, for example through the Account Aggregator network, and explanations for the flagged items). Do not list amounts there.
 - Under 350 words. Use "- " bullets inside sections.`;
 
+/** Tells the model which documents exist, so it never cites a GST month or ITR that was not provided. */
+function docsNote(r: Report): string {
+  const have = ["the bank statement (row tags R1, R2, ...; PDF-META)", r.gst?.length ? "GST returns (GST YYYY-MM tags)" : "", r.itr ? "an ITR (ITR tag)" : ""].filter(Boolean);
+  const missing = [!r.gst?.length ? "GST" : "", !r.itr ? "ITR" : ""].filter(Boolean);
+  return `
+- Documents provided: ${have.join(", ")}.${missing.length ? ` No ${missing.join(" or ")} was provided: never use ${missing.join(" or ")} tags.` : ""}`;
+}
+
 export async function writeMemo(r: Report): Promise<Verified> {
   if (!ai()) return verify(templateMemo(r), r, "template");
   try {
-    const text = await chat(SMART, MEMO_SYS, JSON.stringify(facts(r)), 1200);
+    const text = await chat(SMART, MEMO_SYS + docsNote(r), JSON.stringify(facts(r)), 1200);
     if (!text) throw new Error("empty");
     return verify(text, r, "llm", SMART);
   } catch (e) {
@@ -222,6 +230,6 @@ export async function answer(r: Report, question: string): Promise<Verified> {
     return verify(text, r, "template");
   }
   const sys = "You answer a loan officer's question about one underwriting file. Use only the facts and rows given. Never compute new numbers; quote figures exactly. Cite row IDs or tags in square brackets after each claim, e.g. [R12]. If the facts do not answer the question, say so. Under 150 words.";
-  const text = await chat(SMART, sys, `FACTS:\n${JSON.stringify(facts(r))}\n\nRELEVANT ROWS:\n${rows || "(none)"}\n\nQUESTION: ${question}`, 600);
+  const text = await chat(SMART, sys + docsNote(r), `FACTS:\n${JSON.stringify(facts(r))}\n\nRELEVANT ROWS:\n${rows || "(none)"}\n\nQUESTION: ${question}`, 600);
   return verify(text, r, "llm", SMART);
 }
