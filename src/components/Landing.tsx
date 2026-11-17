@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 import { FEATURES } from "@/lib/features";
-import { Arrow, Btn, Counter, EASE, Marquee, Reveal, Rule, SplitChars, SplitWords, useCycle } from "./motion";
+import { Arrow, Btn, Counter, Marquee, Reveal, Rule, SplitChars, SplitWords, useCycle } from "./motion";
 import { Footer } from "./Nav";
 import { Hero, type HeroData } from "./Hero";
 

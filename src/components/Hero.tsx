@@ -43,7 +43,7 @@ function Scanner({ rows, play }: { rows: HeroRow[]; play: boolean }) {
         <span>Row</span><span>Narration</span><span className="text-right">Deposit</span><span className="text-right">Balance</span>
       </div>
       <div className="relative font-mono text-[10.5px]">
-        {rows.map((r, i) => (
+        {rows.map((r) => (
           <div key={r.id} className={`grid h-[28px] grid-cols-[46px_1fr_76px_84px] items-center gap-2 px-5 transition-colors duration-300 ${caught && r.bad ? "bg-red-soft text-red" : ""}`}>
             <span className="text-ink-muted">{r.id}</span>
             <span className="truncate">{r.narration}</span>
