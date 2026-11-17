@@ -53,7 +53,7 @@ export function Waterfall({ r }: { r: Report }) {
   const e = r.eligibility, m = r.metrics;
   const rows: { label: string; value: number; note: string; tone: string; evs?: Flag["evidence"] }[] = [
     { label: "Monthly sales into the bank", value: e.monthlyInflow, note: m.avgCash ? `digital ${lakh(m.avgDigital)} + cash ${lakh(m.avgCash)}` : "all digital", tone: "bg-crimson" },
-    { label: "Operating costs", value: -m.avgOpex, note: "suppliers, rent, wages, utilities, tax, drawings", tone: "bg-ink/30" },
+    { label: "Operating costs", value: -m.avgOpex, note: "suppliers, rent, wages, utilities, tax, half of owner drawings", tone: "bg-ink/30" },
     { label: "Surplus before EMIs", value: e.surplus, note: "what is left each month", tone: "bg-crimson-deep" },
     { label: `Safe EMI limit (surplus ÷ ${POLICY.minDscr})`, value: e.maxTotalEmi, note: `keeps a ${Math.round((POLICY.minDscr - 1) * 100)}% safety margin`, tone: "bg-crimson/70" },
     { label: "Existing EMIs", value: -e.existingEmi, note: m.loans.map((l) => l.lender).join(", ") || "none", tone: "bg-ink/30", evs: m.loans.flatMap((l) => l.rowIds.map((id) => ({ kind: "row" as const, id }))) },

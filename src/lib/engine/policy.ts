@@ -2,6 +2,12 @@
 export const POLICY = {
   /** Share of cash deposits counted as verified turnover for the turnover cap (cash cannot be traced to customers). */
   cashWeight: 0.5,
+  /**
+   * Share of the owner's transfers to their own account counted as household spending. The rest is treated as
+   * profit the owner is saving, which can service a loan. Counting all of it would make every owner who sweeps
+   * profit to a savings account look unable to repay.
+   */
+  drawingsWeight: 0.5,
   /** Minimum debt-service coverage: monthly surplus must cover all EMIs this many times. */
   minDscr: 1.25,
   /** Assumed annual interest rate for an unsecured MSME term loan. */

@@ -125,7 +125,7 @@ export function analyze(st: Statement, profile: BusinessProfile, gst?: GstMonth[
       month: m, credits: sum(mt.map((t) => t.credit)), debits: sum(mt.map((t) => t.debit)),
       digital: sum(mt.filter((t) => t.cat === "sales_digital" && clean(t)).map((t) => t.credit)),
       cash: sum(mt.filter((t) => t.cat === "sales_cash" && clean(t)).map((t) => t.credit)),
-      opex: sum(mt.filter((t) => OPEX.includes(t.cat) && clean(t)).map((t) => t.debit)),
+      opex: sum(mt.filter((t) => OPEX.includes(t.cat) && clean(t)).map((t) => (t.cat === "drawings" ? t.debit * POLICY.drawingsWeight : t.debit))),
       emi: sum(mt.filter((t) => t.cat === "emi").map((t) => t.debit)),
       closing: mt.at(-1)?.balance ?? bal, abb: daySum / monthLen(m),
     };

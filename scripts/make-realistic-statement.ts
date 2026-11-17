@@ -6,8 +6,8 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { PDFDocument, PDFFont, PDFPage, StandardFonts, rgb } from "pdf-lib";
 
-const OUT = join(process.cwd(), "test-data", "blind");
-let seed = 20261118;
+const OUT = process.env.OUT_DIR ?? join(process.cwd(), "test-data", "blind");
+let seed = Number(process.env.SEED ?? 20261118);
 const rnd = () => ((seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296);
 const between = (a: number, b: number) => a + rnd() * (b - a);
 const paise = (v: number) => Math.round(v * 100) / 100;
@@ -45,7 +45,7 @@ function build(): Row[] {
       if (rnd() < 0.05) add(date, `POS 4591XXXXXXXX3341 METRO WHOLESALE TRICHY`, between(3000, 14000), 0);
       if (rnd() < 0.04) add(date, `ATM WDL/TRICHY CANTONMENT/${digits(6)}`, Math.round(between(5, 10)) * 1000, 0);
       if (d === 2) add(date, `IMPS/P2A/${digits(12)}/K SUBRAMANIAN/SHOP RENT ${MON[m - 1].toUpperCase()}`, 38000, 0);
-      if (d === 5) add(date, `ACH D- CHOLAMANDALAM FINANCE-LN${digits(7)}`, 21640, 0);
+      if (d === 5) add(date, "ACH D- CHOLAMANDALAM FINANCE-LN1681015", 21640, 0);
       if (d === 7) for (const n of ["PRAKASH R", "SELVI M", "KARTHIK S", "MUTHU LAKSHMI P"]) add(date, `NEFT DR-SALARY ${MON[m - 1].toUpperCase()}-${n}`, between(12500, 16500), 0);
       if (d === 27) add(date, `IMPS/P2A/${digits(12)}/R ANNAPOORANI/SELF TRF TO SB`, Math.round(between(185000, 235000) * (festive > 1 ? 1.25 : 1) / 1000) * 1000, 0);
       if (d === 19) add(date, `GST PMT CBIC CPIN ${digits(14)}`, between(9000, 17000) * festive, 0);
@@ -58,7 +58,7 @@ function build(): Row[] {
     if (y === 2026 && m === 6) {
       add(iso(y, m, 5), "ACH D- CHOLAMANDALAM FINANCE RETURN-INSUFFICIENT FUNDS", 0, 21640);
       add(iso(y, m, 5), "ACH RETURN CHARGES INCL GST", 590, 0);
-      add(iso(y, m, 9), `ACH D- CHOLAMANDALAM FINANCE-LN${digits(7)}-REPRESENT`, 21640, 0);
+      add(iso(y, m, 9), "ACH D- CHOLAMANDALAM FINANCE-LN1681015-REPRESENT", 21640, 0);
     }
   }
   ev.sort((a, b) => a.date.localeCompare(b.date));
@@ -119,7 +119,7 @@ async function render(rows: Row[], forged: boolean) {
     const amtFont = forged && r.forged ? ft : f;
     if (r.debit) right(page, money(r.debit), X.wdl, y, amtFont);
     if (r.credit) right(page, money(r.credit), X.dep, y, amtFont);
-    right(page, `${money(r.balance)} Cr`, X.bal, y, f);
+    right(page, `${money(Math.abs(r.balance))} ${r.balance < 0 ? "Dr" : "Cr"}`, X.bal, y, f);
     y -= 13 + (lines.length - 1) * 8.5;
   }
   // Summary block after the table
