@@ -15,13 +15,27 @@ export function Reveal({ children, delay = 0, y = 28, className = "" }: { childr
   );
 }
 
-/** Headline that rises in character by character from a clipped baseline. */
-export function SplitChars({ text, className = "", delay = 0, stagger = 0.035, as = "span" }: { text: string; className?: string; delay?: number; stagger?: number; as?: "span" | "h1" | "h2" }) {
+/** True once the intro preloader has finished (or immediately when it is skipped). */
+export function useReady() {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    if (document.documentElement.dataset.ready === "1") { setReady(true); return; }
+    const on = () => setReady(true);
+    window.addEventListener("kanaku:ready", on);
+    const fallback = setTimeout(on, 4000);
+    return () => { window.removeEventListener("kanaku:ready", on); clearTimeout(fallback); };
+  }, []);
+  return ready;
+}
+
+/** Headline that rises in character by character from a clipped baseline. Pass `play` to control it instead of scroll. */
+export function SplitChars({ text, className = "", delay = 0, stagger = 0.035, as = "span", play }: { text: string; className?: string; delay?: number; stagger?: number; as?: "span" | "h1" | "h2"; play?: boolean }) {
   const Tag = motion[as];
   const words = text.split(" ");
   let i = 0;
+  const ctl = play === undefined ? { whileInView: "show", viewport: { once: true } } : { animate: play ? "show" : "hidden" };
   return (
-    <Tag className={className} initial="hidden" whileInView="show" viewport={{ once: true }} aria-label={text}>
+    <Tag className={className} initial="hidden" {...ctl} aria-label={text}>
       {words.map((w, wi) => (
         <span key={wi} className="inline-block overflow-hidden whitespace-nowrap align-bottom pb-[0.06em]" aria-hidden>
           {[...w].map((ch) => {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Anton, Fraunces, Geist_Mono, Inter_Tight } from "next/font/google";
 import "./globals.css";
+import Preloader from "@/components/Preloader";
 
 const display = Anton({ variable: "--nf-display", weight: "400", subsets: ["latin"] });
 const serif = Fraunces({ variable: "--nf-serif", subsets: ["latin"], style: ["normal", "italic"], axes: ["opsz"] });
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${serif.variable} ${body.variable} ${mono.variable} antialiased`}>{children}</body>
+      <body className={`${display.variable} ${serif.variable} ${body.variable} ${mono.variable} antialiased`}><Preloader />{children}</body>
     </html>
   );
 }
