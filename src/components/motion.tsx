@@ -6,10 +6,45 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 
 export const EASE = [0.22, 1, 0.36, 1] as const;
 
-/** Fade + rise when scrolled into view. */
-export function Reveal({ children, delay = 0, y = 28, className = "" }: { children: ReactNode; delay?: number; y?: number; className?: string }) {
+/**
+ * Auto-cycling highlight for a grid of tiles. While the cursor is outside the grid, the highlight moves to the
+ * next tile every `ms`. While the cursor is inside, the cycle pauses and the tile under the cursor is highlighted.
+ * On leaving, the cycle resumes from that tile. Tiles style themselves with `data-on` (e.g. `data-[on]:bg-crimson`,
+ * `group-data-[on]:text-ivory`). The cycle only runs while the grid is on screen.
+ */
+export function useCycle(count: number, ms = 3500) {
+  const ref = useRef<HTMLDivElement>(null);
+  const visible = useInView(ref, { margin: "-15% 0px" });
+  const [active, setActive] = useState(0);
+  const [inside, setInside] = useState(false);
+  const [hover, setHoverState] = useState<number | null>(null);
+  const hoverRef = useRef<number | null>(null);
+  const setHover = (i: number | null) => { hoverRef.current = i; setHoverState(i); };
+  useEffect(() => {
+    if (inside || !visible || count < 2) return;
+    const t = setInterval(() => setActive((a) => (a + 1) % count), ms);
+    return () => clearInterval(t);
+  }, [inside, visible, count, ms]);
+  const on = (i: number) => (inside ? hover === i : active === i);
+  return {
+    container: {
+      ref,
+      onPointerEnter: () => setInside(true),
+      onPointerLeave: () => { setInside(false); if (hoverRef.current !== null) setActive(hoverRef.current); setHover(null); },
+    },
+    item: (i: number) => ({
+      "data-on": on(i) || undefined,
+      onPointerEnter: () => setHover(i),
+      onFocus: () => { setInside(true); setHover(i); },
+      onBlur: () => { setInside(false); setActive(i); setHover(null); },
+    }),
+  };
+}
+
+/** Fade + rise when scrolled into view. Extra props (data-*, handlers) are passed to the element. */
+export function Reveal({ children, delay = 0, y = 28, className = "", ...rest }: { children: ReactNode; delay?: number; y?: number; className?: string } & Omit<React.HTMLAttributes<HTMLDivElement>, "children" | "className" | "onAnimationStart" | "onDrag" | "onDragStart" | "onDragEnd"> & { "data-on"?: boolean }) {
   return (
-    <motion.div className={className} initial={{ opacity: 0, y }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.8, delay, ease: EASE }}>
+    <motion.div {...(rest as object)} className={className} initial={{ opacity: 0, y }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.8, delay, ease: EASE }}>
       {children}
     </motion.div>
   );

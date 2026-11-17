@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 import { FEATURES } from "@/lib/features";
-import { Arrow, Btn, Counter, EASE, Marquee, Reveal, Rule, SplitChars, SplitWords } from "./motion";
+import { Arrow, Btn, Counter, EASE, Marquee, Reveal, Rule, SplitChars, SplitWords, useCycle } from "./motion";
 import { Footer } from "./Nav";
 import { Hero, type HeroData } from "./Hero";
 
@@ -95,24 +95,25 @@ function How() {
 }
 
 function Features() {
+  const cyc = useCycle(FEATURES.length);
   return (
     <section id="features" className="bg-crimson text-ivory grain">
       <div className="mx-auto max-w-[1400px] px-5 py-28 md:px-10">
         <p className="label text-ivory/70">Features</p>
         <SplitChars as="h2" text="Seven ways it earns trust." className="display mt-4 block text-6xl md:text-8xl" />
-        <div className="mt-16 grid gap-px bg-ivory/15 md:grid-cols-2 lg:grid-cols-4">
+        <div {...cyc.container} className="mt-16 grid gap-px bg-ivory/15 md:grid-cols-2 lg:grid-cols-4">
           {FEATURES.map((f, i) => (
             <Reveal key={f.slug} delay={(i % 4) * 0.08} className={i === 0 ? "lg:col-span-2" : ""}>
-              <Link href={`/features/${f.slug}`} className="group relative flex h-full min-h-[260px] flex-col justify-between overflow-hidden bg-crimson p-8">
-                <span className="absolute inset-0 translate-y-full bg-ivory transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] group-hover:translate-y-0" />
-                <div className="relative flex items-start justify-between transition-colors duration-300 group-hover:text-crimson">
-                  <span className="font-mono text-xs">{f.num}</span>
-                  <span className="label text-[10px] opacity-70">{f.kicker}</span>
+              <Link href={`/features/${f.slug}`} {...cyc.item(i)} className="group relative flex h-full min-h-[260px] flex-col justify-between overflow-hidden bg-crimson p-8">
+                <span className="absolute inset-0 translate-y-full bg-ivory transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] group-data-[on]:translate-y-0" />
+                <div className="relative flex items-start justify-between gap-4 transition-colors duration-300 group-data-[on]:text-crimson">
+                  <span className="shrink-0 font-mono text-xs">{f.num}</span>
+                  <span className="label text-right text-[10px] opacity-70">{f.kicker}</span>
                 </div>
-                <div className="relative transition-colors duration-300 group-hover:text-crimson">
+                <div className="relative transition-colors duration-300 group-data-[on]:text-crimson">
                   <h3 className={`display ${i === 0 ? "text-6xl md:text-7xl" : "text-4xl"}`}>{f.short}</h3>
                   <p className={`serif mt-3 italic leading-snug opacity-85 ${i === 0 ? "max-w-md text-xl" : "text-[15px]"}`}>{f.lede}</p>
-                  <span className="mt-6 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em]">Explore <Arrow className="transition-transform group-hover:translate-x-1" /></span>
+                  <span className="mt-6 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em]">Explore <Arrow className="transition-transform group-data-[on]:translate-x-1" /></span>
                 </div>
               </Link>
             </Reveal>
