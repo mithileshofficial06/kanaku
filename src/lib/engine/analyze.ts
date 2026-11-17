@@ -14,7 +14,7 @@ export type Verdict = "approve" | "approve_reduced" | "decline" | "refer";
 
 export interface Report {
   profile: BusinessProfile;
-  statement: { header: Statement["header"]; pages: number; txnCount: number; closing: number; pdfMeta?: Statement["pdfMeta"]; source: "parser" | "llm" };
+  statement: { header: Statement["header"]; pages: number; txnCount: number; closing: number; pdfMeta?: Statement["pdfMeta"]; source: "parser" | "llm"; checks?: { chainOk: number; aiLabelled: number; readModel?: string; labelModel?: string } };
   txns: ETxn[];
   monthly: MonthStat[];
   metrics: {

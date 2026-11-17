@@ -97,8 +97,32 @@ function Banner({ r, onBack }: { r: Report; onBack?: () => void }) {
             </motion.div>
           ))}
         </div>
+        {r.statement.checks && <Checks r={r} />}
       </div>
     </header>
+  );
+}
+
+/** Who did what on this file: the reader, the balance check, the AI's labelling and the memo. */
+function Checks({ r }: { r: Report }) {
+  const c = r.statement.checks!, n = r.statement.txnCount;
+  const short = (m?: string) => (m ?? "").split("/").pop();
+  const cells = [
+    { k: "Read by", v: r.statement.source === "llm" ? "AI reader" : "Layout reader", d: r.statement.source === "llm" ? `${short(c.readModel)} copied every cell; arithmetic decided money in or out` : "Columns mapped from the page layout, no AI needed" },
+    { k: "Balance chain", v: `${c.chainOk} of ${n} rows add up`, d: c.chainOk === n ? "Every row reconciles with the one before it" : `${n - c.chainOk} ${n - c.chainOk === 1 ? "row does" : "rows do"} not reconcile: see Red flags` },
+    { k: "AI labelling", v: c.aiLabelled ? `${c.aiLabelled} unclear narration${c.aiLabelled === 1 ? "" : "s"}` : "Not needed", d: c.aiLabelled ? `Labelled by ${short(c.labelModel)}; rules handled the rest` : "Rules recognised every narration" },
+    { k: "Memo and answers", v: "Written by AI, checked by code", d: "Every rupee figure and row citation is verified before display" },
+  ];
+  return (
+    <div className="mt-px grid gap-px bg-ivory/20 sm:grid-cols-2 lg:grid-cols-4">
+      {cells.map((x) => (
+        <div key={x.k} className="bg-crimson-deep p-5">
+          <p className="label text-[10px] text-ivory/60">{x.k}</p>
+          <p className={`serif mt-2 text-lg ${x.k === "Balance chain" && c.chainOk !== n ? "text-amber-soft" : ""}`}>{x.v}</p>
+          <p className="mt-1 text-xs text-ivory/70">{x.d}</p>
+        </div>
+      ))}
+    </div>
   );
 }
 

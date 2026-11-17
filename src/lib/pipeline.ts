@@ -3,7 +3,7 @@ import type { BusinessProfile } from "./types";
 import { assertHasText, chainScore, lines, parseGst, parseItr, parseStatement, readPdf, ReadError } from "./parse/pdf";
 import { analyze, type Report } from "./engine/analyze";
 import { categorise } from "./engine/categorise";
-import { categoriseLLM, extractStatementLLM, llmEnabled } from "./llm";
+import { categoriseLLM, extractStatementLLM, llmEnabled, modelNames } from "./llm";
 
 export interface Docs { statement: Uint8Array; gst?: Uint8Array; itr?: Uint8Array; profile: BusinessProfile; password?: string }
 
@@ -31,5 +31,12 @@ export async function runPipeline(d: Docs): Promise<Report> {
   const hints = await categoriseLLM(unknown).catch(() => ({}));
   const report = analyze(st, d.profile, gst, itr, hints);
   report.statement.source = source;
+  // What the AI did on this file, and how much of the statement reconciles, shown on the report.
+  report.statement.checks = {
+    chainOk: Math.round(chainScore(st.txns, st.header.openingBalance) * st.txns.length),
+    aiLabelled: Object.keys(hints).length,
+    readModel: source === "llm" ? modelNames().fast : undefined,
+    labelModel: Object.keys(hints).length ? modelNames().fast : undefined,
+  };
   return report;
 }
