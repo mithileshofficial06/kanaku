@@ -53,3 +53,8 @@
 
 ## Next step
 Day 2: build the engine modules with tests, committing after each module.
+
+## 18 Nov 2026: submitted
+- Demo video (4:15, 1080p60) on YouTube, unlisted: https://youtu.be/cCWbdKiyT6g; linked in README.
+- Arthaton form submitted (forms.gle/mdXFpDtq5R4inTbq8). Editable until 22 Nov 11:59 PM IST via the confirmation email link.
+- Rule: no pushes after 22 Nov 11:59 PM IST. Keep the repo public and the video up until results (by 30 Nov).
