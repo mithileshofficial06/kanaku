@@ -35,7 +35,8 @@ export async function POST(req: NextRequest) {
       vintageYears: num("vintageYears", 3), gstin: "", loanRequested: num("loanRequested", 500000), tenureMonths: Math.min(84, num("tenureMonths", 36)),
       purpose: String(form.get("purpose") || "Business loan").slice(0, 120), scenario: "healthy", tagline: "",
     };
-    const report = await runPipeline({ statement, gst: await file("gst"), itr: await file("itr"), profile });
+    const password = String(form.get("password") || "").slice(0, 64) || undefined;
+    const report = await runPipeline({ statement, gst: await file("gst"), itr: await file("itr"), profile, password });
     return NextResponse.json(report);
   } catch (e) {
     return NextResponse.json({ error: e instanceof Error ? e.message : "Analysis failed" }, { status: 422 });

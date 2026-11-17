@@ -9,7 +9,8 @@
     "lint": "eslint",
     "test": "vitest run",
     "gen:samples": "tsx scripts/generate-samples.ts",
-    "postinstall": "node -e \"require('fs').copyFileSync('node_modules/pdfjs-dist/build/pdf.worker.min.mjs','public/pdf.worker.min.mjs')\""
+    "postinstall": "node -e \"require('fs').copyFileSync('node_modules/pdfjs-dist/build/pdf.worker.min.mjs','public/pdf.worker.min.mjs')\"",
+    "gen:formats": "tsx scripts/generate-formats.ts"
   },
   "dependencies": {
     "motion": "^14.14.0",

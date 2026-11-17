@@ -49,12 +49,31 @@ function firstJson<T>(s: string): T | null {
 // ------------------------------------------------------------ extraction fallback
 /** Used only when the deterministic parser does not recognise a layout. The balance-chain check validates the result. */
 export async function extractStatementLLM(lines: string[]): Promise<Txn[] | null> {
+  // The AI only reads: it copies each row's cells as printed, in compact arrays, in small chunks read in
+  // parallel. Whether an amount is money in or out is then decided by the balance chain, not by the AI.
+  const SIZE = 50;
+  const starts = Array.from({ length: Math.ceil(lines.length / SIZE) }, (_, k) => k * SIZE);
+  type Cells = [string, string, string, string, string];
+  const chunks = await Promise.all(starts.map(async (i) => {
+    const chunk = lines.slice(i, i + SIZE).join("\n");
+    const res = await chat(FAST, "You copy bank statement rows into JSON. Copy every value exactly as printed. Never calculate, round or guess.",
+      `Text below keeps the column spacing of the statement. Return only a JSON array with one array per transaction row:\n["date as YYYY-MM-DD", "description", "amount as printed", "out" or "in" (which column the amount sits in), "balance as printed"]\nSkip header, opening balance and total lines. No other text.\n\n${chunk}`, 4000).catch(() => "");
+    const rows = firstJson<Cells[]>(res) ?? [];
+    return rows.filter((r) => Array.isArray(r) && /^\d{4}-\d{2}-\d{2}$/.test(String(r[0])) && /\d/.test(String(r[4]))).map((r) => ({ r, page: 1 + Math.floor(i / 45) }));
+  }));
+  let rows = chunks.flat();
+  if (rows.length > 1 && rows[0].r[0] > rows.at(-1)!.r[0]) rows = rows.reverse();
+  const num = (s: unknown) => Math.abs(Number(String(s).replace(/[^\d.-]/g, "")) || 0);
   const out: Txn[] = [];
-  for (let i = 0; i < lines.length; i += 120) {
-    const chunk = lines.slice(i, i + 120).join("\n");
-    const res = await chat(SMART, "You convert bank statement text into JSON. Copy numbers exactly as printed; never compute or guess values.", `Return a JSON array. Each element: {"date":"YYYY-MM-DD","narration":string,"ref":string,"debit":number,"credit":number,"balance":number}. Use 0 when a column is empty. Skip headers and totals.\n\n${chunk}`, 4000);
-    const rows = firstJson<Omit<Txn, "id" | "page">[]>(res) ?? [];
-    for (const r of rows) if (r && r.date && Number.isFinite(r.balance)) out.push({ ...r, debit: +r.debit || 0, credit: +r.credit || 0, id: `R${out.length + 1}`, page: 1 + Math.floor(i / 40) });
+  let prev: number | undefined;
+  for (const { r, page } of rows) {
+    const amount = num(r[2]), balance = num(r[4]);
+    // Direction from arithmetic when the balance settles it; the column hint only when it cannot (e.g. an edited row).
+    const isIn = prev !== undefined && Math.abs(prev + amount - balance) < 1 ? true
+      : prev !== undefined && Math.abs(prev - amount - balance) < 1 ? false
+      : /in|cr/i.test(String(r[3]));
+    out.push({ id: `R${out.length + 1}`, date: String(r[0]), narration: String(r[1] ?? ""), ref: "", debit: isIn ? 0 : amount, credit: isIn ? amount : 0, balance, page });
+    prev = balance;
   }
   return out.length ? out : null;
 }

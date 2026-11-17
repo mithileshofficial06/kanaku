@@ -85,7 +85,8 @@ export default function AnalyzeApp() {
     fd.set("statement", files.statement);
     if (files.gst) fd.set("gst", files.gst); else fd.delete("gst");
     if (files.itr) fd.set("itr", files.itr); else fd.delete("itr");
-    finish(fetch("/api/analyze", { method: "POST", body: fd }), URL.createObjectURL(files.statement));
+    const pw = String(fd.get("password") || "");
+    finish(fetch("/api/analyze", { method: "POST", body: fd }), URL.createObjectURL(files.statement) + (pw ? `#pw=${encodeURIComponent(pw)}` : ""));
   };
 
   if (loading) return <><div className="bg-crimson"><Nav /></div><Loading /></>;
@@ -145,6 +146,7 @@ export default function AnalyzeApp() {
                 <Field label="Tenure (months)"><input name="tenureMonths" type="number" min={6} max={84} defaultValue={36} className={inputCls} /></Field>
                 <Field label="Years in business"><input name="vintageYears" type="number" min={0} max={80} defaultValue={3} className={inputCls} /></Field>
                 <Field label="Purpose"><input name="purpose" className={inputCls} placeholder="e.g. Working capital" /></Field>
+                <Field label="PDF password (if the statement has one)"><input name="password" type="password" autoComplete="off" className={inputCls} placeholder="Used only to open the file, never stored" /></Field>
               </div>
               <Btn type="submit" variant="crimson">Analyse documents <Arrow /></Btn>
             </form>

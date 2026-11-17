@@ -46,7 +46,8 @@ async function loadDoc(url: string): Promise<PdfDoc> {
     docs.set(url, (async () => {
       const pdfjs = await import("pdfjs-dist");
       pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
-      return (await pdfjs.getDocument({ url }).promise) as unknown as PdfDoc;
+      const [src, pw] = url.split("#pw=");
+      return (await pdfjs.getDocument({ url: src, password: pw ? decodeURIComponent(pw) : undefined }).promise) as unknown as PdfDoc;
     })());
   }
   return docs.get(url)!;
