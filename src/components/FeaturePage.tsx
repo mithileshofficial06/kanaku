@@ -3,7 +3,7 @@ import Link from "next/link";
 import { motion, useScroll, useTransform } from "motion/react";
 import type { Report } from "@/lib/engine/analyze";
 import type { Feature } from "@/lib/features";
-import { Arrow, Btn, EASE, Reveal, Rule, SplitChars, SplitWords } from "./motion";
+import { Arrow, Btn, EASE, Reveal, Rule, SplitChars, SplitWords, useCycle } from "./motion";
 import { Footer, Nav } from "./Nav";
 import { EvidenceProvider } from "./report/Evidence";
 import { Memo } from "./report/Memo";
@@ -42,6 +42,7 @@ function Demo({ slug, r }: { slug: string; r: Report }) {
 export default function FeaturePage({ feature: f, report, next, prev }: { feature: Feature; report: Report; next: Feature; prev: Feature }) {
   const { scrollYProgress } = useScroll();
   const bar = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const cyc = useCycle(f.steps.length);
   return (
     <main>
       <motion.div className="fixed left-0 top-0 z-50 h-[3px] bg-ivory mix-blend-difference" style={{ width: bar }} />
@@ -70,12 +71,12 @@ export default function FeaturePage({ feature: f, report, next, prev }: { featur
       <section className="bg-ivory-2">
         <div className="mx-auto max-w-[1400px] px-5 py-24 md:px-10">
           <p className="label text-crimson">How Kanaku does it</p>
-          <div className={`mt-10 grid gap-px bg-line ${f.steps.length === 4 ? "md:grid-cols-2 lg:grid-cols-4" : "md:grid-cols-3"}`}>
+          <div {...cyc.container} className={`mt-10 grid gap-px bg-line ${f.steps.length === 4 ? "md:grid-cols-2 lg:grid-cols-4" : "md:grid-cols-3"}`}>
             {f.steps.map((s, i) => (
-              <Reveal key={s.title} delay={i * 0.12} className="group bg-ivory-2 p-8 transition-colors duration-500 hover:bg-crimson hover:text-ivory">
-                <span className="display text-7xl text-crimson/25 transition-colors group-hover:text-ivory/30">0{i + 1}</span>
+              <Reveal key={s.title} delay={i * 0.12} {...cyc.item(i)} className="group bg-ivory-2 p-8 transition-colors duration-500 data-[on]:bg-crimson data-[on]:text-ivory">
+                <span className="display text-7xl text-crimson/25 transition-colors group-data-[on]:text-ivory/30">0{i + 1}</span>
                 <h3 className="display mt-6 text-3xl">{s.title}</h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-ink-muted transition-colors group-hover:text-ivory/85">{s.body}</p>
+                <p className="mt-3 text-[15px] leading-relaxed text-ink-muted transition-colors group-data-[on]:text-ivory/85">{s.body}</p>
               </Reveal>
             ))}
           </div>

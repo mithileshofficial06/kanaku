@@ -7,6 +7,7 @@
 - `public/samples/formats/`: layouts a/b/c (parser), d (AI), scanned. One-click tests on /analyze ("Other bank layouts"). 21 tests.
 - Report banner "checks" strip: reader, rows reconciling, AI labels, memo. Proof drawer render race fixed and it auto-scrolls to the highlighted row. Concurrent memo requests share one AI call.
 - README (full, with screenshots in docs/screens) and docs/DEMO-SCRIPT.md written.
+- Tile grids (features, how-it-works, samples, analyze samples + layouts, feature-page steps) auto-cycle their highlight every 3.5s via `useCycle()` in motion.tsx; hovering pauses and follows the cursor; leaving resumes from the hovered tile. Style tiles with `data-[on]:` / `group-data-[on]:`, not `hover:`.
 - Gotcha: don't write files into the project while `next dev` runs (it recompiles and pages time out). Take screenshots against `next build && next start`.
 
 ## Next step
