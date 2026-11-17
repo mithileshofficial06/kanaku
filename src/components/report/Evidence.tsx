@@ -39,7 +39,7 @@ export function EvidenceButton({ evs, title, children, className = "" }: { evs: 
 }
 
 // ------------------------------------------------------------ PDF page renderer
-type PdfDoc = { numPages: number; getPage: (n: number) => Promise<{ getViewport: (o: { scale: number }) => { width: number; height: number }; render: (o: { canvasContext: CanvasRenderingContext2D; viewport: unknown; canvas: HTMLCanvasElement }) => { promise: Promise<void> } }> };
+type PdfDoc = { numPages: number; getPage: (n: number) => Promise<{ getViewport: (o: { scale: number }) => { width: number; height: number }; render: (o: { canvasContext: CanvasRenderingContext2D; viewport: unknown; canvas: HTMLCanvasElement }) => { promise: Promise<void>; cancel: () => void } }> };
 const docs = new Map<string, Promise<PdfDoc>>();
 async function loadDoc(url: string): Promise<PdfDoc> {
   if (!docs.has(url)) {
@@ -58,8 +58,10 @@ export function PdfPage({ url, page, marks }: { url: string; page: number; marks
   const box = useRef<HTMLDivElement>(null);
   const [geo, setGeo] = useState<{ s: number; h: number } | null>(null);
   const [err, setErr] = useState(false);
+  const firstMark = useRef<HTMLDivElement>(null);
   useEffect(() => {
     let dead = false;
+    let task: { promise: Promise<void>; cancel: () => void } | null = null;
     (async () => {
       try {
         const doc = await loadDoc(url);
@@ -71,18 +73,25 @@ export function PdfPage({ url, page, marks }: { url: string; page: number; marks
         const c = canvas.current!;
         c.width = vp.width; c.height = vp.height;
         c.style.width = `${width}px`; c.style.height = `${base.height * s}px`;
-        await p.render({ canvasContext: c.getContext("2d")!, viewport: vp, canvas: c }).promise;
-        if (!dead) setGeo({ s, h: base.height });
-      } catch { if (!dead) setErr(true); }
+        if (dead) return;
+        task = p.render({ canvasContext: c.getContext("2d")!, viewport: vp, canvas: c });
+        await task.promise;
+        if (!dead) { setGeo({ s, h: base.height }); setErr(false); }
+      } catch (e) {
+        // A render cancelled because the drawer moved on is not an error.
+        if (!dead && (e as { name?: string })?.name !== "RenderingCancelledException") setErr(true);
+      }
     })();
-    return () => { dead = true; };
+    return () => { dead = true; task?.cancel(); };
   }, [url, page]);
+  // Bring the highlighted row into view inside the drawer.
+  useEffect(() => { if (geo) setTimeout(() => firstMark.current?.scrollIntoView({ behavior: "smooth", block: "center" }), 250); }, [geo]);
   return (
     <div ref={box} className="relative w-full border border-line bg-white">
       {err && <p className="p-6 text-sm text-ink-muted">The original page could not be rendered. The extracted rows are shown below.</p>}
       <canvas ref={canvas} className="block" />
-      {geo && marks.map((m) => (
-        <motion.div key={m.id} initial={{ opacity: 0, scaleX: 0.6 }} animate={{ opacity: 1, scaleX: 1 }} transition={{ duration: 0.5, ease: EASE }}
+      {geo && marks.map((m, i) => (
+        <motion.div key={m.id} ref={i === 0 ? firstMark : undefined} initial={{ opacity: 0, scaleX: 0.6 }} animate={{ opacity: 1, scaleX: 1 }} transition={{ duration: 0.5, ease: EASE }}
           className="pointer-events-none absolute left-[4%] right-[3%] border-2 border-crimson bg-[var(--hl)]"
           style={{ top: (geo.h - m.y - 10) * geo.s, height: 15 * geo.s }}>
           <span className="absolute -left-1 top-1/2 -translate-x-full -translate-y-1/2 bg-crimson px-1 font-mono text-[9px] text-ivory">{m.id}</span>
