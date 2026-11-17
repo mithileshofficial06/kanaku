@@ -1,5 +1,19 @@
 # Progress
 
+## Current state (17 Nov 2026, night): feature-complete, README done
+- LLM: NVIDIA NIM with one key. Smart = nvidia/nemotron-3-ultra-550b-a55b (memo about 15s, Ask about 5s, thinking off). Fast = nvidia/nemotron-3.5-lightning-30b-a3b (labels, AI reader). Mistral Large 4 was too slow (>2 min) and was dropped. `reasoningOpts()` in llm.ts sets the per-model thinking controls.
+- Memo prompt: only real tags (R#, GST YYYY-MM, ITR, PDF-META), tags only on claims about that source; a refer verdict means no amounts in Path to Yes. Verified 0 bad figures / 0 bad cites on all samples (`scripts/bench-memo.ts`, `scripts/bench-ask.ts`).
+- Parser: layout-aware (many date styles, Dr/Cr amount column, Cr suffix, wrapped rows, value-date columns, newest first); every parse must reconcile against the balance chain (>= 90%) or the AI reader takes over. The AI copies cells; direction comes from the balance arithmetic. Password PDFs supported; scanned PDFs get a ReadError.
+- `public/samples/formats/`: layouts a/b/c (parser), d (AI), scanned. One-click tests on /analyze ("Other bank layouts"). 21 tests.
+- Report banner "checks" strip: reader, rows reconciling, AI labels, memo. Proof drawer render race fixed and it auto-scrolls to the highlighted row. Concurrent memo requests share one AI call.
+- README (full, with screenshots in docs/screens) and docs/DEMO-SCRIPT.md written.
+- Gotcha: don't write files into the project while `next dev` runs (it recompiles and pages time out). Take screenshots against `next build && next start`.
+
+## Next step
+1. The user deploys to Vercel (import the repo, add the NIM_* env vars), then the live link goes into the README.
+2. The user records the video following docs/DEMO-SCRIPT.md (warm the memo cache first), uploads it, and the link goes into the README.
+3. Submit before 22 Nov, 11:59 PM IST.
+
 ## Update (17 Nov 2026, evening): UI built from the user's reference
 - Reference: crimson #790B13 + ivory #FFF0DC editorial style. The user asked for: square corners only, motion animations, text animations, high legibility, a hero, a landing page, and one page per feature.
 - Fonts: Anton (display), Fraunces (serif + italic), Inter Tight (body), Geist Mono (numbers). Tokens live in globals.css; next/font vars are --nf-*.
