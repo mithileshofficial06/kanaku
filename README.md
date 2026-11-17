@@ -153,8 +153,8 @@ npm run dev                     # http://localhost:3000
 |---|---|---|
 | `NIM_API_KEY` | NVIDIA NIM key (`nvapi-...`) | none (template mode) |
 | `NIM_BASE_URL` | OpenAI-compatible endpoint | `https://integrate.api.nvidia.com/v1` |
-| `NIM_MODEL_SMART` | Memo and answers | `nvidia/nemotron-3-ultra-550b-a55b` |
-| `NIM_MODEL_FAST` | Labelling and the AI reader | `nvidia/nemotron-3.5-lightning-30b-a3b` |
+| `NIM_MODEL_SMART` | Memo, answers and narration labels | `nvidia/nemotron-3-ultra-550b-a55b` |
+| `NIM_MODEL_FAST` | The AI reader for unknown layouts | `nvidia/nemotron-3.5-lightning-30b-a3b` |
 
 ### Scripts
 
@@ -235,8 +235,8 @@ _Link to be added after upload._
 | Tool | Role |
 |---|---|
 | **Claude Code** (Anthropic, Claude Opus 5.5) | Development partner for the whole build: architecture, code, tests, synthetic data and UI |
-| **NVIDIA NIM: Nemotron 3 Ultra** | In the app: writes the underwriting memo and answers questions |
-| **NVIDIA NIM: Nemotron 3.5 Lightning** | In the app: labels unclear narrations and reads unrecognised statement layouts |
+| **NVIDIA NIM: Nemotron 3 Ultra** | In the app: writes the underwriting memo, answers questions, and labels narrations the rules cannot place |
+| **NVIDIA NIM: Nemotron 3.5 Lightning** | In the app: reads unrecognised statement layouts |
 
 All parsing, business logic and arithmetic is deterministic code in this repository. No AI computes any number in a report.
 

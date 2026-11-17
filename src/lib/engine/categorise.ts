@@ -61,6 +61,8 @@ const RULES: [RegExp, Category, "cr" | "dr" | "any"][] = [
 
 /** Narration with reference numbers removed, so repeated transactions of one kind share a key. */
 export const narrKey = (n: string) => n.toUpperCase().replace(/[A-Z]*\d[A-Z0-9]*/g, "#").replace(/\s+/g, " ").trim();
+/** Key for an AI label: the narration's pattern plus its direction. */
+export const hintKey = (t: { narration: string; credit: number }) => `${t.credit ? "cr" : "dr"}|${narrKey(t.narration)}`;
 
 export function categorise(t: Txn, llmHint?: Category): ETxn {
   const n = t.narration.toUpperCase();

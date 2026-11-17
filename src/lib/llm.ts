@@ -78,14 +78,25 @@ export async function extractStatementLLM(lines: string[]): Promise<Txn[] | null
   return out.length ? out : null;
 }
 
-const CATS: Category[] = ["sales_digital", "sales_cash", "loan_in", "reversal", "interest", "other_in", "emi", "bounce", "supplier", "rent", "salary", "utility", "tax", "drawings", "cash_out", "other_out"];
-export async function categoriseLLM(items: { narration: string; dir: "credit" | "debit" }[]): Promise<Record<string, Category>> {
+const CREDIT_CATS: Category[] = ["sales_digital", "sales_cash", "loan_in", "reversal", "interest", "other_in"];
+const DEBIT_CATS: Category[] = ["emi", "bounce", "supplier", "rent", "salary", "utility", "tax", "drawings", "cash_out", "other_out"];
+/**
+ * Labels the kinds of narration the rules could not place. Items are one per kind (reference numbers removed),
+ * biggest money first, keyed by `key`. A label must fit the direction: a credit can never become rent.
+ */
+export async function categoriseLLM(items: { key: string; narration: string; dir: "credit" | "debit" }[]): Promise<Record<string, Category>> {
   if (!items.length || !ai()) return {};
-  const list = items.slice(0, 80).map((x, i) => `${i}. [${x.dir}] ${x.narration}`).join("\n");
-  const res = await chat(FAST, "You label Indian bank statement narrations for a small-business credit analyst.", `Allowed labels: ${CATS.join(", ")}.\nReturn JSON object mapping the line number to a label.\n\n${list}`, 1500).catch(() => "");
+  const batch = items.slice(0, 60);
+  const list = batch.map((x, i) => `${i}. [${x.dir}] ${x.narration}`).join("\n");
+  const res = await chat(SMART, "You label Indian bank statement narrations for a small-business credit analyst.",
+    `Credit labels: ${CREDIT_CATS.join(", ")}.\nDebit labels: ${DEBIT_CATS.join(", ")}.\nsales_digital = customer money by UPI, card, NEFT, IMPS, cheque or a platform payout; sales_cash = only cash paid in at a branch or cash machine; emi = loan repayment; drawings = owner taking money out; supplier = paying for stock or services. Use other_in / other_out when unsure.\nReturn only a JSON object mapping each line number to one label.\n\n${list}`, 1500).catch(() => "");
   const map = firstJson<Record<string, string>>(res) ?? {};
   const out: Record<string, Category> = {};
-  for (const [k, v] of Object.entries(map)) { const it = items[+k]; if (it && CATS.includes(v as Category)) out[it.narration] = v as Category; }
+  for (const [k, v] of Object.entries(map)) {
+    const it = batch[+k];
+    const allowed = it?.dir === "credit" ? CREDIT_CATS : DEBIT_CATS;
+    if (it && allowed.includes(v as Category) && v !== "other_in" && v !== "other_out") out[it.key] = v as Category;
+  }
   return out;
 }
 

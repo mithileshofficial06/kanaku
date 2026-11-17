@@ -2,7 +2,7 @@
 import type { BusinessProfile } from "./types";
 import { assertHasText, chainScore, lines, parseGst, parseItr, parseStatement, readPdf, ReadError } from "./parse/pdf";
 import { analyze, type Report } from "./engine/analyze";
-import { categorise } from "./engine/categorise";
+import { categorise, hintKey } from "./engine/categorise";
 import { categoriseLLM, extractStatementLLM, llmEnabled, modelNames } from "./llm";
 
 export interface Docs { statement: Uint8Array; gst?: Uint8Array; itr?: Uint8Array; profile: BusinessProfile; password?: string }
@@ -27,14 +27,20 @@ export async function runPipeline(d: Docs): Promise<Report> {
   const gst = d.gst ? parseGst(await readPdf(d.gst, d.password)) : null;
   const itr = d.itr ? parseItr(await readPdf(d.itr, d.password)) : null;
   // Ask the LLM to label only narrations the rules could not place.
-  const unknown = [...new Map(st.txns.map((t) => categorise(t)).filter((t) => t.cat === "other_in" || t.cat === "other_out").map((t) => [t.narration, { narration: t.narration, dir: (t.credit ? "credit" : "debit") as "credit" | "debit" }])).values()];
-  const hints = await categoriseLLM(unknown).catch(() => ({}));
+  // One item per kind of narration (reference numbers removed), biggest money first.
+  const kinds = new Map<string, { key: string; narration: string; dir: "credit" | "debit"; total: number }>();
+  for (const t of st.txns.map((x) => categorise(x)).filter((x) => x.cat === "other_in" || x.cat === "other_out")) {
+    const key = hintKey(t);
+    const k = kinds.get(key) ?? kinds.set(key, { key, narration: t.narration, dir: t.credit ? "credit" : "debit", total: 0 }).get(key)!;
+    k.total += t.credit || t.debit;
+  }
+  const hints: Record<string, import("./engine/categorise").Category> = await categoriseLLM([...kinds.values()].sort((a, b) => b.total - a.total)).catch(() => ({}));
   const report = analyze(st, d.profile, gst, itr, hints);
   report.statement.source = source;
   // What the AI did on this file, and how much of the statement reconciles, shown on the report.
   report.statement.checks = {
     chainOk: Math.round(chainScore(st.txns, st.header.openingBalance) * st.txns.length),
-    aiLabelled: Object.keys(hints).length,
+    aiLabelled: report.txns.filter((t) => hints[hintKey(t)]).length,
     readModel: source === "llm" ? modelNames().fast : undefined,
     labelModel: Object.keys(hints).length ? modelNames().fast : undefined,
   };

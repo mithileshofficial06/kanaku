@@ -1,7 +1,7 @@
 // Deterministic underwriting: metrics, red flags, eligibility, decision. No LLM here.
 import type { BusinessProfile, GstMonth, ItrSummary, Statement } from "../types";
 import { inr, lakh, r2 } from "../format";
-import { categorise, OPEX, type Category, type ETxn } from "./categorise";
+import { categorise, OPEX, type Category, type ETxn, hintKey } from "./categorise";
 import { POLICY } from "./policy";
 import { eligibility, pathToYes, type Eligibility, type EligibilityInput, type Loan, type PathToYes } from "./whatif";
 
@@ -104,7 +104,7 @@ function tamper(st: Statement, tx: ETxn[]): Flag[] {
 }
 
 export function analyze(st: Statement, profile: BusinessProfile, gst?: GstMonth[] | null, itr?: ItrSummary | null, hints?: Record<string, Category>): Report {
-  const tx = st.txns.map((t) => categorise(t, hints?.[t.narration]));
+  const tx = st.txns.map((t) => categorise(t, hints?.[hintKey(t)]));
   const months = monthsBetween(tx[0].date, tx.at(-1)!.date);
   const rt = roundTrips(tx), wd = windowDressing(tx);
   const rtIds = new Set(rt.flat().map((t) => t.id)), wdIds = new Set(wd.flat().map((t) => t.id));
