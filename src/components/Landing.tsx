@@ -69,6 +69,7 @@ function How() {
     ["Check", "Every balance is re-added, fonts and file history are inspected, round trips and month-end cash are hunted, and GST, ITR and bank are lined up."],
     ["Explain", "An open model writes the memo from the computed facts. Every citation and every rupee figure it writes is verified before you see it."],
   ];
+  const cyc = useCycle(steps.length);
   return (
     <section id="how" className="bg-ivory-2 text-ink scroll-mt-10">
       <div className="mx-auto max-w-[1400px] px-5 py-28 md:px-10">
@@ -79,12 +80,12 @@ function How() {
           </div>
           <p className="serif max-w-sm text-lg italic text-ink-muted">The AI reads and explains. Code does every calculation. A verifier checks the AI.</p>
         </div>
-        <div className="mt-16 grid gap-px bg-line md:grid-cols-4">
+        <div {...cyc.container} className="mt-16 grid gap-px bg-line md:grid-cols-4">
           {steps.map(([t, b], i) => (
-            <Reveal key={t} delay={i * 0.12} className="group relative bg-ivory-2 p-8 transition-colors duration-500 hover:bg-crimson hover:text-ivory">
-              <span className="display text-[88px] leading-none text-crimson/20 transition-colors group-hover:text-ivory/25">0{i + 1}</span>
+            <Reveal key={t} delay={i * 0.12} {...cyc.item(i)} className="group relative bg-ivory-2 p-8 transition-colors duration-500 data-[on]:bg-crimson data-[on]:text-ivory">
+              <span className="display text-[88px] leading-none text-crimson/20 transition-colors group-data-[on]:text-ivory/25">0{i + 1}</span>
               <h3 className="display mt-6 text-4xl">{t}</h3>
-              <p className="mt-4 text-[15px] leading-relaxed text-ink-muted transition-colors group-hover:text-ivory/85">{b}</p>
+              <p className="mt-4 text-[15px] leading-relaxed text-ink-muted transition-colors group-data-[on]:text-ivory/85">{b}</p>
             </Reveal>
           ))}
         </div>
@@ -125,6 +126,7 @@ function Features() {
 }
 
 function Samples({ samples }: { samples: SampleCard[] }) {
+  const cyc = useCycle(samples.length);
   const tone: Record<string, string> = { approve: "bg-forest text-ivory", approve_reduced: "bg-amber text-ivory", refer: "bg-red text-ivory", decline: "bg-ink text-ivory" };
   return (
     <section id="samples" className="bg-ivory text-ink scroll-mt-10">
@@ -136,10 +138,10 @@ function Samples({ samples }: { samples: SampleCard[] }) {
           </div>
           <p className="max-w-sm text-sm text-ink-muted">Synthetic but realistic: 12 months of statement rows, GST returns and an ITR for each. Nothing is pre-written; the engine runs live.</p>
         </div>
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        <div {...cyc.container} className="mt-14 grid gap-6 lg:grid-cols-3">
           {samples.map((s, i) => (
-            <Reveal key={s.id} delay={i * 0.12}>
-              <div className="group flex h-full flex-col border border-line bg-ivory transition-all duration-500 hover:-translate-y-1 hover:border-crimson hover:shadow-[0_30px_60px_-30px_rgba(121,11,19,0.45)]">
+            <Reveal key={s.id} delay={i * 0.12} {...cyc.item(i)} className="group">
+              <div className="flex h-full flex-col border border-line bg-ivory transition-all duration-500 group-data-[on]:-translate-y-1 group-data-[on]:border-crimson group-data-[on]:shadow-[0_30px_60px_-30px_rgba(121,11,19,0.45)]">
                 <div className="flex items-center justify-between border-b border-line px-6 py-4">
                   <span className="label text-ink-muted">{s.scenario}</span>
                   <span className="font-mono text-xs text-ink-muted">Asks {s.requested}</span>
@@ -155,7 +157,7 @@ function Samples({ samples }: { samples: SampleCard[] }) {
                   <p className="mt-1 text-xs opacity-85">{s.flags ? `${s.flags} finding${s.flags > 1 ? "s" : ""} with evidence` : "No red flags"}</p>
                 </div>
                 <Link href={`/analyze?sample=${s.id}`} className="flex items-center justify-between bg-crimson px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.2em] text-ivory transition-colors hover:bg-crimson-night">
-                  Open the full analysis <Arrow className="transition-transform group-hover:translate-x-1" />
+                  Open the full analysis <Arrow className="transition-transform group-data-[on]:translate-x-1" />
                 </Link>
               </div>
             </Reveal>

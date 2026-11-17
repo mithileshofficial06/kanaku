@@ -29,6 +29,7 @@ export function useCycle(count: number, ms = 3500) {
   return {
     container: {
       ref,
+      "data-cycle": "",
       onPointerEnter: () => setInside(true),
       onPointerLeave: () => { setInside(false); if (hoverRef.current !== null) setActive(hoverRef.current); setHover(null); },
     },
