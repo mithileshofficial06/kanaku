@@ -131,8 +131,9 @@ function stressed(): SampleBusiness {
     b.add(d(m, 10), "ACH D- SWARNA GOLD LOAN-EMI 3391", 8000, 0);
     b.add(d(m, 14), "BILLPAY DR-TNPDCL ELECTRICITY", b.amt(3500, 5000, 10), 0);
     const decline = 1 - m * 0.015;
-    for (let k = 0; k < 7; k++) b.add(d(m, b.int(2, lastDay(m))), "CASH DEP-SELF-BRANCH 0412", 0, b.amt(15000, 35000, 500) * decline);
-    for (let k = 0; k < 10; k++) b.upiIn(d(m, b.int(1, lastDay(m))), 3000, 12000);
+    for (let k = 0; k < 7; k++) b.add(d(m, b.int(2, lastDay(m))), "CASH DEP-SELF-BRANCH 0412", 0, b.amt(22000, 38000, 500) * decline);
+    for (let k = 0; k < 12; k++) b.upiIn(d(m, b.int(1, lastDay(m))), 4000, 11000);
+    for (let k = 0; k < 2; k++) b.add(d(m, b.int(8, 25)), "CASH WDL-SELF-PARTS PURCHASE", b.amt(17000, 23000, 500), 0);
     for (let k = 0; k < 3; k++) b.add(d(m, b.int(3, 26)), `NEFT DR-${b.pick(["KOVAI AUTO PARTS DIST", "SRI RANGA BEARINGS", "TVS PARTS AGENCY KOVAI"])}-PUR`, b.amt(40000, 58000, 100), 0);
     b.add(d(m, 20), "GST PMT-CBIC-GSTR3B", b.amt(2500, 4000, 10), 0);
   }
