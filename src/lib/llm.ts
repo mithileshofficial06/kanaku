@@ -229,7 +229,7 @@ export async function answer(r: Report, question: string): Promise<Verified> {
     const text = f ? `${f.title}. ${f.detail} [${f.evidence.slice(0, 4).map(tag).join(", ")}]` : `${r.decision.headline}. ${r.decision.reasons.join(". ")}. (Connect an LLM key for free-form answers.)`;
     return verify(text, r, "template");
   }
-  const sys = "You answer a loan officer's question about one underwriting file. Use only the facts and rows given. Never compute new numbers; quote figures exactly. Cite row IDs or tags in square brackets after each claim, e.g. [R12]. If the facts do not answer the question, say so. Under 150 words.";
+  const sys = "You answer a loan officer's question about one underwriting file. Use only the facts and rows given. Never compute new numbers; quote figures exactly. Cite row IDs or tags in square brackets after each claim, e.g. [R12]. The only valid tags are row IDs (R followed by digits), single GST months (GST YYYY-MM), ITR and PDF-META; never write a range such as [GST 2025-11 to GST 2026-04], cite one or two single months instead. If the facts do not answer the question, say so. Under 150 words.";
   const text = await chat(SMART, sys + docsNote(r), `FACTS:\n${JSON.stringify(facts(r))}\n\nRELEVANT ROWS:\n${rows || "(none)"}\n\nQUESTION: ${question}`, 600);
   return verify(text, r, "llm", SMART);
 }

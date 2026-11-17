@@ -19,7 +19,7 @@
 </p>
 
 <p>
-  <a href="#live-demo"><b>Live demo</b></a> &nbsp;·&nbsp;
+  <a href="https://kanaku-sigma.vercel.app"><b>Live demo</b></a> &nbsp;·&nbsp;
   <a href="#demo-video"><b>Demo video</b></a> &nbsp;·&nbsp;
   <a href="#quick-start"><b>Quick start</b></a> &nbsp;·&nbsp;
   <a href="#how-it-works"><b>How it works</b></a>
@@ -224,7 +224,7 @@ scripts/                   synthetic data generators, live AI benchmarks
 
 ## Live demo
 
-_Link to be added after deployment._
+**[kanaku-sigma.vercel.app](https://kanaku-sigma.vercel.app)**: open **Analyze**, pick a sample business, or try the other bank layouts. No sign-up needed.
 
 ## Demo video
 
