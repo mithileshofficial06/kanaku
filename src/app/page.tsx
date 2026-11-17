@@ -4,8 +4,8 @@ import { lakh, r2 } from "@/lib/format";
 
 const SCENARIO: Record<string, string> = { healthy: "Healthy business", stressed: "Under stress", fraud: "Suspicious file" };
 
-export default function Home() {
-  const reports = demoReports();
+export default async function Home() {
+  const reports = await demoReports();
   const fraud = reports["sri-lakshmi-traders"];
   const badId = fraud.flags.find((f) => f.code === "tamper_chain")?.evidence[0];
   const badIdx = fraud.txns.findIndex((t) => badId?.kind === "row" && t.id === badId.id);
