@@ -27,6 +27,7 @@ export async function readPdf(data: Uint8Array, password?: string): Promise<PdfT
         ? new ReadError("bad_password", "That password did not open the PDF. Check it and try again.")
         : new ReadError("password", "This PDF is password protected. Enter its password (bank e-statements often use part of your name and date of birth) and try again.");
     }
+    console.error("[readPdf] could not open PDF:", err?.name, (e as Error)?.message);
     throw new ReadError("unreadable", "This file could not be opened as a PDF. Download the statement again from net banking and retry.");
   }
   const items: TextItem[] = [];
