@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import type { Report } from "@/lib/engine/analyze";
-import { Arrow, Btn, EASE, SplitChars } from "./motion";
+import { Arrow, Btn, EASE, SplitChars, useCycle } from "./motion";
 import { Footer, Nav } from "./Nav";
 import { ReportView } from "./report/ReportView";
 
@@ -64,6 +64,8 @@ export default function AnalyzeApp() {
   useEffect(() => { if (error && !loading) document.querySelector('[role="alert"]')?.scrollIntoView({ behavior: "smooth", block: "center" }); }, [error, loading]);
   const [files, setFiles] = useState<{ statement?: File; gst?: File; itr?: File }>({});
   const started = useRef<string | null>(null);
+  const sampleCyc = useCycle(SAMPLES.length);
+  const formatCyc = useCycle(FORMATS.length);
 
   const finish = useCallback(async (p: Promise<Response>, url?: string) => {
     setLoading(true); setError("");
@@ -131,16 +133,16 @@ export default function AnalyzeApp() {
       <section className="bg-ivory">
         <div className="mx-auto max-w-[1400px] px-5 py-16 md:px-10">
           <p className="label text-crimson">Sample businesses · synthetic data</p>
-          <div className="mt-6 grid gap-px bg-line md:grid-cols-3">
+          <div {...sampleCyc.container} className="mt-6 grid gap-px bg-line md:grid-cols-3">
             {SAMPLES.map((s, i) => (
-              <motion.button key={s.id} onClick={() => runSample(s.id)} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 + i * 0.1, ease: EASE, duration: 0.7 }} className="group relative overflow-hidden bg-ivory p-8 text-left">
-                <span className="absolute inset-0 translate-y-full bg-crimson transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] group-hover:translate-y-0" />
-                <span className="relative block transition-colors duration-300 group-hover:text-ivory">
+              <motion.button key={s.id} {...sampleCyc.item(i)} onClick={() => runSample(s.id)} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 + i * 0.1, ease: EASE, duration: 0.7 }} className="group relative overflow-hidden bg-ivory p-8 text-left">
+                <span className="absolute inset-0 translate-y-full bg-crimson transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] group-data-[on]:translate-y-0" />
+                <span className="relative block transition-colors duration-300 group-data-[on]:text-ivory">
                   <span className="label text-[10px] opacity-70">{s.tag}</span>
                   <span className="serif mt-4 block text-3xl font-semibold">{s.name}</span>
                   <span className="mt-1 block text-sm opacity-75">{s.city}</span>
                   <span className="serif mt-6 block text-lg italic">{s.line}</span>
-                  <span className="mt-8 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em]">Analyse <Arrow className="transition-transform group-hover:translate-x-1" /></span>
+                  <span className="mt-8 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em]">Analyse <Arrow className="transition-transform group-data-[on]:translate-x-1" /></span>
                 </span>
               </motion.button>
             ))}
@@ -153,15 +155,15 @@ export default function AnalyzeApp() {
               <p className="max-w-xl text-ink-muted">The same stressed business, printed the way different banks print statements. Each should give the same answer: ₹1.25L now, with a Path to Yes.</p>
             </div>
             {error && errorAt === "formats" && <p role="alert" className="mt-6 border-l-4 border-red bg-red-soft p-4 text-sm text-red">{error}</p>}
-            <div className="mt-6 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-5">
-              {FORMATS.map((x) => (
-                <button key={x.file} onClick={() => runFormat(x.file)} className="group flex flex-col justify-between bg-ivory p-6 text-left transition-colors hover:bg-crimson hover:text-ivory">
+            <div {...formatCyc.container} className="mt-6 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-5">
+              {FORMATS.map((x, i) => (
+                <button key={x.file} {...formatCyc.item(i)} onClick={() => runFormat(x.file)} className="group flex flex-col justify-between bg-ivory p-6 text-left transition-colors duration-500 data-[on]:bg-crimson data-[on]:text-ivory">
                   <span>
                     <span className="label text-[10px] opacity-70">{x.how}</span>
                     <span className="serif mt-3 block text-xl font-semibold">{x.name}</span>
                     <span className="mt-2 block text-sm opacity-80">{x.line}</span>
                   </span>
-                  <span className="mt-6 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em]">Run <Arrow className="transition-transform group-hover:translate-x-1" /></span>
+                  <span className="mt-6 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em]">Run <Arrow className="transition-transform group-data-[on]:translate-x-1" /></span>
                 </button>
               ))}
             </div>
