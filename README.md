@@ -14,13 +14,13 @@
   <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS 4" />
   <img src="https://img.shields.io/badge/NVIDIA_NIM-Nemotron-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA NIM Nemotron" />
-  <img src="https://img.shields.io/badge/tests-21_passing-2F5D3A?style=flat-square&logo=vitest&logoColor=white" alt="21 tests passing" />
+  <img src="https://img.shields.io/badge/tests-25_passing-2F5D3A?style=flat-square&logo=vitest&logoColor=white" alt="25 tests passing" />
   <img src="https://img.shields.io/badge/Arthaton-2026-790B13?style=flat-square" alt="Arthaton 2026" />
 </p>
 
 <p>
   <a href="https://kanaku-sigma.vercel.app"><b>Live demo</b></a> &nbsp;·&nbsp;
-  <a href="#demo-video"><b>Demo video</b></a> &nbsp;·&nbsp;
+  <a href="https://youtu.be/cCWbdKiyT6g"><b>Demo video</b></a> &nbsp;·&nbsp;
   <a href="#quick-start"><b>Quick start</b></a> &nbsp;·&nbsp;
   <a href="#how-it-works"><b>How it works</b></a>
 </p>
@@ -228,7 +228,7 @@ scripts/                   synthetic data generators, live AI benchmarks
 
 ## Demo video
 
-_Link to be added after upload._
+**[Watch the 4-minute demo on YouTube](https://youtu.be/cCWbdKiyT6g)**: the full flow, fraud and tamper detection, Path to Yes, layout coverage and the blind test, with narration.
 
 ## AI tools used
 
