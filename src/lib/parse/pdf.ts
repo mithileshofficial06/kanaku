@@ -11,7 +11,7 @@ const DATE = /^(\d{2})[/-](\d{2})[/-](\d{4})$/;
 
 export async function readPdf(data: Uint8Array): Promise<PdfText> {
   const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
-  const task = pdfjs.getDocument({ data: data.slice(), disableFontFace: true, useSystemFonts: false, isEvalSupported: false, verbosity: 0 });
+  const task = pdfjs.getDocument({ data: data.slice(), disableFontFace: true, useSystemFonts: false, verbosity: 0 });
   const doc = await task.promise;
   const items: TextItem[] = [];
   for (let p = 1; p <= doc.numPages; p++) {
