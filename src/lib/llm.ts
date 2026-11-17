@@ -7,8 +7,16 @@ import type { Report } from "./engine/analyze";
 import type { Txn } from "./types";
 import { inr, lakh } from "./format";
 
-const SMART = process.env.NIM_MODEL_SMART || "meta/llama-3.3-70b-instruct";
-const FAST = process.env.NIM_MODEL_FAST || "meta/llama-3.1-8b-instruct";
+const SMART = process.env.NIM_MODEL_SMART || "nvidia/nemotron-3-ultra-550b-a55b";
+const FAST = process.env.NIM_MODEL_FAST || "nvidia/nemotron-3.5-lightning-30b-a3b";
+
+// Reasoning models spend tokens thinking before they answer. Keep thinking short (Mistral) or off
+// (Nemotron) and leave headroom so the visible answer is never cut off.
+function reasoningOpts(model: string, maxTokens: number): Record<string, unknown> {
+  if (/mistral-large-4/i.test(model)) return { reasoning_effort: "low", max_tokens: maxTokens + 1500 };
+  if (/nemotron-3/i.test(model)) return { chat_template_kwargs: { enable_thinking: false } };
+  return {};
+}
 
 let client: OpenAI | null | undefined;
 function ai(): OpenAI | null {
@@ -24,7 +32,8 @@ export const modelNames = () => ({ smart: SMART, fast: FAST });
 async function chat(model: string, system: string, user: string, maxTokens = 1500): Promise<string> {
   const c = ai();
   if (!c) throw new Error("LLM not configured");
-  const r = await c.chat.completions.create({ model, temperature: 0.1, max_tokens: maxTokens, messages: [{ role: "system", content: system }, { role: "user", content: user }] });
+  const body = { model, temperature: 0.1, max_tokens: maxTokens, messages: [{ role: "system" as const, content: system }, { role: "user" as const, content: user }], ...reasoningOpts(model, maxTokens) };
+  const r = await c.chat.completions.create(body as Parameters<typeof c.chat.completions.create>[0] & { stream?: false });
   return r.choices[0]?.message?.content?.trim() ?? "";
 }
 
@@ -121,7 +130,8 @@ export function verify(text: string, r: Report, source: Verified["source"], mode
 const MEMO_SYS = `You are a senior credit analyst at an Indian NBFC writing an underwriting memo for a small-business loan.
 Rules:
 - Use ONLY the facts in the JSON. Never calculate new numbers; copy figures exactly as given (you may write them as ₹X.XL or ₹X,XX,XXX).
-- After every claim that comes from evidence, cite it in square brackets using the evidence tags exactly as given, e.g. [R175] or [GST 2026-03] or [ITR].
+- After every claim that comes from evidence, cite it in square brackets using the evidence tags exactly as given, e.g. [R175] or [GST 2026-03] or [ITR] or [PDF-META].
+- The ONLY valid tags are row IDs (R followed by digits), one GST month each (GST YYYY-MM), ITR and PDF-META. Never put JSON field or section names in brackets (no [metrics], [eligibility], [pathToYes], [decision]); figures computed by the engine need no tag. Never write a range such as [GST 2025-11 to GST 2026-04]; cite one or two single months instead.
 - Plain, direct English a business owner can follow. No hype.
 - Sections, each starting with "## ": Summary, Repayment capacity, Risks and red flags, Path to Yes, Recommendation.
 - Under 350 words. Use "- " bullets inside sections.`;
@@ -132,7 +142,8 @@ export async function writeMemo(r: Report): Promise<Verified> {
     const text = await chat(SMART, MEMO_SYS, JSON.stringify(facts(r)), 1200);
     if (!text) throw new Error("empty");
     return verify(text, r, "llm", SMART);
-  } catch {
+  } catch (e) {
+    console.error("[memo] LLM failed, using template:", (e as Error).message);
     return verify(templateMemo(r), r, "template");
   }
 }
