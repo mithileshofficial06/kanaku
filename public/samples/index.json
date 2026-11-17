@@ -1,0 +1,44 @@
+[
+  {
+    "id": "meenakshi-textiles",
+    "businessName": "Meenakshi Textiles",
+    "ownerName": "R. Meenakshi",
+    "city": "Madurai, Tamil Nadu",
+    "constitution": "Proprietorship",
+    "vintageYears": 9,
+    "gstin": "33ABCPM1234K1Z5",
+    "loanRequested": 500000,
+    "tenureMonths": 24,
+    "purpose": "Working capital for festive inventory",
+    "scenario": "healthy",
+    "tagline": "Steady digital sales, one small loan, clean repayment"
+  },
+  {
+    "id": "arun-auto-spares",
+    "businessName": "Arun Auto Spares",
+    "ownerName": "S. Arun Kumar",
+    "city": "Coimbatore, Tamil Nadu",
+    "constitution": "Proprietorship",
+    "vintageYears": 4,
+    "gstin": "33DEFPA5678L1Z2",
+    "loanRequested": 500000,
+    "tenureMonths": 36,
+    "purpose": "Stock up on two-wheeler spares",
+    "scenario": "stressed",
+    "tagline": "Mostly cash sales, two loans, recent EMI bounces"
+  },
+  {
+    "id": "sri-lakshmi-traders",
+    "businessName": "Sri Lakshmi Traders",
+    "ownerName": "K. Venkatesan",
+    "city": "Salem, Tamil Nadu",
+    "constitution": "Proprietorship",
+    "vintageYears": 2,
+    "gstin": "33GHIPK9012M1Z8",
+    "loanRequested": 1500000,
+    "tenureMonths": 36,
+    "purpose": "Expansion of sago trading",
+    "scenario": "fraud",
+    "tagline": "Big turnover on paper, but the money keeps coming back"
+  }
+]
