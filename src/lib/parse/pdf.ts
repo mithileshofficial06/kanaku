@@ -143,6 +143,7 @@ export function parseStatement(pdf: PdfText): Statement | null {
   const opening = parseInr(grab(/(?:Opening Balance|Opening Bal\.?|Balance B\/F|Brought Forward)[^\d\n]*([\d,]+\.\d{2})/i));
 
   let txns: Txn[] = [];
+  let rowOpening = 0;
   let last: { t: Txn; y: number; page: number } | null = null;
   for (const l of ls) {
     if (isHead(l)) { last = null; continue; }
@@ -156,7 +157,8 @@ export function parseStatement(pdf: PdfText): Statement | null {
       // Continuation line: a wrapped description directly under the previous row.
       if (last && l[0].page === last.page && last.y - l[0].y < 13 && !l.some((i) => AMT.test(i.str) || /total|closing|opening|page \d/i.test(i.str))) {
         for (const it of l) {
-          if (it.x >= narr.x - 4 && it.x < narrEnd) last.t.narration = (last.t.narration + " " + it.str).trim();
+          // A line broken right after "/" continues the same token (UPI/IMPS references): join without a space.
+          if (it.x >= narr.x - 4 && it.x < narrEnd) last.t.narration = last.t.narration.endsWith("/") ? last.t.narration + it.str : (last.t.narration + " " + it.str).trim();
           else if (ref && it.x >= narrEnd && it.x < amountStart) last.t.ref = (last.t.ref + it.str).trim();
         }
         last.y = l[0].y;
@@ -181,6 +183,8 @@ export function parseStatement(pdf: PdfText): Statement | null {
     if (amt) { if (mark === "dr") t.debit = amount; else t.credit = amount; }
     t.narration = narrParts.join(" ");
     if (Number.isNaN(t.balance)) continue;
+    // Balance-only lines (opening balance, B/F, C/F) are not transactions. The first one gives the opening balance.
+    if (!t.debit && !t.credit) { if (!txns.length && !rowOpening) rowOpening = t.balance; last = null; continue; }
     txns.push(t);
     last = { t, y: l[0].y, page: l[0].page };
   }
@@ -188,7 +192,7 @@ export function parseStatement(pdf: PdfText): Statement | null {
 
   // Newest-first statements: put rows in date order.
   if (txns[0].date > txns.at(-1)!.date) txns = txns.reverse();
-  const open = opening || r2(txns[0].balance - txns[0].credit + txns[0].debit);
+  const open = opening || rowOpening || r2(txns[0].balance - txns[0].credit + txns[0].debit);
   // A row that only reconciles with debit and credit swapped was mapped to the wrong column: fix it.
   // Rows that reconcile neither way stay as printed; the tamper check reports them.
   let prev = open;
