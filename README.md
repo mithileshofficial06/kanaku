@@ -48,52 +48,28 @@ India has over 6 crore MSMEs, and their credit gap is estimated at ₹20–25 la
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <img src="docs/icons/path-to-yes.svg" width="40" align="left" alt="" />
-      <b>&nbsp;Path to Yes</b><br />
-      <sub>&nbsp;Instead of a flat rejection, the owner sees the exact changes that unlock the amount they asked for, with live what-if sliders.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <img src="docs/icons/tamper.svg" width="40" align="left" alt="" />
-      <b>&nbsp;Tamper detection</b><br />
-      <sub>&nbsp;Re-adds every running balance, compares the fonts of every amount, and reads the PDF's metadata. One edited number gets caught.</sub>
-    </td>
+    <td width="52" valign="top"><img src="docs/icons/path-to-yes.svg" width="44" alt="" /></td>
+    <td width="44%" valign="top"><b>Path to Yes</b><br /><sub>Instead of a flat rejection, the owner sees the exact changes that unlock the amount they asked for, with live what-if sliders.</sub></td>
+    <td width="52" valign="top"><img src="docs/icons/tamper.svg" width="44" alt="" /></td>
+    <td width="44%" valign="top"><b>Tamper detection</b><br /><sub>Re-adds every running balance, compares the fonts of every amount, and reads the PDF's metadata. One edited number gets caught.</sub></td>
   </tr>
   <tr>
-    <td valign="top">
-      <img src="docs/icons/fraud.svg" width="40" align="left" alt="" />
-      <b>&nbsp;Fraud patterns</b><br />
-      <sub>&nbsp;Round-tripping through linked parties and month-end window dressing, detected and excluded from income.</sub>
-    </td>
-    <td valign="top">
-      <img src="docs/icons/cross-check.svg" width="40" align="left" alt="" />
-      <b>&nbsp;Three-document check</b><br />
-      <sub>&nbsp;Bank vs GST vs ITR. A business has one real turnover; Kanaku checks that all three filings agree.</sub>
-    </td>
+    <td width="52" valign="top"><img src="docs/icons/fraud.svg" width="44" alt="" /></td>
+    <td width="44%" valign="top"><b>Fraud patterns</b><br /><sub>Round-tripping through linked parties and month-end window dressing, detected and excluded from income.</sub></td>
+    <td width="52" valign="top"><img src="docs/icons/cross-check.svg" width="44" alt="" /></td>
+    <td width="44%" valign="top"><b>Three-document check</b><br /><sub>Bank vs GST vs ITR. A business has one real turnover; Kanaku checks that all three filings agree.</sub></td>
   </tr>
   <tr>
-    <td valign="top">
-      <img src="docs/icons/capacity.svg" width="40" align="left" alt="" />
-      <b>&nbsp;Repayment capacity</b><br />
-      <sub>&nbsp;Genuine sales, operating costs and existing EMIs found in the statement, turned into a safe new EMI, every step shown.</sub>
-    </td>
-    <td valign="top">
-      <img src="docs/icons/money-flow.svg" width="40" align="left" alt="" />
-      <b>&nbsp;Money-flow map</b><br />
-      <sub>&nbsp;Who pays the business and whom it pays. Money cycling through a party shows up as a red loop.</sub>
-    </td>
+    <td width="52" valign="top"><img src="docs/icons/capacity.svg" width="44" alt="" /></td>
+    <td width="44%" valign="top"><b>Repayment capacity</b><br /><sub>Genuine sales, operating costs and existing EMIs found in the statement, turned into a safe new EMI, every step shown.</sub></td>
+    <td width="52" valign="top"><img src="docs/icons/money-flow.svg" width="44" alt="" /></td>
+    <td width="44%" valign="top"><b>Money-flow map</b><br /><sub>Who pays the business and whom it pays. Money cycling through a party shows up as a red loop.</sub></td>
   </tr>
   <tr>
-    <td valign="top">
-      <img src="docs/icons/proof.svg" width="40" align="left" alt="" />
-      <b>&nbsp;Proof for every number</b><br />
-      <sub>&nbsp;The AI memo cites rows, and code verifies every figure and citation before display. Click any citation to see the original page.</sub>
-    </td>
-    <td valign="top">
-      <img src="docs/icons/reader.svg" width="40" align="left" alt="" />
-      <b>&nbsp;Reads any bank's layout</b><br />
-      <sub>&nbsp;A layout-aware parser with an AI fallback, both gated by the balance chain. Password-protected PDFs are supported; scans are refused with the reason.</sub>
-    </td>
+    <td width="52" valign="top"><img src="docs/icons/proof.svg" width="44" alt="" /></td>
+    <td width="44%" valign="top"><b>Proof for every number</b><br /><sub>The AI memo cites rows, and code verifies every figure and citation before display. Click any citation to see the original page.</sub></td>
+    <td width="52" valign="top"><img src="docs/icons/reader.svg" width="44" alt="" /></td>
+    <td width="44%" valign="top"><b>Reads any bank's layout</b><br /><sub>A layout-aware parser with an AI fallback, both gated by the balance chain. Password-protected PDFs are supported; scans are refused with the reason.</sub></td>
   </tr>
 </table>
 
